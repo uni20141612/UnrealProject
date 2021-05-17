@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\SecondProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{7C6C36D7-EB2E-4994-9796-00F200727095}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SecondProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SecondProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{E0D2DD3A-DE90-49EA-B31B-F5AD2DCAA079}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\SecondProject">
+      <UniqueIdentifier>{F2AA468B-B254-4E3E-8DDF-14F67D845045}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SecondProject\SecondProject.Build.cs">
+      <Filter>Source\SecondProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\SecondProject\SecondProject.cpp">
+      <Filter>Source\SecondProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SecondProject\SecondProject.h">
+      <Filter>Source\SecondProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Private">
+      <UniqueIdentifier>{04B5EBBC-53CF-4B9C-AA12-B56C464BF8DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SecondProject\Private\Character">
+      <UniqueIdentifier>{AF2CDE7B-8624-4797-BA4F-22F6204E89D8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\BaseCharacter.cpp">
+      <Filter>Source\SecondProject\Private\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Monster.cpp">
+      <Filter>Source\SecondProject\Private\Character</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Animation">
+      <UniqueIdentifier>{2210694A-3D43-4189-A389-E85F02751896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SecondProject\Private\Character\Animation\Notify">
+      <UniqueIdentifier>{102C7544-F5CA-4365-B088-E95C3DDE1E38}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Animation\Notify\FootStepAnimNotify.cpp">
+      <Filter>Source\SecondProject\Private\Character\Animation\Notify</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Animation\NotifyState">
+      <UniqueIdentifier>{B0B3A1EB-9D5E-4A15-B364-ECF3DEC8FC11}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Animation\NotifyState\CreateLinetraceNotifyState.cpp">
+      <Filter>Source\SecondProject\Private\Character\Animation\NotifyState</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Component">
+      <UniqueIdentifier>{7C3846EF-74A7-42EB-B68A-350DF8D61412}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Component\LockOnComponent.cpp">
+      <Filter>Source\SecondProject\Private\Character\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Component\StatusComponent.cpp">
+      <Filter>Source\SecondProject\Private\Character\Component</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Equipment">
+      <UniqueIdentifier>{014B0683-0421-456C-B4B6-17A0BD697D87}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Equipment\EquipmentActor.cpp">
+      <Filter>Source\SecondProject\Private\Character\Equipment</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Player">
+      <UniqueIdentifier>{5AA900A4-6C59-4D6B-B2D2-CFFDDAB9734F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\PlayerCharacter.cpp">
+      <Filter>Source\SecondProject\Private\Character\Player</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Player\Animation">
+      <UniqueIdentifier>{BDB362C5-CA97-403D-8947-BC113FDE97E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SecondProject\Private\Character\Player\Animation\Notify">
+      <UniqueIdentifier>{5592403D-7D4F-4782-B8AB-2BA2EA459711}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Animation\Notify\EquipNotify.cpp">
+      <Filter>Source\SecondProject\Private\Character\Player\Animation\Notify</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Player\Animation\NotifyState">
+      <UniqueIdentifier>{19616AD5-DEF6-4F3A-8318-8C684953350F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Animation\NotifyState\AttackNotifyState.cpp">
+      <Filter>Source\SecondProject\Private\Character\Player\Animation\NotifyState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Animation\NotifyState\CheckInputNotifyState.cpp">
+      <Filter>Source\SecondProject\Private\Character\Player\Animation\NotifyState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Animation\NotifyState\RollAnimNotifyState.cpp">
+      <Filter>Source\SecondProject\Private\Character\Player\Animation\NotifyState</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Player\Component">
+      <UniqueIdentifier>{31873745-9C9D-435D-A7B8-CB7533682745}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Component\InventoryComponent.cpp">
+      <Filter>Source\SecondProject\Private\Character\Player\Component</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Character\Player\Controller">
+      <UniqueIdentifier>{FB32F56D-E815-4E71-8E44-D3B39F10687A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Controller\CustomController.cpp">
+      <Filter>Source\SecondProject\Private\Character\Player\Controller</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Item">
+      <UniqueIdentifier>{00EC270E-F480-4FA4-B701-CC310F5FA257}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Item\Equipment.cpp">
+      <Filter>Source\SecondProject\Private\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Item\ItemActor.cpp">
+      <Filter>Source\SecondProject\Private\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Item\ItemTypes.cpp">
+      <Filter>Source\SecondProject\Private\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Item\Potion.cpp">
+      <Filter>Source\SecondProject\Private\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Item\Shield.cpp">
+      <Filter>Source\SecondProject\Private\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Item\Weapon.cpp">
+      <Filter>Source\SecondProject\Private\Item</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Private\Widget">
+      <UniqueIdentifier>{26005F5F-AC9E-4A81-BF5B-EE5CB94031D3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\HeadOnHealthBarWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\InventoryListWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\InventoryWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\ItemButtonWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\ItemInformationWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\ItemMenuWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\MainWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\PlayerInformationWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\ShowDamageWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\ToolTipWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
+    <Filter Include="Source\SecondProject\Public">
+      <UniqueIdentifier>{1548C5CA-A949-44F9-B305-973A01EA49CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SecondProject\Public\Character">
+      <UniqueIdentifier>{CBED88F5-D352-49C5-94DA-F073E5DE12F7}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\BaseCharacter.h">
+      <Filter>Source\SecondProject\Public\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Monster.h">
+      <Filter>Source\SecondProject\Public\Character</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Animation">
+      <UniqueIdentifier>{37E37398-6676-450E-95C3-4B286BADF251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SecondProject\Public\Character\Animation\Notify">
+      <UniqueIdentifier>{8CD65BF6-610B-47FD-B5F1-D61805E365A7}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Animation\Notify\FootStepAnimNotify.h">
+      <Filter>Source\SecondProject\Public\Character\Animation\Notify</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Animation\NotifyState">
+      <UniqueIdentifier>{24A3E54B-D7C2-4EF8-AFB8-33B6DDA8C37C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Animation\NotifyState\CreateLinetraceNotifyState.h">
+      <Filter>Source\SecondProject\Public\Character\Animation\NotifyState</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Component">
+      <UniqueIdentifier>{1EF8976A-19DD-4F93-9FB9-3495E78AFAF9}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Component\LockOnComponent.h">
+      <Filter>Source\SecondProject\Public\Character\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Component\StatusComponent.h">
+      <Filter>Source\SecondProject\Public\Character\Component</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Equipment">
+      <UniqueIdentifier>{719AF2B4-ECE6-4C86-B722-14D989684D56}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Equipment\EquipmentActor.h">
+      <Filter>Source\SecondProject\Public\Character\Equipment</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Player">
+      <UniqueIdentifier>{4F211DAF-3A63-42E6-B0AF-BC88107A1A7F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\PlayerCharacter.h">
+      <Filter>Source\SecondProject\Public\Character\Player</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Player\Animation">
+      <UniqueIdentifier>{DB4C0714-7D4E-4BDA-9D12-1FFE09AF45F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SecondProject\Public\Character\Player\Animation\Notify">
+      <UniqueIdentifier>{21040D5F-9C63-4F75-8194-26EDA7B383C9}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Animation\Notify\EquipNotify.h">
+      <Filter>Source\SecondProject\Public\Character\Player\Animation\Notify</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Player\Animation\NotifyState">
+      <UniqueIdentifier>{E330142E-5B40-4F4B-8ECC-B67E9A18B769}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Animation\NotifyState\AttackNotifyState.h">
+      <Filter>Source\SecondProject\Public\Character\Player\Animation\NotifyState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Animation\NotifyState\CheckInputNotifyState.h">
+      <Filter>Source\SecondProject\Public\Character\Player\Animation\NotifyState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Animation\NotifyState\RollAnimNotifyState.h">
+      <Filter>Source\SecondProject\Public\Character\Player\Animation\NotifyState</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Player\Component">
+      <UniqueIdentifier>{10E82FE6-98FE-4D76-9B35-863DFA1707BB}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Component\InventoryComponent.h">
+      <Filter>Source\SecondProject\Public\Character\Player\Component</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Character\Player\Controller">
+      <UniqueIdentifier>{425DB693-6326-4387-9C7D-BE8114D828DD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Controller\CustomController.h">
+      <Filter>Source\SecondProject\Public\Character\Player\Controller</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Item">
+      <UniqueIdentifier>{E51C4836-95FB-4C19-9DBF-5D820B8CB25E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Item\Equipment.h">
+      <Filter>Source\SecondProject\Public\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Item\ItemActor.h">
+      <Filter>Source\SecondProject\Public\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Item\ItemTypes.h">
+      <Filter>Source\SecondProject\Public\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Item\Potion.h">
+      <Filter>Source\SecondProject\Public\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Item\Shield.h">
+      <Filter>Source\SecondProject\Public\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Item\Weapon.h">
+      <Filter>Source\SecondProject\Public\Item</Filter>
+    </ClInclude>
+    <Filter Include="Source\SecondProject\Public\Widget">
+      <UniqueIdentifier>{A2A0EFE0-B6BB-4982-AFAE-460C3C7FCCFB}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\HeadOnHealthBarWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\InventoryListWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\InventoryWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\ItemButtonWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\ItemInformationWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\ItemMenuWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\MainWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\PlayerInformationWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\ShowDamageWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\ToolTipWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

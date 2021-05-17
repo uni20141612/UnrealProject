@@ -1,0 +1,2 @@
+D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Definitions.SecondProject.h
+D:\Users\hansu\Downloads\Coding\SecondProject\Source\SecondProject\SecondProject.h

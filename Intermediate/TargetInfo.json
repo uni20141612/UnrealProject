@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SecondProject",
+			"Path": "D:\\Users\\hansu\\Downloads\\Coding\\SecondProject\\Source\\SecondProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SecondProjectEditor",
+			"Path": "D:\\Users\\hansu\\Downloads\\Coding\\SecondProject\\Source\\SecondProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
