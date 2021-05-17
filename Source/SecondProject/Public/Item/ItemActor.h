@@ -32,7 +32,7 @@ public:
     void SetItemCode(const FName& newCode) { item_Code = newCode; }
 
 protected:
-    // Called when the game starts or when spawned
+    // Called when the game starts or when spawned.
     virtual void BeginPlay() override;
 
 protected:
