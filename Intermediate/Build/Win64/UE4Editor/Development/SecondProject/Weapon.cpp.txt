@@ -1,30 +1,32 @@
-D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Definitions.SecondProject.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Source\SecondProject\Public\Item/Weapon.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Source\SecondProject\Public\Item/Equipment.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Source\SecondProject\Public\Item/ItemActor.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Source\SecondProject\Public\Item/ItemTypes.h
-C:\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
-C:\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
-C:\UE_4.26\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
-C:\UE_4.26\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
-C:\UE_4.26\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
-C:\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\AssetRegistry/ARFilter.h
-C:\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/DataTable.h
-C:\UE_4.26\Engine\Source\Runtime\Engine\Public\DataTableUtils.h
-C:\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DataTable.generated.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemTypes.generated.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemActor.generated.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Equipment.generated.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Weapon.generated.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Source\SecondProject\Public\Character/Player/PlayerCharacter.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Source\SecondProject\Public\Character/BaseCharacter.h
-C:\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
-C:\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
-C:\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\BaseCharacter.generated.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\PlayerCharacter.generated.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Source\SecondProject\Public\Character/Equipment/EquipmentActor.h
-D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\EquipmentActor.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Definitions.SecondProject.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Weapon.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Equipment.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/ItemActor.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/ItemTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\AssetRegistry/ARFilter.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/DataTable.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\DataTableUtils.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DataTable.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemTypes.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemActor.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Equipment.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Weapon.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Character/Player/PlayerCharacter.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Character/BaseCharacter.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\BaseCharacter.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\PlayerCharacter.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Character/Equipment/EquipmentActor.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\EquipmentActor.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Character/Player/Component/InventoryComponent.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\InventoryComponent.generated.h

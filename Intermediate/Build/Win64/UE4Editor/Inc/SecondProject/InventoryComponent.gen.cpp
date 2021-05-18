@@ -13,12 +13,82 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeInventoryComponent() {}
 // Cross Module References
-	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FStoredItem();
+	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FEquippedItem();
 	UPackage* Z_Construct_UPackage__Script_SecondProject();
+	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FStoredItem();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UInventoryComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 // End Cross Module References
+class UScriptStruct* FEquippedItem::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern SECONDPROJECT_API uint32 Get_Z_Construct_UScriptStruct_FEquippedItem_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FEquippedItem, Z_Construct_UPackage__Script_SecondProject(), TEXT("EquippedItem"), sizeof(FEquippedItem), Get_Z_Construct_UScriptStruct_FEquippedItem_Hash());
+	}
+	return Singleton;
+}
+template<> SECONDPROJECT_API UScriptStruct* StaticStruct<FEquippedItem>()
+{
+	return FEquippedItem::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FEquippedItem(FEquippedItem::StaticStruct, TEXT("/Script/SecondProject"), TEXT("EquippedItem"), false, nullptr, nullptr);
+static struct FScriptStruct_SecondProject_StaticRegisterNativesFEquippedItem
+{
+	FScriptStruct_SecondProject_StaticRegisterNativesFEquippedItem()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("EquippedItem")),new UScriptStruct::TCppStructOps<FEquippedItem>);
+	}
+} ScriptStruct_SecondProject_StaticRegisterNativesFEquippedItem;
+	struct Z_Construct_UScriptStruct_FEquippedItem_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEquippedItem_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/Character/Player/Component/InventoryComponent.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FEquippedItem_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FEquippedItem>();
+	}
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FEquippedItem_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_SecondProject,
+		nullptr,
+		&NewStructOps,
+		"EquippedItem",
+		sizeof(FEquippedItem),
+		alignof(FEquippedItem),
+		nullptr,
+		0,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FEquippedItem_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEquippedItem_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FEquippedItem()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FEquippedItem_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_SecondProject();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("EquippedItem"), sizeof(FEquippedItem), Get_Z_Construct_UScriptStruct_FEquippedItem_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FEquippedItem_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FEquippedItem_Hash() { return 3825111078U; }
 class UScriptStruct* FStoredItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;

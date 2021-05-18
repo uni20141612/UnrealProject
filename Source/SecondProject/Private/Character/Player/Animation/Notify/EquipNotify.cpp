@@ -40,7 +40,7 @@ void UEquipNotify::Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* A
 					weapon->AttachToComponent(
 						MeshComp,
 						FAttachmentTransformRules(EAttachmentRule::SnapToTarget, false),
-						"WeaponSocket"
+						UnEquipSocket
 					);
 				}
 

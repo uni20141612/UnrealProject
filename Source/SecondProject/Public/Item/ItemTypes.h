@@ -112,6 +112,12 @@ public:
 		class UAnimMontage* gotHitLeftMontage;
 	UPROPERTY(EditAnyWhere)
 		class UAnimMontage* gotHitBackMontage;
+	UPROPERTY(EditAnyWhere)
+		class UAnimMontage* rightGuardMontage;
+	UPROPERTY(EditAnyWhere)
+		class UAnimMontage* leftGuardMontage;
+	UPROPERTY(EditAnywhere)
+		class UAnimMontage* frontGuardMontage;
 	UPROPERTY(EditAnywhere)
 		class UAnimMontage* AttackMontage;
 	UPROPERTY(EditAnywhere)
@@ -121,6 +127,8 @@ public:
 		class UParticleSystem* gotHitParticle;
 	UPROPERTY(EditAnyWhere)
 		class UParticleSystem* hitParticle;
+	UPROPERTY(EditAnyWhere)
+		class UParticleSystem* guardParticle;
 	UPROPERTY(EditAnyWhere)
 		class UAnimBlueprint* animBP;
 

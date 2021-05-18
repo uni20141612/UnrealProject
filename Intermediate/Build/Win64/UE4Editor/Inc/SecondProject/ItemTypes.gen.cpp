@@ -221,6 +221,18 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_gotHitBackMontage;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_rightGuardMontage_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_rightGuardMontage;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_leftGuardMontage_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_leftGuardMontage;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_frontGuardMontage_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_frontGuardMontage;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AttackMontage_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AttackMontage;
@@ -236,6 +248,10 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hitParticle_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_hitParticle;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_guardParticle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_guardParticle;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_animBP_MetaData[];
 #endif
@@ -340,6 +356,27 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_gotHitBackMontage = { "gotHitBackMontage", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponInformation, gotHitBackMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_gotHitBackMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_gotHitBackMontage_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rightGuardMontage_MetaData[] = {
+		{ "Category", "WeaponInformation" },
+		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rightGuardMontage = { "rightGuardMontage", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponInformation, rightGuardMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rightGuardMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rightGuardMontage_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_leftGuardMontage_MetaData[] = {
+		{ "Category", "WeaponInformation" },
+		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_leftGuardMontage = { "leftGuardMontage", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponInformation, leftGuardMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_leftGuardMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_leftGuardMontage_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_frontGuardMontage_MetaData[] = {
+		{ "Category", "WeaponInformation" },
+		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_frontGuardMontage = { "frontGuardMontage", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponInformation, frontGuardMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_frontGuardMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_frontGuardMontage_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_AttackMontage_MetaData[] = {
 		{ "Category", "WeaponInformation" },
 		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
@@ -367,6 +404,13 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_hitParticle = { "hitParticle", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponInformation, hitParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_hitParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_hitParticle_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_guardParticle_MetaData[] = {
+		{ "Category", "WeaponInformation" },
+		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_guardParticle = { "guardParticle", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponInformation, guardParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_guardParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_guardParticle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_animBP_MetaData[] = {
 		{ "Category", "WeaponInformation" },
@@ -401,10 +445,14 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_gotHitRightMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_gotHitLeftMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_gotHitBackMontage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rightGuardMontage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_leftGuardMontage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_frontGuardMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_AttackMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_guardMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_gotHitParticle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_hitParticle,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_guardParticle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_animBP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_attackSP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rollSP,
@@ -437,7 +485,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FWeaponInformation_Hash() { return 1448634970U; }
+	uint32 Get_Z_Construct_UScriptStruct_FWeaponInformation_Hash() { return 1540244605U; }
 
 static_assert(std::is_polymorphic<FPotionInformation>() == std::is_polymorphic<FItemInformation>(), "USTRUCT FPotionInformation cannot be polymorphic unless super FItemInformation is polymorphic");
 

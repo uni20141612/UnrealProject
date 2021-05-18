@@ -112,39 +112,69 @@ void APlayerCharacter::StopRun()
 }
 
 void APlayerCharacter::Roll()
-{/*
-	if (GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false)
+{
+	auto equipInfo = inventoryComponent->GetEquippedItem();
+	if (equipInfo.GetWeapon() != nullptr)
 	{
-		if (RollMontage != nullptr && statusComponent->CheckStamina(30) == true)
+		if (GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false)
 		{
-			statusComponent->SetSP(statusComponent->GetSP() - 30);
-			statusComponent->PauseRecoverStamina();
+			if (equipInfo.GetWeapon()->RollMontage != nullptr && statusComponent->CheckStamina(equipInfo.GetWeapon()->rollSP) == true)
+			{
+				statusComponent->SetSP(statusComponent->GetSP() - equipInfo.GetWeapon()->rollSP);
+				statusComponent->PauseRecoverStamina();
 
-			lockOnComponent->bBlockLookAt = true;
-			float time = GetMesh()->GetAnimInstance()->Montage_Play(RollMontage);
+				lockOnComponent->bBlockLookAt = true;
+				float time = GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->RollMontage);
 
-			GetWorldTimerManager().SetTimer(RollStaminaTimerHandle,
-				statusComponent, &UStatusComponent::RunRecoverStaminaTimer, time);
+				GetWorldTimerManager().SetTimer(RollStaminaTimerHandle,
+					statusComponent, &UStatusComponent::RunRecoverStaminaTimer, time);
 
+			}
 		}
 	}
-	*/
 }
 
 void APlayerCharacter::Guard()
 {
-	if (bReadyCombat)
+	auto equipInfo = inventoryComponent->GetEquippedItem();
+	if (equipInfo.GetWeapon() != nullptr)
 	{
-		bGuard = !bGuard;
-		if (bGuard && statusComponent->CheckStamina(30) == false)
+		if (bReadyCombat)
 		{
-			bGuard = false;
+			bGuard = !bGuard;
+			if (equipInfo.GetShield() != nullptr)
+			{
+				if (bGuard && statusComponent->CheckStamina(30) == false)
+				{
+					bGuard = false;
+				}
+			}
+			else
+			{
+				if (equipInfo.GetWeapon()->guardMontage != nullptr)
+				{
+					if (!GetMesh()->GetAnimInstance()->IsAnyMontagePlaying())
+					{
+						float time = GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->guardMontage);
+
+						FTimerDelegate guardTimerDel = FTimerDelegate::CreateUObject(this, &APlayerCharacter::SetGuard, false);
+						FTimerHandle guardTimerHandle;
+						GetWorldTimerManager().SetTimer(guardTimerHandle, guardTimerDel, time, false);
+					}
+				}
+			}
 		}
 	}
 }
 
 bool APlayerCharacter::GuardProcess(FVector hitLocation)
 {
+	auto equipInfo = inventoryComponent->GetEquippedItem();
+	if (equipInfo.GetWeapon() == nullptr)
+	{
+		return nullptr;
+	}
+
 	//1. hitLocation과 플레이어 사이의 각도 
 	FRotator rot = (hitLocation - GetActorLocation()).Rotation();
 	//1번 각도와 현재 플레이어의 로테이션을 이용하면, 좌우를 알수 있음
@@ -162,33 +192,47 @@ bool APlayerCharacter::GuardProcess(FVector hitLocation)
 	//플레이어 앞을 기준으로
 	//좌측값 : -180~0
 	//우측값 : 0 ~ 180
-	/*
+	
 	//좌측
 	if (-120 <= yaw && yaw <= 0)
 	{
-		GetMesh()->GetAnimInstance()->Montage_Play(leftGuardMontage);
+		if (equipInfo.GetWeapon()->leftGuardMontage != nullptr)
+		{
+			GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->leftGuardMontage);
+		}
+		else
+		{
+			GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->frontGuardMontage);
+		}
 	}
 	//우측
 	else if (yaw >= 0 && yaw <= 120)
 	{
-		GetMesh()->GetAnimInstance()->Montage_Play(rightGuardMontage);
+		if (equipInfo.GetWeapon()->rightGuardMontage)
+		{
+			GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->rightGuardMontage);
+		}
+		else
+		{
+			GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->frontGuardMontage);
+		}
 	}
 	//후방
 	else
 	{
-		GetMesh()->GetAnimInstance()->Montage_Play(gotHitBackMontage);
-		if (gotHitParticle != nullptr)
+		GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->gotHitBackMontage);
+		if (equipInfo.GetWeapon()->gotHitParticle != nullptr)
 		{
-			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), gotHitParticle, hitLocation);
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), equipInfo.GetWeapon()->gotHitParticle, hitLocation);
 		}
 		return false;
 	}
 
-	if (guardParticle != nullptr)
+	if (equipInfo.GetWeapon()->guardParticle != nullptr)
 	{
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), guardParticle, hitLocation);
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), equipInfo.GetWeapon()->guardParticle, hitLocation);
 	}
-	*/
+	
 	return true;
 }
 
@@ -284,7 +328,6 @@ void APlayerCharacter::InventoryOpen()
 
 void APlayerCharacter::ItemPickUp()
 {
-	//UE_LOG(LogTemp, Log, TEXT("111111111"));
 	if (pickUpItem != nullptr)
 	{
 		inventoryComponent->AddItem(pickUpItem);
@@ -320,14 +363,13 @@ float APlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Damag
 	//hit.Location || hit.ImpactPoint <<-- 요 정보를 가지고 플레이어 앞방향을 기준으로 전 후 좌 우 를 어떻게 구별할 것인가?
 	if (bGuard)
 	{
-		//Guard();
 		if (statusComponent->CheckStamina(30))
 		{
-			statusComponent->SetSP(statusComponent->GetSP() - 30);
-			if (GuardProcess(hit.ImpactPoint))
-			{
-				DamageAmount = 0;
-			}
+				if (GuardProcess(hit.ImpactPoint))
+				{
+					statusComponent->SetSP(statusComponent->GetSP() - 30);
+					DamageAmount = 0;
+				}
 		}
 	}
 	else
@@ -474,7 +516,6 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &APlayerCharacter::LookUpAtRate);
 
-
 	PlayerInputComponent->BindAction("EquipWeapon", IE_Pressed, this, &APlayerCharacter::EquipWeapon);
 	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &APlayerCharacter::Attack);
 	PlayerInputComponent->BindAction("Attack", IE_Released, this, &APlayerCharacter::StopAttack);
@@ -483,34 +524,79 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction("Run", IE_Released, this, &APlayerCharacter::StopRun);
 
 	PlayerInputComponent->BindAction("Roll", IE_Pressed, this, &APlayerCharacter::Roll);
-
 	PlayerInputComponent->BindAction("Guard", IE_Pressed, this, &APlayerCharacter::Guard);
 	PlayerInputComponent->BindAction("Guard", IE_Released, this, &APlayerCharacter::Guard);
 
 	PlayerInputComponent->BindAction("LockOn", IE_Pressed, this, &APlayerCharacter::LockOn);
-
 	PlayerInputComponent->BindAction("Inventory", IE_Pressed, this, &APlayerCharacter::InventoryOpen);
-
 	PlayerInputComponent->BindAction("PickUp", IE_Pressed, this, &APlayerCharacter::ItemPickUp);
 
 }
 
 void APlayerCharacter::EquipWeapon()
-{/*
+{
+	auto equipInfo = inventoryComponent->GetEquippedItem();
+	if (equipInfo.GetWeapon() != nullptr)
+	{
+		if (bReadyCombat == true)
+		{
+			if (equipInfo.GetWeapon()->UnEquipMontage != nullptr && GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false)
+			{
+				GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->UnEquipMontage);
+				bReadyCombat = false;
+			}
+		}
+	}
+	/*
 	if(bReadyCombat == true)
 	{
-		if (UnEquipMontage != nullptr && GetMesh()->GetAnimInstance()->IsAnyMontagePlaying()==false) {
+		if (UnEquipMontage != nullptr && GetMesh()->GetAnimInstance()->IsAnyMontagePlaying()==false)
+		{
 			GetMesh()->GetAnimInstance()->Montage_Play(UnEquipMontage);
 			bReadyCombat = false;
 		}
-	}*/
+	}
+	*/
 }
 
 void APlayerCharacter::Attack()
-{/*
+{
+	auto equipInfo = inventoryComponent->GetEquippedItem();
+	if (equipInfo.GetWeapon() != nullptr)
+	{
+		if (bReadyCombat == false)
+		{
+			if (equipInfo.GetWeapon()->EquipMontage != nullptr)
+			{
+				if (GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false) 
+				{
+					GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->EquipMontage);
+					bReadyCombat = true;
+				}
+			}
+		}
+		else
+		{
+			bAttack = true;
+
+			if (equipInfo.GetWeapon()->AttackMontage != nullptr &&
+				GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false)
+			{
+				if (statusComponent->CheckStamina(equipInfo.GetWeapon()->attackSP))
+				{
+					statusComponent->SetSP(statusComponent->GetSP() - equipInfo.GetWeapon()->attackSP);
+					statusComponent->PauseRecoverStamina();
+					GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->AttackMontage);
+				}
+			}
+		}
+	}
+	/*
 	if (bReadyCombat == false) {
-		if (EquipMontage != nullptr) {
-			if (GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false) {
+		if (EquipMontage != nullptr)
+		{
+			if (GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false)
+			{
 				GetMesh()->GetAnimInstance()->Montage_Play(EquipMontage);
 				bReadyCombat = true;
 			}
@@ -536,5 +622,6 @@ void APlayerCharacter::Attack()
 void APlayerCharacter::StopAttack()
 {
 	bAttack = false;
+	GetStatusComponent()->RunRecoverStaminaTimer();
 }
 

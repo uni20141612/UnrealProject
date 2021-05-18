@@ -3,6 +3,7 @@
 #include "Item/Weapon.h"
 #include "Character/Player/PlayerCharacter.h"
 #include "Character/Equipment/EquipmentActor.h"
+#include "Character/Player/Component/InventoryComponent.h"
 
 void AWeapon::UseItem(AActor* target)
 {
@@ -16,6 +17,11 @@ void AWeapon::UseItem(AActor* target)
 			if (info != nullptr)
 			{
 				weapon->getSkeletalMesh()->SetSkeletalMesh(info->newMesh);
+				weapon->AttachToComponent(player->GetMesh(), FAttachmentTransformRules(EAttachmentRule::SnapToTarget, false), "WeaponBackSocket");
+
+				player->GetInventoryComponent()->SetWeapon(info);
+
+				player->GetMesh()->SetAnimInstanceClass(info->animBP->GetAnimBlueprintGeneratedClass());
 			}
 		}
 	}

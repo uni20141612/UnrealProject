@@ -51,6 +51,7 @@ public:
 	UFUNCTION()
 		void OnEndOverlapEvent(AActor* OverlappedActor, AActor* OtherActor);
 
+	void SetGuard(bool value) { bGuard = value; }
 	bool GetbAttack() { return bAttack; }
 
 	class AEquipmentActor* GetWeapon() { return spawndWeapon; }

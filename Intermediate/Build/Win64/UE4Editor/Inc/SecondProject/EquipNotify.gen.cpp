@@ -36,6 +36,10 @@ void EmptyLinkFunctionForGeneratedCodeEquipNotify() {}
 #endif
 		static void NewProp_bEquip_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEquip;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UnEquipSocket_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_UnEquipSocket;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -63,8 +67,16 @@ void EmptyLinkFunctionForGeneratedCodeEquipNotify() {}
 		((UEquipNotify*)Obj)->bEquip = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UEquipNotify_Statics::NewProp_bEquip = { "bEquip", nullptr, (EPropertyFlags)0x0020080000000011, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UEquipNotify), &Z_Construct_UClass_UEquipNotify_Statics::NewProp_bEquip_SetBit, METADATA_PARAMS(Z_Construct_UClass_UEquipNotify_Statics::NewProp_bEquip_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipNotify_Statics::NewProp_bEquip_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEquipNotify_Statics::NewProp_UnEquipSocket_MetaData[] = {
+		{ "Category", "EquipNotify" },
+		{ "ModuleRelativePath", "Public/Character/Player/Animation/Notify/EquipNotify.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UEquipNotify_Statics::NewProp_UnEquipSocket = { "UnEquipSocket", nullptr, (EPropertyFlags)0x0020080000000011, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipNotify, UnEquipSocket), METADATA_PARAMS(Z_Construct_UClass_UEquipNotify_Statics::NewProp_UnEquipSocket_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipNotify_Statics::NewProp_UnEquipSocket_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEquipNotify_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipNotify_Statics::NewProp_bEquip,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipNotify_Statics::NewProp_UnEquipSocket,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEquipNotify_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEquipNotify>::IsAbstract,
@@ -93,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeEquipNotify() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEquipNotify, 2104208982);
+	IMPLEMENT_CLASS(UEquipNotify, 1412267798);
 	template<> SECONDPROJECT_API UClass* StaticClass<UEquipNotify>()
 	{
 		return UEquipNotify::StaticClass();

@@ -20,4 +20,6 @@ protected:
 protected:
 	UPROPERTY(EditAnywhere)
 		bool bEquip = false;
+	UPROPERTY(EditAnywhere)
+		FName UnEquipSocket;
 };
