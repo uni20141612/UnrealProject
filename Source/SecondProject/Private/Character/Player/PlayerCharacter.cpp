@@ -58,7 +58,7 @@ void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SpawnEquipment();
+	//SpawnEquipment();
 	/*
 	if (Weapon != nullptr) {
 		//스켈레탈메시 소켓 위치를 받아오는 방법.
@@ -118,6 +118,11 @@ void APlayerCharacter::Roll()
 	{
 		if (GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false)
 		{
+			if (spawndWeapon != nullptr)
+			{
+				spawndWeapon->Roll();
+			}
+			/*
 			if (equipInfo.GetWeapon()->RollMontage != nullptr && statusComponent->CheckStamina(equipInfo.GetWeapon()->rollSP) == true)
 			{
 				statusComponent->SetSP(statusComponent->GetSP() - equipInfo.GetWeapon()->rollSP);
@@ -130,6 +135,7 @@ void APlayerCharacter::Roll()
 					statusComponent, &UStatusComponent::RunRecoverStaminaTimer, time);
 
 			}
+			*/
 		}
 	}
 }
@@ -141,6 +147,11 @@ void APlayerCharacter::Guard()
 	{
 		if (bReadyCombat)
 		{
+			if (spawndWeapon != nullptr)
+			{
+				spawndWeapon->Guard();
+			}
+			/*
 			bGuard = !bGuard;
 			if (equipInfo.GetShield() != nullptr)
 			{
@@ -157,12 +168,13 @@ void APlayerCharacter::Guard()
 					{
 						float time = GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->guardMontage);
 
-						FTimerDelegate guardTimerDel = FTimerDelegate::CreateUObject(this, &APlayerCharacter::SetGuard, false);
+						FDelegate guardTimerDel = FTimerDelegate::CreateUObject(this, &APlayerCharacter::SetGuard, false);
 						FTimerHandle guardTimerHandle;
 						GetWorldTimerManager().SetTimer(guardTimerHandle, guardTimerDel, time, false);
 					}
 				}
 			}
+			*/
 		}
 	}
 }
@@ -172,9 +184,14 @@ bool APlayerCharacter::GuardProcess(FVector hitLocation)
 	auto equipInfo = inventoryComponent->GetEquippedItem();
 	if (equipInfo.GetWeapon() == nullptr)
 	{
-		return nullptr;
+		return false;
 	}
-
+	if (spawndWeapon != nullptr)
+	{
+		return spawndWeapon->GuardProcess(hitLocation);
+	}
+	return false;
+	/*
 	//1. hitLocation과 플레이어 사이의 각도 
 	FRotator rot = (hitLocation - GetActorLocation()).Rotation();
 	//1번 각도와 현재 플레이어의 로테이션을 이용하면, 좌우를 알수 있음
@@ -234,10 +251,21 @@ bool APlayerCharacter::GuardProcess(FVector hitLocation)
 	}
 	
 	return true;
+	*/
 }
 
 void APlayerCharacter::HitProcess(FVector hitLocation)
 {
+	auto equipInfo = inventoryComponent->GetEquippedItem();
+	if (equipInfo.GetWeapon() == nullptr)
+	{
+		return;
+	}
+	if (spawndWeapon != nullptr)
+	{
+		spawndWeapon->HitProcess(hitLocation);
+	}
+	/*
 	//1. hitLocation과 플레이어 사이의 각도 
 	FRotator rot = (hitLocation - GetActorLocation()).Rotation();
 	//1번 각도와 현재 플레이어의 로테이션을 이용하면, 좌우를 알수 있음
@@ -276,7 +304,7 @@ void APlayerCharacter::HitProcess(FVector hitLocation)
 		//GetMesh()->GetAnimInstance()->Montage_Play(gotHitBackMontage);
 	}
 
-	/*if (gotHitParticle != nullptr)
+	if (gotHitParticle != nullptr)
 	{
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), gotHitParticle, hitLocation);
 	}*/
@@ -561,6 +589,12 @@ void APlayerCharacter::EquipWeapon()
 
 void APlayerCharacter::Attack()
 {
+	if (spawndWeapon != nullptr)
+	{
+		spawndWeapon->Attack();
+	}
+
+	/*
 	auto equipInfo = inventoryComponent->GetEquippedItem();
 	if (equipInfo.GetWeapon() != nullptr)
 	{
@@ -591,7 +625,7 @@ void APlayerCharacter::Attack()
 			}
 		}
 	}
-	/*
+	
 	if (bReadyCombat == false) {
 		if (EquipMontage != nullptr)
 		{
@@ -616,7 +650,8 @@ void APlayerCharacter::Attack()
 				GetMesh()->GetAnimInstance()->Montage_Play(AttackMontage);
 			}
 		}
-	}*/
+	}
+	*/
 }
 
 void APlayerCharacter::StopAttack()

@@ -18,10 +18,10 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 	SECONDPROJECT_API UEnum* Z_Construct_UEnum_SecondProject_EItemType();
 	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FWeaponInformation();
 	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FEquipmentInformation();
-	ENGINE_API UClass* Z_Construct_UClass_USkeletalMesh_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_AEquipmentActor_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USkeletalMesh_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimBlueprint_NoRegister();
 	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FPotionInformation();
@@ -175,6 +175,10 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
 #endif
 		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_spawnableEquipmentClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_spawnableEquipmentClass;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_weaponType_Underlying;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_weaponType_MetaData[];
@@ -277,6 +281,13 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FWeaponInformation>();
 	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_spawnableEquipmentClass_MetaData[] = {
+		{ "Category", "WeaponInformation" },
+		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_spawnableEquipmentClass = { "spawnableEquipmentClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponInformation, spawnableEquipmentClass), Z_Construct_UClass_AEquipmentActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_spawnableEquipmentClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_spawnableEquipmentClass_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_weaponType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_weaponType_MetaData[] = {
@@ -433,6 +444,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rollSP = { "rollSP", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponInformation, rollSP), METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rollSP_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_rollSP_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FWeaponInformation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_spawnableEquipmentClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_weaponType_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_weaponType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponInformation_Statics::NewProp_newMesh,
@@ -485,7 +497,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FWeaponInformation_Hash() { return 1540244605U; }
+	uint32 Get_Z_Construct_UScriptStruct_FWeaponInformation_Hash() { return 3348669918U; }
 
 static_assert(std::is_polymorphic<FPotionInformation>() == std::is_polymorphic<FItemInformation>(), "USTRUCT FPotionInformation cannot be polymorphic unless super FItemInformation is polymorphic");
 

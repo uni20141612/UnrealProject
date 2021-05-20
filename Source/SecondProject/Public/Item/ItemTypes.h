@@ -88,6 +88,8 @@ struct FWeaponInformation : public FEquipmentInformation
 
 public:
 	UPROPERTY(EditAnywhere)
+		TSubclassOf<class AEquipmentActor> spawnableEquipmentClass;
+	UPROPERTY(EditAnywhere)
 		EWeaponType weaponType;
 	UPROPERTY(EditAnywhere)
 		class USkeletalMesh* newMesh;

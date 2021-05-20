@@ -33,7 +33,7 @@ void UStatusComponent::RunRecoverStaminaTimer()
 		GetWorld()->GetTimerManager().SetTimer(
 			recoverStaminaTimerHandle,
 			this,
-			&UStatusComponent::RecoverStamina, 0.5f, true);
+			&UStatusComponent::RecoverStamina, 0.25f, true);
 	}
 }
 

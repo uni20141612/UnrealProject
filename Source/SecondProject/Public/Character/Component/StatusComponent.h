@@ -62,4 +62,7 @@ protected:
 	FTimerHandle removeStaminaTimerHandle;
 	FTimerHandle recoverHPTimerHandle;
 	FTimerHandle removeHPTimerHandle;
+
+	UPROPERTY()
+		TArray<FTimerHandle> PauseRecoverStaminaTimerHandles;
 };

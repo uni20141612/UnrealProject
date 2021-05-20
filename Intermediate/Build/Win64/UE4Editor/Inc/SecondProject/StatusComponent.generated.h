@@ -63,7 +63,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UStatusComponent); \
 	FORCEINLINE static uint32 __PPO__MaxHP() { return STRUCT_OFFSET(UStatusComponent, MaxHP); } \
 	FORCEINLINE static uint32 __PPO__SP() { return STRUCT_OFFSET(UStatusComponent, SP); } \
 	FORCEINLINE static uint32 __PPO__MaxSP() { return STRUCT_OFFSET(UStatusComponent, MaxSP); } \
-	FORCEINLINE static uint32 __PPO__AttackSpeed() { return STRUCT_OFFSET(UStatusComponent, AttackSpeed); }
+	FORCEINLINE static uint32 __PPO__AttackSpeed() { return STRUCT_OFFSET(UStatusComponent, AttackSpeed); } \
+	FORCEINLINE static uint32 __PPO__PauseRecoverStaminaTimerHandles() { return STRUCT_OFFSET(UStatusComponent, PauseRecoverStaminaTimerHandles); }
 
 
 #define UnrealProject_Source_SecondProject_Public_Character_Component_StatusComponent_h_10_PROLOG

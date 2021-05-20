@@ -52,6 +52,7 @@ public:
 		void OnEndOverlapEvent(AActor* OverlappedActor, AActor* OtherActor);
 
 	void SetGuard(bool value) { bGuard = value; }
+	void SetSpawndWeapon(class AEquipmentActor* weapon) { spawndWeapon = weapon; }
 	bool GetbAttack() { return bAttack; }
 
 	class AEquipmentActor* GetWeapon() { return spawndWeapon; }
@@ -105,6 +106,10 @@ public:
 		bool bGuard;
 	UPROPERTY(BlueprintReadOnly)
 		bool bLockOn;
+	UPROPERTY(BlueprintReadOnly)
+		bool bReadyCombat = false;
+	//공격키를 누르면 참이 됨
+	bool bAttack = false;
 
 	FTimerHandle RollStaminaTimerHandle;
 	FTimerHandle nextLockOnTargetTimerHandle;
@@ -160,11 +165,6 @@ protected:
 		AEquipmentActor* spawndWeapon;
 	UPROPERTY()
 		AEquipmentActor* spawndShield;
-
-	UPROPERTY(BlueprintReadOnly)
-		bool bReadyCombat = false;
-	//공격키를 누르면 참이 됨
-	bool bAttack = false;
 
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UWidgetComponent> damageWidgetComponentClass;

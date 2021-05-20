@@ -169,6 +169,11 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		static void NewProp_bLockOn_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bLockOn;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bReadyCombat_MetaData[];
+#endif
+		static void NewProp_bReadyCombat_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bReadyCombat;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_equipmentClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_equipmentClass;
@@ -196,11 +201,6 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_spawndShield_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_spawndShield;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bReadyCombat_MetaData[];
-#endif
-		static void NewProp_bReadyCombat_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bReadyCombat;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_damageWidgetComponentClass_MetaData[];
 #endif
@@ -303,6 +303,17 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bLockOn = { "bLockOn", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APlayerCharacter), &Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bLockOn_SetBit, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bLockOn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bLockOn_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_MetaData[] = {
+		{ "Category", "PlayerCharacter" },
+		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_SetBit(void* Obj)
+	{
+		((APlayerCharacter*)Obj)->bReadyCombat = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat = { "bReadyCombat", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APlayerCharacter), &Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_SetBit, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_equipmentClass_MetaData[] = {
 		{ "Category", "PlayerCharacter" },
 		{ "Comment", "/*\x09\n\x09UPROPERTY(EditAnywhere)\n\x09\x09""class UAnimMontage* EquipMontage;\n\x09UPROPERTY(EditAnywhere)\n\x09\x09""class UAnimMontage* UnEquipMontage;\n\n\x09UPROPERTY(EditAnywhere)\n\x09\x09TSubclassOf<class AEquipmentActor> Weapon;\n\x09UPROPERTY(EditAnywhere)\n\x09\x09TSubclassOf<class AEquipmentActor> Shield;\n\x09\n\x09UPROPERTY(EditAnywhere)\n\x09\x09""class UAnimMontage* RollMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* gotHitCenterMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* gotHitRightMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* gotHitLeftMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* gotHitBackMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* rightGuardMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* leftGuardMontage;\n\x09UPROPERTY(EditAnywhere)\n\x09\x09""class UAnimMontage* AttackMontage;\n\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09""class UParticleSystem* guardParticle;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09""class UParticleSystem* gotHitParticle;\n\x09*/" },
@@ -352,17 +363,6 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_spawndShield = { "spawndShield", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, spawndShield), Z_Construct_UClass_AEquipmentActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_spawndShield_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_spawndShield_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_MetaData[] = {
-		{ "Category", "PlayerCharacter" },
-		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
-	};
-#endif
-	void Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_SetBit(void* Obj)
-	{
-		((APlayerCharacter*)Obj)->bReadyCombat = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat = { "bReadyCombat", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APlayerCharacter), &Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_SetBit, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_damageWidgetComponentClass_MetaData[] = {
 		{ "Category", "PlayerCharacter" },
 		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
@@ -385,6 +385,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bRun,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bGuard,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bLockOn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_equipmentClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_pickUpItem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_lockOnComponent,
@@ -392,7 +393,6 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_moveRight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_spawndWeapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_spawndShield,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_bReadyCombat,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_damageWidgetComponentClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_inventoryComponent,
 	};
@@ -423,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerCharacter, 3836806482);
+	IMPLEMENT_CLASS(APlayerCharacter, 3521044319);
 	template<> SECONDPROJECT_API UClass* StaticClass<APlayerCharacter>()
 	{
 		return APlayerCharacter::StaticClass();

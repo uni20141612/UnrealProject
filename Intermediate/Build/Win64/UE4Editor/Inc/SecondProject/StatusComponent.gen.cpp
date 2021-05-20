@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UStatusComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	UPackage* Z_Construct_UPackage__Script_SecondProject();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
 // End Cross Module References
 	void UStatusComponent::StaticRegisterNativesUStatusComponent()
 	{
@@ -51,6 +52,11 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AttackSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AttackSpeed;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_PauseRecoverStaminaTimerHandles_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PauseRecoverStaminaTimerHandles_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_PauseRecoverStaminaTimerHandles;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -102,12 +108,21 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed = { "AttackSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, AttackSpeed), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles_Inner = { "PauseRecoverStaminaTimerHandles", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Character/Component/StatusComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles = { "PauseRecoverStaminaTimerHandles", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, PauseRecoverStaminaTimerHandles), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UStatusComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_HP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UStatusComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UStatusComponent>::IsAbstract,
@@ -136,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UStatusComponent, 2904552864);
+	IMPLEMENT_CLASS(UStatusComponent, 3913757822);
 	template<> SECONDPROJECT_API UClass* StaticClass<UStatusComponent>()
 	{
 		return UStatusComponent::StaticClass();

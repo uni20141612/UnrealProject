@@ -77,7 +77,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayerCharacter); \
 	FORCEINLINE static uint32 __PPO__moveRight() { return STRUCT_OFFSET(APlayerCharacter, moveRight); } \
 	FORCEINLINE static uint32 __PPO__spawndWeapon() { return STRUCT_OFFSET(APlayerCharacter, spawndWeapon); } \
 	FORCEINLINE static uint32 __PPO__spawndShield() { return STRUCT_OFFSET(APlayerCharacter, spawndShield); } \
-	FORCEINLINE static uint32 __PPO__bReadyCombat() { return STRUCT_OFFSET(APlayerCharacter, bReadyCombat); } \
 	FORCEINLINE static uint32 __PPO__damageWidgetComponentClass() { return STRUCT_OFFSET(APlayerCharacter, damageWidgetComponentClass); } \
 	FORCEINLINE static uint32 __PPO__inventoryComponent() { return STRUCT_OFFSET(APlayerCharacter, inventoryComponent); }
 

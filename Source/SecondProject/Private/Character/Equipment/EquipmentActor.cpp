@@ -4,6 +4,8 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Character/Monster.h"
 #include "Character/Player/PlayerCharacter.h"
+#include "Character/Component/StatusComponent.h"
+#include "Character/Player/Component/InventoryComponent.h"
 
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/GameplayStatics.h"
@@ -38,6 +40,58 @@ void AEquipmentActor::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+void AEquipmentActor::HitProcess(const FVector& hitLocation)
+{
+	auto equipInfo = GetInventoryComponent()->GetEquippedItem();
+	if (equipInfo.GetWeapon() == nullptr)
+	{
+		return;
+	}
+	//1. hitLocation과 플레이어 사이의 각도 
+	FRotator rot = (hitLocation - GetActorLocation()).Rotation();
+	//1번 각도와 현재 플레이어의 로테이션을 이용하면, 좌우를 알수 있음
+	float yaw = (rot - GetActorRotation()).Yaw;
+
+	//알아보기 쉽게
+	if (yaw > 180)
+	{
+		yaw -= 360;
+	}
+	else if (yaw < -180)
+	{
+		yaw += 360;
+	}
+	//플레이어 앞을 기준으로
+	//좌측값 : -180~0
+	//우측값 : 0 ~ 180
+	//좌측
+	auto mesh = Cast<APlayerCharacter>(GetOwner())->GetMesh();
+	if (yaw > -135 && yaw <= -45)
+	{
+		mesh->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->gotHitLeftMontage);
+	}
+	//전방
+	else if (yaw > -45 && yaw <= 45)
+	{
+		mesh->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->gotHitCenterMontage);
+	}
+	//우측
+	else if (yaw > 45 && yaw <= 135)
+	{
+		mesh->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->gotHitRightMontage);
+	}
+	//후방
+	else
+	{
+		mesh->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->gotHitBackMontage);
+	}
+
+	if (equipInfo.GetWeapon()->gotHitParticle != nullptr)
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), equipInfo.GetWeapon()->gotHitParticle, hitLocation);
+	}
+}
+
 // Called when the game starts or when spawned
 void AEquipmentActor::BeginPlay()
 {
@@ -52,6 +106,49 @@ void AEquipmentActor::PostInitializeComponents()
 	Super::PostInitializeComponents();
 	//생성자에서 작동 안되는 경우 있음!
 	//OnActorBeginOverlap.AddUniqueDynamic(this, &AEquipmentActor::OnBeginOverlapEvent);
+}
+
+UInventoryComponent* AEquipmentActor::GetInventoryComponent()
+{
+	auto player = Cast<APlayerCharacter>(GetOwner());
+	if (player != nullptr)
+	{
+		return player->GetInventoryComponent();
+	}
+	return nullptr;
+}
+
+UStatusComponent* AEquipmentActor::GetStatusComponent()
+{
+	auto player = Cast<APlayerCharacter>(GetOwner());
+	if (player != nullptr)
+	{
+		return player->GetStatusComponent();
+	}
+	return nullptr;
+}
+
+float AEquipmentActor::PlayMontage(UAnimMontage* montage)
+{
+	if (montage != nullptr)
+	{
+		auto player = Cast<APlayerCharacter>(GetOwner());
+		if (player != nullptr)
+		{
+			return player->GetMesh()->GetAnimInstance()->Montage_Play(montage);
+		}
+	}
+	return 0;
+}
+
+bool AEquipmentActor::IsPlayingAnyMontage()
+{
+	auto player = Cast<APlayerCharacter>(GetOwner());
+	if (player != nullptr)
+	{
+		return player->GetMesh()->GetAnimInstance()->IsAnyMontagePlaying();
+	}
+	return false;
 }
 
 void AEquipmentActor::OnBeginOverlapEvent(AActor* OverlappedActor, AActor* OtherActor)
