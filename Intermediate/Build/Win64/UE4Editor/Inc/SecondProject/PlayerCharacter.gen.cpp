@@ -26,6 +26,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 	SECONDPROJECT_API UClass* Z_Construct_UClass_ULockOnComponent_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
+	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(APlayerCharacter::execOnEndOverlapEvent)
 	{
@@ -209,6 +211,30 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_inventoryComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_inventoryComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RunStaminaTimerHandle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_RunStaminaTimerHandle;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Helmet_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Helmet;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Gloves_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Gloves;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Chest_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Chest;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Legs_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Legs;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Boots_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Boots;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -316,9 +342,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_equipmentClass_MetaData[] = {
 		{ "Category", "PlayerCharacter" },
-		{ "Comment", "/*\x09\n\x09UPROPERTY(EditAnywhere)\n\x09\x09""class UAnimMontage* EquipMontage;\n\x09UPROPERTY(EditAnywhere)\n\x09\x09""class UAnimMontage* UnEquipMontage;\n\n\x09UPROPERTY(EditAnywhere)\n\x09\x09TSubclassOf<class AEquipmentActor> Weapon;\n\x09UPROPERTY(EditAnywhere)\n\x09\x09TSubclassOf<class AEquipmentActor> Shield;\n\x09\n\x09UPROPERTY(EditAnywhere)\n\x09\x09""class UAnimMontage* RollMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* gotHitCenterMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* gotHitRightMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* gotHitLeftMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* gotHitBackMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* rightGuardMontage;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09UAnimMontage* leftGuardMontage;\n\x09UPROPERTY(EditAnywhere)\n\x09\x09""class UAnimMontage* AttackMontage;\n\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09""class UParticleSystem* guardParticle;\n\x09UPROPERTY(EditAnyWhere)\n\x09\x09""class UParticleSystem* gotHitParticle;\n\x09*/" },
 		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
-		{ "ToolTip", "UPROPERTY(EditAnywhere)\n        class UAnimMontage* EquipMontage;\nUPROPERTY(EditAnywhere)\n        class UAnimMontage* UnEquipMontage;\n\nUPROPERTY(EditAnywhere)\n        TSubclassOf<class AEquipmentActor> Weapon;\nUPROPERTY(EditAnywhere)\n        TSubclassOf<class AEquipmentActor> Shield;\n\nUPROPERTY(EditAnywhere)\n        class UAnimMontage* RollMontage;\nUPROPERTY(EditAnyWhere)\n        UAnimMontage* gotHitCenterMontage;\nUPROPERTY(EditAnyWhere)\n        UAnimMontage* gotHitRightMontage;\nUPROPERTY(EditAnyWhere)\n        UAnimMontage* gotHitLeftMontage;\nUPROPERTY(EditAnyWhere)\n        UAnimMontage* gotHitBackMontage;\nUPROPERTY(EditAnyWhere)\n        UAnimMontage* rightGuardMontage;\nUPROPERTY(EditAnyWhere)\n        UAnimMontage* leftGuardMontage;\nUPROPERTY(EditAnywhere)\n        class UAnimMontage* AttackMontage;\n\nUPROPERTY(EditAnyWhere)\n        class UParticleSystem* guardParticle;\nUPROPERTY(EditAnyWhere)\n        class UParticleSystem* gotHitParticle;" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_equipmentClass = { "equipmentClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, equipmentClass), Z_Construct_UClass_AEquipmentActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_equipmentClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_equipmentClass_MetaData)) };
@@ -377,6 +401,54 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_inventoryComponent = { "inventoryComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, inventoryComponent), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_inventoryComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_inventoryComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_RunStaminaTimerHandle_MetaData[] = {
+		{ "Comment", "//?\xde\xb8??? ?\xd2\xb8??\xcf\xb4? sp \xc5\xb8?\xcc\xb8?\n" },
+		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
+		{ "ToolTip", "?\xde\xb8??? ?\xd2\xb8??\xcf\xb4? sp \xc5\xb8?\xcc\xb8?" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_RunStaminaTimerHandle = { "RunStaminaTimerHandle", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, RunStaminaTimerHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_RunStaminaTimerHandle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_RunStaminaTimerHandle_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Helmet_MetaData[] = {
+		{ "Category", "PlayerCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Helmet = { "Helmet", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, Helmet), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Helmet_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Helmet_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Gloves_MetaData[] = {
+		{ "Category", "PlayerCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Gloves = { "Gloves", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, Gloves), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Gloves_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Gloves_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Chest_MetaData[] = {
+		{ "Category", "PlayerCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Chest = { "Chest", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, Chest), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Chest_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Chest_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Legs_MetaData[] = {
+		{ "Category", "PlayerCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Legs = { "Legs", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, Legs), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Legs_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Legs_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Boots_MetaData[] = {
+		{ "Category", "PlayerCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/Player/PlayerCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Boots = { "Boots", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, Boots), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Boots_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Boots_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_FollowCamera,
@@ -395,6 +467,12 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_spawndShield,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_damageWidgetComponentClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_inventoryComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_RunStaminaTimerHandle,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Helmet,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Gloves,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Chest,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Legs,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Boots,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlayerCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlayerCharacter>::IsAbstract,
@@ -423,7 +501,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerCharacter, 3521044319);
+	IMPLEMENT_CLASS(APlayerCharacter, 1711165616);
 	template<> SECONDPROJECT_API UClass* StaticClass<APlayerCharacter>()
 	{
 		return APlayerCharacter::StaticClass();

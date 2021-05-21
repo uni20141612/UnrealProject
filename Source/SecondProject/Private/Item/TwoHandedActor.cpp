@@ -58,7 +58,7 @@ void ATwoHandedActor::Attack()
 							if (GetStatusComponent()->CheckStamina(equipInfo.GetWeapon()->attackSP))
 							{
 								GetStatusComponent()->SetSP(GetStatusComponent()->GetSP() - equipInfo.GetWeapon()->attackSP);
-								GetStatusComponent()->PauseRecoverStamina();
+								GetStatusComponent()->PauseRecoverStaminaPerTime();
 								mesh->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->AttackMontage);
 							}
 						}
@@ -85,7 +85,7 @@ void ATwoHandedActor::Attack()
 						if (GetStatusComponent()->CheckStamina(20))
 						{
 							GetStatusComponent()->SetSP(GetStatusComponent()->GetSP() - 20);
-							GetStatusComponent()->PauseRecoverStamina();
+							GetStatusComponent()->PauseRecoverStaminaPerTime();
 							mesh->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->AttackMontage);
 						}
 					}
@@ -106,7 +106,10 @@ void ATwoHandedActor::Roll()
 			if (GetStatusComponent()->CheckStamina(equipInfo.GetWeapon()->rollSP))
 			{
 				GetStatusComponent()->SetSP(GetStatusComponent()->GetSP() - equipInfo.GetWeapon()->rollSP);
-				PlayMontage(equipInfo.GetWeapon()->RollMontage);
+				GetStatusComponent()->PauseRecoverStaminaPerTime();
+				float time = PlayMontage(equipInfo.GetWeapon()->RollMontage);
+				FTimerHandle rollTimerHandle;
+				GetWorldTimerManager().SetTimer(rollTimerHandle, GetStatusComponent(), &UStatusComponent::ResumeRecoverStaminaPerTime, false);
 			}
 		}
 	}
@@ -123,8 +126,11 @@ void ATwoHandedActor::Guard()
 			auto player = Cast<APlayerCharacter>(GetOwner());
 			if (player != nullptr && IsPlayingAnyMontage())
 			{
+				GetStatusComponent()->PauseRecoverStaminaPerTime();
 				player->bGuard = true;				
 				float time = PlayMontage(equipInfo.GetWeapon()->guardMontage);
+				FTimerHandle staminaTimerHandle;
+				GetWorldTimerManager().SetTimer(staminaTimerHandle, GetStatusComponent(), &UStatusComponent::ResumeRecoverStaminaPerTime, false);
 
 				FTimerDelegate guardTimerDel = FTimerDelegate::CreateUObject(player, &APlayerCharacter::SetGuard, false);
 				FTimerHandle guardTimerHandle;

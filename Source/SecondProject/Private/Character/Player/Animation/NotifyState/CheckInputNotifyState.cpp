@@ -31,7 +31,7 @@ void UCheckInputNotifyState::BranchingPointNotifyEnd(FBranchingPointNotifyPayloa
 		if (!bContinue)
 		{
 			BranchingPointPayload.SkelMeshComponent->GetAnimInstance()->Montage_Stop(0.1f);
-			Player->GetStatusComponent()->RunRecoverStaminaTimer();
+			Player->GetStatusComponent()->ResumeRecoverStaminaPerTime();
 		}
 		else
 		{
@@ -43,7 +43,7 @@ void UCheckInputNotifyState::BranchingPointNotifyEnd(FBranchingPointNotifyPayloa
 			else
 			{
 				BranchingPointPayload.SkelMeshComponent->GetAnimInstance()->Montage_Stop(0.1f);
-				Player->GetStatusComponent()->RunRecoverStaminaTimer();
+				Player->GetStatusComponent()->ResumeRecoverStaminaPerTime();
 			}
 		}
 	}

@@ -22,10 +22,10 @@ void UStatusComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	RunRecoverStaminaTimer();
+	//RunRecoverStaminaTimer();
 	RunRecoverHPTimer();
 }
-
+/*
 void UStatusComponent::RunRecoverStaminaTimer()
 {
 	if (GetWorld()->GetTimerManager().IsTimerActive(recoverStaminaTimerHandle) == false)
@@ -63,6 +63,7 @@ void UStatusComponent::PauseRemoveStaminaTimer()
 		GetWorld()->GetTimerManager().PauseTimer(removeStaminaTimerHandle);
 	}
 }
+*/
 
 void UStatusComponent::RunRecoverHPTimer()
 {
@@ -83,14 +84,14 @@ void UStatusComponent::PauseRecoverHPTimer()
 	}
 }
 
-void UStatusComponent::SetHP(int32 value)
+void UStatusComponent::SetHP(float value)
 {
-	HP = FMath::Clamp(value, 0, MaxHP);
+	HP = FMath::Clamp(value, 0.f, MaxHP);
 }
 
-void UStatusComponent::SetSP(int32 value)
+void UStatusComponent::SetSP(float value)
 {
-	SP = FMath::Clamp(value, 0, MaxSP);
+	SP = FMath::Clamp(value, 0.f, MaxSP);
 }
 
 // Called every frame
@@ -101,7 +102,7 @@ void UStatusComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 	// ...
 }
 
-bool UStatusComponent::CheckStamina(int32 value)
+bool UStatusComponent::CheckStamina(float value)
 {
 	if (SP > value)
 	{
@@ -110,6 +111,48 @@ bool UStatusComponent::CheckStamina(int32 value)
 	return false;
 }
 
+void UStatusComponent::RecoverStamina(float value)
+{
+	SP = FMath::Clamp(SP + value, 0.f, MaxSP);
+}
+
+void UStatusComponent::RemoveStamina(float value)
+{
+	SP = FMath::Clamp(SP - value, 0.f, MaxSP);
+}
+
+void UStatusComponent::PauseRecoverStaminaPerTime()
+{
+	PauseStaminaOrder.Push(0);
+	if (GetWorld()->GetTimerManager().IsTimerActive(recoverStaminaByTimeTimerHandle) == true)
+	{
+		GetWorld()->GetTimerManager().PauseTimer(recoverHPTimerHandle);
+	}
+}
+
+void UStatusComponent::ResumeRecoverStaminaPerTime()
+{
+	if (PauseStaminaOrder.Num() > 0)
+	{
+		PauseStaminaOrder.Pop();
+	}
+
+	if (PauseStaminaOrder.Num() == 0)
+	{
+		GetWorld()->GetTimerManager().UnPauseTimer(recoverStaminaByTimeTimerHandle);
+	}
+}
+
+void UStatusComponent::RecoverStaminaPerTime(float value)
+{
+	if (GetWorld()->GetTimerManager().IsTimerActive(recoverStaminaByTimeTimerHandle) == false)
+	{
+		FTimerDelegate recoverStaminaTimerDel = FTimerDelegate::CreateUObject(this, &UStatusComponent::RecoverStamina, value);
+		GetWorld()->GetTimerManager().SetTimer(recoverStaminaByTimeTimerHandle, recoverStaminaTimerDel, 0.3f, true);
+	}
+}
+
+/*
 void UStatusComponent::RecoverStamina()
 {
 	SP = FMath::Clamp(SP + 2, 0, MaxSP);
@@ -124,13 +167,14 @@ void UStatusComponent::RemoveStamina()
 		Cast<APlayerCharacter>(GetOwner())->StopRun();
 	}
 }
+*/
 
 void UStatusComponent::RecoverHP()
 {
-	HP = FMath::Clamp(HP + 1, 0, MaxHP);
+	HP = FMath::Clamp(HP + 1, 0.f, MaxHP);
 }
 
 void UStatusComponent::RemoveHP()
 {
-	HP = FMath::Clamp(HP - 1, 0, MaxHP);
+	HP = FMath::Clamp(HP - 1, 0.f, MaxHP);
 }

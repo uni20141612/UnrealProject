@@ -52,12 +52,24 @@ APlayerCharacter::APlayerCharacter() {
 	inventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("inventoryComp"));
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	Helmet = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Helmet"));
+	Helmet->SetupAttachment(GetMesh());
+	Gloves = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gloves"));
+	Gloves->SetupAttachment(GetMesh());
+	Chest = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Chest"));
+	Chest->SetupAttachment(GetMesh());
+	Legs = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Legs"));
+	Legs->SetupAttachment(GetMesh());
+	Boots = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Boots"));
+	Boots->SetupAttachment(GetMesh());
 }
 
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	GetStatusComponent()->RecoverStaminaPerTime(1.f);
 	//SpawnEquipment();
 	/*
 	if (Weapon != nullptr) {
@@ -97,18 +109,30 @@ void APlayerCharacter::Run()
 	}
 
 	bRun = true;
-	GetStatusComponent()->PauseRecoverStamina();
-	GetStatusComponent()->RunRemoveStaminaTimer();
+	GetStatusComponent()->PauseRecoverStaminaPerTime();
+	//GetStatusComponent()->PauseRecoverStamina();
+	//GetStatusComponent()->RunRemoveStaminaTimer();
 	GetCharacterMovement()->MaxWalkSpeed = 1200;
+
+	if (GetWorldTimerManager().IsTimerActive(RunStaminaTimerHandle) == false)
+	{
+		FTimerDelegate runTimerDel = FTimerDelegate::CreateUObject(GetStatusComponent(), &UStatusComponent::RemoveStamina, 7.f);
+		GetWorldTimerManager().SetTimer(RunStaminaTimerHandle, runTimerDel, 1.f, true);
+	}
 }
 
 void APlayerCharacter::StopRun()
 {
 	bRun = false;
-	GetStatusComponent()->PauseRemoveStaminaTimer();
-	GetStatusComponent()->RunRecoverStaminaTimer();
+	GetStatusComponent()->ResumeRecoverStaminaPerTime();
+	//GetStatusComponent()->PauseRemoveStaminaTimer();
+	//GetStatusComponent()->RunRecoverStaminaTimer();
 	GetCharacterMovement()->MaxWalkSpeed = 600;
 
+	if (GetWorldTimerManager().IsTimerActive(RunStaminaTimerHandle) == true)
+	{
+		GetWorldTimerManager().ClearTimer(RunStaminaTimerHandle);
+	}
 }
 
 void APlayerCharacter::Roll()
@@ -561,6 +585,17 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 }
 
+void APlayerCharacter::OnConstruction(const FTransform& Transform)
+{
+	Super::OnConstruction(Transform);
+
+	Helmet->SetMasterPoseComponent(GetMesh());
+	Gloves->SetMasterPoseComponent(GetMesh());
+	Chest->SetMasterPoseComponent(GetMesh());
+	Legs->SetMasterPoseComponent(GetMesh());
+	Boots->SetMasterPoseComponent(GetMesh());
+}
+
 void APlayerCharacter::EquipWeapon()
 {
 	auto equipInfo = inventoryComponent->GetEquippedItem();
@@ -657,6 +692,6 @@ void APlayerCharacter::Attack()
 void APlayerCharacter::StopAttack()
 {
 	bAttack = false;
-	GetStatusComponent()->RunRecoverStaminaTimer();
+	GetStatusComponent()->ResumeRecoverStaminaPerTime();
 }
 

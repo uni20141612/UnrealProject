@@ -11,10 +11,20 @@
 UENUM(BlueprintType)
 enum class EItemType : uint8
 {
+	Equipment,
+	Consume
+};
+
+UENUM(BlueprintType)
+enum class EEquipmentType : uint8
+{
 	Weapon,
 	Shield,
-	Armor,
-	Consume
+	Helmet,
+	Gloves,
+	Chest,
+	Legs,
+	Boots,
 };
 
 UENUM(BlueprintType)
@@ -59,6 +69,8 @@ public:
 
 	UPROPERTY(EditAnywhere)
 		class USkeletalMeshComponent* mesh;
+	UPROPERTY(EditAnywhere)
+		EEquipmentType equipmentType;
 };
 
 USTRUCT(BlueprintType)

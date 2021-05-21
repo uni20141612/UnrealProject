@@ -17,52 +17,66 @@ public:
 	UStatusComponent();
 	// Called when the game starts
 	virtual void BeginPlay() override;
-
+	/*
 	void RunRecoverStaminaTimer();
 	void PauseRecoverStamina();
 	void RunRemoveStaminaTimer();
 	void PauseRemoveStaminaTimer();
+	*/
 	void RunRecoverHPTimer();
 	void PauseRecoverHPTimer();
 
-	void SetHP(int32 value);
-	void SetSP(int32 value);
+	void SetHP(float value);
+	void SetSP(float value);
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	bool CheckStamina(int32 value);
+	bool CheckStamina(float value);
 
-	const int32& GetHP() { return HP; }
-	const int32& GetMaxHP() { return MaxHP; }
-	const int32& GetSP() { return SP; }
-	const int32& GetMaxSP() { return MaxSP; }
+	void RecoverStamina(float value);
+	void RemoveStamina(float value);
+	void PauseRecoverStaminaPerTime();
+	void ResumeRecoverStaminaPerTime();
+	void RecoverStaminaPerTime(float value);
+
+	const float& GetHP() { return HP; }
+	const float& GetMaxHP() { return MaxHP; }
+	const float& GetSP() { return SP; }
+	const float& GetMaxSP() { return MaxSP; }
 
 	const float GetHPPercent() { return HP / (float)MaxHP; }
 	const float GetSPPercent() { return SP / (float)MaxSP; }
 
 protected:
-	void RecoverStamina();
-	void RemoveStamina();
+	//void RecoverStamina();
+	//void RemoveStamina();
 	void RecoverHP();
 	void RemoveHP();
 
+public:
+	//n초당 sp를 회복시키는 타이머 핸들
+	FTimerHandle recoverStaminaByTimeTimerHandle;
+
 protected:
 	UPROPERTY(EditAnywhere)
-		int32 HP;
+		float HP;
 	UPROPERTY(EditAnywhere)
-		int32 MaxHP = 100;
+		float MaxHP = 100;
 	UPROPERTY(EditAnywhere)
-		int32 SP;
+		float SP;
 	UPROPERTY(EditAnywhere)
-		int32 MaxSP = 100;
+		float MaxSP = 100;
 	UPROPERTY(EditAnywhere)
 		float AttackSpeed = 1.f;
 
-	FTimerHandle recoverStaminaTimerHandle;
-	FTimerHandle removeStaminaTimerHandle;
+	//sp 회복중지요청이 들어오면 저장합니다.
+	TArray<int32> PauseStaminaOrder;
+	UPROPERTY()
+		TArray<FTimerHandle> PauseRecoverStaminaTimerHandles;
+
+	//FTimerHandle recoverStaminaTimerHandle;
+	//FTimerHandle removeStaminaTimerHandle;
 	FTimerHandle recoverHPTimerHandle;
 	FTimerHandle removeHPTimerHandle;
 
-	UPROPERTY()
-		TArray<FTimerHandle> PauseRecoverStaminaTimerHandles;
 };

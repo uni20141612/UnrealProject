@@ -203,9 +203,21 @@ C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProj
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Character/Player/PlayerCharacter.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/ShowDamageWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ShowDamageWidget.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Equipment.cpp
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Boots.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Boots.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Equipment.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Equipment.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Boots.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Chest.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Chest.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Chest.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Equipment.cpp
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Gloves.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Gloves.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Gloves.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Helmet.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Helmet.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Helmet.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/ItemActor.cpp
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
@@ -217,6 +229,9 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Particl
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/ItemTypes.cpp
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Legs.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Legs.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Legs.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Potion.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Potion.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Potion.generated.h

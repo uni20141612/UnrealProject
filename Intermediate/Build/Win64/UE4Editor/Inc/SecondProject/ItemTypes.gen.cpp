@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 // Cross Module References
 	SECONDPROJECT_API UEnum* Z_Construct_UEnum_SecondProject_EWeaponType();
 	UPackage* Z_Construct_UPackage__Script_SecondProject();
+	SECONDPROJECT_API UEnum* Z_Construct_UEnum_SecondProject_EEquipmentType();
 	SECONDPROJECT_API UEnum* Z_Construct_UEnum_SecondProject_EItemType();
 	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FWeaponInformation();
 	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FEquipmentInformation();
@@ -86,6 +87,70 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 		}
 		return ReturnEnum;
 	}
+	static UEnum* EEquipmentType_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_SecondProject_EEquipmentType, Z_Construct_UPackage__Script_SecondProject(), TEXT("EEquipmentType"));
+		}
+		return Singleton;
+	}
+	template<> SECONDPROJECT_API UEnum* StaticEnum<EEquipmentType>()
+	{
+		return EEquipmentType_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EEquipmentType(EEquipmentType_StaticEnum, TEXT("/Script/SecondProject"), TEXT("EEquipmentType"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_SecondProject_EEquipmentType_Hash() { return 694618137U; }
+	UEnum* Z_Construct_UEnum_SecondProject_EEquipmentType()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_SecondProject();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EEquipmentType"), 0, Get_Z_Construct_UEnum_SecondProject_EEquipmentType_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EEquipmentType::Weapon", (int64)EEquipmentType::Weapon },
+				{ "EEquipmentType::Shield", (int64)EEquipmentType::Shield },
+				{ "EEquipmentType::Helmet", (int64)EEquipmentType::Helmet },
+				{ "EEquipmentType::Gloves", (int64)EEquipmentType::Gloves },
+				{ "EEquipmentType::Chest", (int64)EEquipmentType::Chest },
+				{ "EEquipmentType::Legs", (int64)EEquipmentType::Legs },
+				{ "EEquipmentType::Boots", (int64)EEquipmentType::Boots },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
+				{ "Boots.Name", "EEquipmentType::Boots" },
+				{ "Chest.Name", "EEquipmentType::Chest" },
+				{ "Gloves.Name", "EEquipmentType::Gloves" },
+				{ "Helmet.Name", "EEquipmentType::Helmet" },
+				{ "Legs.Name", "EEquipmentType::Legs" },
+				{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+				{ "Shield.Name", "EEquipmentType::Shield" },
+				{ "Weapon.Name", "EEquipmentType::Weapon" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_SecondProject,
+				nullptr,
+				"EEquipmentType",
+				"EEquipmentType",
+				Enumerators,
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	static UEnum* EItemType_StaticEnum()
 	{
 		static UEnum* Singleton = nullptr;
@@ -100,7 +165,7 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 		return EItemType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EItemType(EItemType_StaticEnum, TEXT("/Script/SecondProject"), TEXT("EItemType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_SecondProject_EItemType_Hash() { return 1140590793U; }
+	uint32 Get_Z_Construct_UEnum_SecondProject_EItemType_Hash() { return 2765314718U; }
 	UEnum* Z_Construct_UEnum_SecondProject_EItemType()
 	{
 #if WITH_HOT_RELOAD
@@ -112,19 +177,15 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 		if (!ReturnEnum)
 		{
 			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
-				{ "EItemType::Weapon", (int64)EItemType::Weapon },
-				{ "EItemType::Shield", (int64)EItemType::Shield },
-				{ "EItemType::Armor", (int64)EItemType::Armor },
+				{ "EItemType::Equipment", (int64)EItemType::Equipment },
 				{ "EItemType::Consume", (int64)EItemType::Consume },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "Armor.Name", "EItemType::Armor" },
 				{ "BlueprintType", "true" },
 				{ "Consume.Name", "EItemType::Consume" },
+				{ "Equipment.Name", "EItemType::Equipment" },
 				{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
-				{ "Shield.Name", "EItemType::Shield" },
-				{ "Weapon.Name", "EItemType::Weapon" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -676,6 +737,11 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFEquipmentInforma
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mesh;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_equipmentType_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_equipmentType_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_equipmentType;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -711,10 +777,20 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFEquipmentInforma
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh = { "mesh", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FEquipmentInformation, mesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType_MetaData[] = {
+		{ "Category", "EquipmentInformation" },
+		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType = { "equipmentType", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FEquipmentInformation, equipmentType), Z_Construct_UEnum_SecondProject_EEquipmentType, METADATA_PARAMS(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FEquipmentInformation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_dam,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_def,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FEquipmentInformation_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_SecondProject,
@@ -744,7 +820,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFEquipmentInforma
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FEquipmentInformation_Hash() { return 3214871157U; }
+	uint32 Get_Z_Construct_UScriptStruct_FEquipmentInformation_Hash() { return 2556802501U; }
 
 static_assert(std::is_polymorphic<FItemInformation>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FItemInformation cannot be polymorphic unless super FTableRowBase is polymorphic");
 

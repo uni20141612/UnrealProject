@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SECONDPROJECT_ItemTypes_generated_h
 
-#define UnrealProject_Source_SecondProject_Public_Item_ItemTypes_h_87_GENERATED_BODY \
+#define UnrealProject_Source_SecondProject_Public_Item_ItemTypes_h_99_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FWeaponInformation_Statics; \
 	SECONDPROJECT_API static class UScriptStruct* StaticStruct(); \
 	typedef FEquipmentInformation Super;
@@ -21,7 +21,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FWeaponInformation>();
 
-#define UnrealProject_Source_SecondProject_Public_Item_ItemTypes_h_67_GENERATED_BODY \
+#define UnrealProject_Source_SecondProject_Public_Item_ItemTypes_h_79_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPotionInformation_Statics; \
 	SECONDPROJECT_API static class UScriptStruct* StaticStruct(); \
 	typedef FItemInformation Super;
@@ -29,7 +29,7 @@ template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FWeaponInformati
 
 template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FPotionInformation>();
 
-#define UnrealProject_Source_SecondProject_Public_Item_ItemTypes_h_52_GENERATED_BODY \
+#define UnrealProject_Source_SecondProject_Public_Item_ItemTypes_h_62_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FEquipmentInformation_Statics; \
 	SECONDPROJECT_API static class UScriptStruct* StaticStruct(); \
 	typedef FItemInformation Super;
@@ -37,7 +37,7 @@ template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FPotionInformati
 
 template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FEquipmentInformation>();
 
-#define UnrealProject_Source_SecondProject_Public_Item_ItemTypes_h_29_GENERATED_BODY \
+#define UnrealProject_Source_SecondProject_Public_Item_ItemTypes_h_39_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemInformation_Statics; \
 	SECONDPROJECT_API static class UScriptStruct* StaticStruct(); \
 	typedef FTableRowBase Super;
@@ -56,10 +56,20 @@ template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FItemInformation
 enum class EWeaponType : uint8;
 template<> SECONDPROJECT_API UEnum* StaticEnum<EWeaponType>();
 
+#define FOREACH_ENUM_EEQUIPMENTTYPE(op) \
+	op(EEquipmentType::Weapon) \
+	op(EEquipmentType::Shield) \
+	op(EEquipmentType::Helmet) \
+	op(EEquipmentType::Gloves) \
+	op(EEquipmentType::Chest) \
+	op(EEquipmentType::Legs) \
+	op(EEquipmentType::Boots) 
+
+enum class EEquipmentType : uint8;
+template<> SECONDPROJECT_API UEnum* StaticEnum<EEquipmentType>();
+
 #define FOREACH_ENUM_EITEMTYPE(op) \
-	op(EItemType::Weapon) \
-	op(EItemType::Shield) \
-	op(EItemType::Armor) \
+	op(EItemType::Equipment) \
 	op(EItemType::Consume) 
 
 enum class EItemType : uint8;

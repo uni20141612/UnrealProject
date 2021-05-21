@@ -1,9 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Widget/InventoryListWidget.h"
-#include "Character/Player/Component/InventoryComponent.h"
 #include "Widget/ItemButtonWidget.h"
 #include "Widget/ItemMenuWidget.h"
+#include "Character/Player/Component/InventoryComponent.h"
+#include "Character/Player/PlayerCharacter.h"
 
 #include "Components/ScrollBox.h"
 #include "Blueprint/WidgetLayoutLibrary.h"
@@ -57,6 +58,18 @@ void UInventoryListWidget::UpdateItemButton(const FName& itemCode, const int32& 
 
 void UInventoryListWidget::ShowItemMenu(const FName& item_Code)
 {
+	auto player = Cast<APlayerCharacter>(GetOwningPlayerPawn());
+	if (player == nullptr)
+	{
+		return;
+	}
+
+	auto invenComp = player->GetInventoryComponent();
+	if (invenComp == nullptr)
+	{
+		return;
+	}
+
 	if (itemMenuWidgetClass != nullptr)
 	{
 		if (itemMenuWidget == nullptr)
@@ -66,6 +79,15 @@ void UInventoryListWidget::ShowItemMenu(const FName& item_Code)
 		itemMenuWidget->SetItemCode(item_Code);
 		auto mousePos = UWidgetLayoutLibrary::GetMousePositionOnViewport(GetOwningPlayer());
 		itemMenuWidget->SetPositionInViewport(mousePos, false);
+
+		if (invenComp->GetItemInfo(item_Code)->item_Type == EItemType::Consume)
+		{
+			itemMenuWidget->DisableUseButton();
+		}
+		else
+		{
+			itemMenuWidget->EnableUseButton();
+		}
 
 		if (itemMenuWidget->IsInViewport() == false)
 		{

@@ -15,17 +15,9 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\BaseCharacter.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CheckInputNotifyState.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Animation/NotifyState/CheckInputNotifyState.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CheckInputNotifyState.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CreateLinetraceNotifyState.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Animation/NotifyState/CreateLinetraceNotifyState.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CreateLinetraceNotifyState.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CustomController.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Controller/CustomController.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CustomController.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Equipment.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Item/Equipment.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Boots.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Item/Boots.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Equipment.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/ItemActor.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/ItemTypes.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
@@ -40,6 +32,20 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemTypes.generated.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemActor.generated.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Equipment.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Boots.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CheckInputNotifyState.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Animation/NotifyState/CheckInputNotifyState.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CheckInputNotifyState.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Chest.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Item/Chest.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Chest.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CreateLinetraceNotifyState.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Animation/NotifyState/CreateLinetraceNotifyState.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CreateLinetraceNotifyState.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CustomController.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Controller/CustomController.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CustomController.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Equipment.gen.cpp
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/EquipmentActor.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Equipment/EquipmentActor.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\EquipmentActor.generated.h
@@ -49,6 +55,9 @@ C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Buil
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/FootStepAnimNotify.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Animation/Notify/FootStepAnimNotify.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\FootStepAnimNotify.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Gloves.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Item/Gloves.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Gloves.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/HeadOnHealthBarWidget.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Widget/HeadOnHealthBarWidget.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
@@ -151,6 +160,9 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\HeadOnHealthBarWidget.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Helmet.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Item/Helmet.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Helmet.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/InventoryComponent.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Component/InventoryComponent.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\InventoryComponent.generated.h
@@ -171,6 +183,9 @@ C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Buil
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Widget/ItemMenuWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemMenuWidget.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/ItemTypes.gen.cpp
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Legs.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Item/Legs.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Legs.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/LockOnComponent.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Component/LockOnComponent.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\LockOnComponent.generated.h

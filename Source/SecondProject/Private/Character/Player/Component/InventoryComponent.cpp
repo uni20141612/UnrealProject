@@ -37,7 +37,7 @@ void UInventoryComponent::UseItem(const FName& itemCode, AActor* target)
 
 		if (itemClass != nullptr)
 		{
-			if (inventory[itemCode]->item_Count > 0)
+			if (inventory[itemCode]->GetItemInfo()->item_Type == EItemType::Consume)
 			{
 				inventory[itemCode]->item_Count--;
 			}

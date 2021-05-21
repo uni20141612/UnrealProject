@@ -5,11 +5,9 @@
 #include "Character/Player/PlayerCharacter.h"
 
 #include "Components/Button.h"
-//#include "Blueprint/"
 
 void UItemMenuWidget::NativeConstruct()
-{
-	
+{	
 	Button_Use->OnClicked.AddUniqueDynamic(this, &UItemMenuWidget::OnClickedButtonUse);
 	Button_Drop->OnClicked.AddUniqueDynamic(this, &UItemMenuWidget::OnClickedButtonDrop);
 	Button_Remove->OnClicked.AddUniqueDynamic(this, &UItemMenuWidget::OnClickedButtonRemove);
@@ -54,4 +52,14 @@ void UItemMenuWidget::OnClickedButtonRemove()
 void UItemMenuWidget::OnClickedButtonCancel()
 {
 	RemoveFromParent();
+}
+
+void UItemMenuWidget::DisableUseButton()
+{
+	Button_Use->SetIsEnabled(false);
+}
+
+void UItemMenuWidget::EnableUseButton()
+{
+	Button_Use->SetIsEnabled(true);
 }

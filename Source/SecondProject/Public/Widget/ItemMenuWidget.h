@@ -17,6 +17,8 @@ class SECONDPROJECT_API UItemMenuWidget : public UUserWidget
 
 public:
 	void SetItemCode(const FName& code) { itemCode = code; }
+	void DisableUseButton();
+	void EnableUseButton();
 
 protected:
 	virtual void NativeConstruct() override;

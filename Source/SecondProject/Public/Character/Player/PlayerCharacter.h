@@ -62,6 +62,12 @@ public:
 	class ULockOnComponent* GetLockOnComponent() { return lockOnComponent; }
 	class UInventoryComponent* GetInventoryComponent() { return inventoryComponent; }
 
+	class USkeletalMeshComponent* GetHelmet() { return Helmet; }
+	class USkeletalMeshComponent* GetGloves() { return Gloves; }
+	class USkeletalMeshComponent* GetChest() { return Chest; }
+	class USkeletalMeshComponent* GetLegs() { return Legs; }
+	class USkeletalMeshComponent* GetBoots() { return Boots; }
+
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
@@ -86,6 +92,7 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
+	virtual void OnConstruction(const FTransform& Transform) override;
 
 	void EquipWeapon();
 	void Attack();
@@ -114,39 +121,7 @@ public:
 	FTimerHandle RollStaminaTimerHandle;
 	FTimerHandle nextLockOnTargetTimerHandle;
 	FTimerHandle preLockOnTargetTimerHandle;
-	/*	
-	UPROPERTY(EditAnywhere)
-		class UAnimMontage* EquipMontage;
-	UPROPERTY(EditAnywhere)
-		class UAnimMontage* UnEquipMontage;
 
-	UPROPERTY(EditAnywhere)
-		TSubclassOf<class AEquipmentActor> Weapon;
-	UPROPERTY(EditAnywhere)
-		TSubclassOf<class AEquipmentActor> Shield;
-	
-	UPROPERTY(EditAnywhere)
-		class UAnimMontage* RollMontage;
-	UPROPERTY(EditAnyWhere)
-		UAnimMontage* gotHitCenterMontage;
-	UPROPERTY(EditAnyWhere)
-		UAnimMontage* gotHitRightMontage;
-	UPROPERTY(EditAnyWhere)
-		UAnimMontage* gotHitLeftMontage;
-	UPROPERTY(EditAnyWhere)
-		UAnimMontage* gotHitBackMontage;
-	UPROPERTY(EditAnyWhere)
-		UAnimMontage* rightGuardMontage;
-	UPROPERTY(EditAnyWhere)
-		UAnimMontage* leftGuardMontage;
-	UPROPERTY(EditAnywhere)
-		class UAnimMontage* AttackMontage;
-
-	UPROPERTY(EditAnyWhere)
-		class UParticleSystem* guardParticle;
-	UPROPERTY(EditAnyWhere)
-		class UParticleSystem* gotHitParticle;
-	*/
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class AEquipmentActor> equipmentClass;
 
@@ -171,4 +146,19 @@ protected:
 
 	UPROPERTY(VisibleAnywhere)
 		class UInventoryComponent* inventoryComponent;
+
+	//달릴때 소모하는 sp 타이머
+	UPROPERTY()
+		FTimerHandle RunStaminaTimerHandle;
+
+	UPROPERTY(VisibleAnywhere, BluePrintReadOnly)
+		class USkeletalMeshComponent* Helmet;
+	UPROPERTY(VisibleAnywhere, BluePrintReadOnly)
+		class USkeletalMeshComponent* Gloves;
+	UPROPERTY(VisibleAnywhere, BluePrintReadOnly)
+		class USkeletalMeshComponent* Chest;
+	UPROPERTY(VisibleAnywhere, BluePrintReadOnly)
+		class USkeletalMeshComponent* Legs;
+	UPROPERTY(VisibleAnywhere, BluePrintReadOnly)
+		class USkeletalMeshComponent* Boots;
 };

@@ -35,19 +35,19 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HP_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_HP;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HP;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxHP_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxHP;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxHP;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SP_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_SP;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SP;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxSP_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxSP;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxSP;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AttackSpeed_MetaData[];
 #endif
@@ -79,28 +79,28 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 		{ "ModuleRelativePath", "Public/Character/Component/StatusComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_HP = { "HP", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, HP), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_HP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_HP_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_HP = { "HP", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, HP), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_HP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_HP_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxHP_MetaData[] = {
 		{ "Category", "StatusComponent" },
 		{ "ModuleRelativePath", "Public/Character/Component/StatusComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxHP = { "MaxHP", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, MaxHP), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxHP_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxHP = { "MaxHP", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, MaxHP), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxHP_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP_MetaData[] = {
 		{ "Category", "StatusComponent" },
 		{ "ModuleRelativePath", "Public/Character/Component/StatusComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP = { "SP", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, SP), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP = { "SP", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, SP), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP_MetaData[] = {
 		{ "Category", "StatusComponent" },
 		{ "ModuleRelativePath", "Public/Character/Component/StatusComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP = { "MaxSP", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, MaxSP), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP = { "MaxSP", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, MaxSP), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed_MetaData[] = {
 		{ "Category", "StatusComponent" },
@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UStatusComponent, 3913757822);
+	IMPLEMENT_CLASS(UStatusComponent, 2406563525);
 	template<> SECONDPROJECT_API UClass* StaticClass<UStatusComponent>()
 	{
 		return UStatusComponent::StaticClass();

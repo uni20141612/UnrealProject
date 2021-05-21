@@ -78,7 +78,13 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayerCharacter); \
 	FORCEINLINE static uint32 __PPO__spawndWeapon() { return STRUCT_OFFSET(APlayerCharacter, spawndWeapon); } \
 	FORCEINLINE static uint32 __PPO__spawndShield() { return STRUCT_OFFSET(APlayerCharacter, spawndShield); } \
 	FORCEINLINE static uint32 __PPO__damageWidgetComponentClass() { return STRUCT_OFFSET(APlayerCharacter, damageWidgetComponentClass); } \
-	FORCEINLINE static uint32 __PPO__inventoryComponent() { return STRUCT_OFFSET(APlayerCharacter, inventoryComponent); }
+	FORCEINLINE static uint32 __PPO__inventoryComponent() { return STRUCT_OFFSET(APlayerCharacter, inventoryComponent); } \
+	FORCEINLINE static uint32 __PPO__RunStaminaTimerHandle() { return STRUCT_OFFSET(APlayerCharacter, RunStaminaTimerHandle); } \
+	FORCEINLINE static uint32 __PPO__Helmet() { return STRUCT_OFFSET(APlayerCharacter, Helmet); } \
+	FORCEINLINE static uint32 __PPO__Gloves() { return STRUCT_OFFSET(APlayerCharacter, Gloves); } \
+	FORCEINLINE static uint32 __PPO__Chest() { return STRUCT_OFFSET(APlayerCharacter, Chest); } \
+	FORCEINLINE static uint32 __PPO__Legs() { return STRUCT_OFFSET(APlayerCharacter, Legs); } \
+	FORCEINLINE static uint32 __PPO__Boots() { return STRUCT_OFFSET(APlayerCharacter, Boots); }
 
 
 #define UnrealProject_Source_SecondProject_Public_Character_Player_PlayerCharacter_h_13_PROLOG
