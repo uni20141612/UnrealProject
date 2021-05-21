@@ -13,6 +13,7 @@
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Character/Player/Component/InventoryComponent.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Character/Player/Controller/CustomController.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Character/Player/PlayerCharacter.cpp"
+#include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Boots.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Chest.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Equipment.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Gloves.cpp"

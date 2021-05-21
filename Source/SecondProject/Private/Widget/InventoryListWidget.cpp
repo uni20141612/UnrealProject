@@ -80,13 +80,13 @@ void UInventoryListWidget::ShowItemMenu(const FName& item_Code)
 		auto mousePos = UWidgetLayoutLibrary::GetMousePositionOnViewport(GetOwningPlayer());
 		itemMenuWidget->SetPositionInViewport(mousePos, false);
 
-		if (invenComp->GetItemInfo(item_Code)->item_Type == EItemType::Consume)
+		if (invenComp->GetItemInfo(item_Code)->item_Type == EItemType::Consume || invenComp->GetItemInfo(item_Code)->equip_Type == EEquipmentType::Weapon)
 		{
-			itemMenuWidget->DisableUseButton();
+			itemMenuWidget->EnableUseButton();
 		}
 		else
 		{
-			itemMenuWidget->EnableUseButton();
+			itemMenuWidget->DisableUseButton();
 		}
 
 		if (itemMenuWidget->IsInViewport() == false)

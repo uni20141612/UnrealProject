@@ -873,6 +873,11 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFItemInformation
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_item_Type_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_item_Type;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_equip_Type_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_equip_Type_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_equip_Type;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_item_Description_MetaData[];
 #endif
@@ -930,6 +935,14 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFItemInformation
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Type = { "item_Type", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemInformation, item_Type), Z_Construct_UEnum_SecondProject_EItemType, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Type_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Type_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_equip_Type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_equip_Type_MetaData[] = {
+		{ "Category", "ItemInformation" },
+		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_equip_Type = { "equip_Type", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemInformation, equip_Type), Z_Construct_UEnum_SecondProject_EEquipmentType, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_equip_Type_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_equip_Type_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Description_MetaData[] = {
 		{ "Category", "ItemInformation" },
@@ -951,6 +964,8 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFItemInformation
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Image,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Type_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Type,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_equip_Type_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_equip_Type,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Description,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemInformation_Statics::NewProp_item_Description_Long,
 	};
@@ -982,7 +997,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFItemInformation
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemInformation_Hash() { return 1950436580U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemInformation_Hash() { return 274859953U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

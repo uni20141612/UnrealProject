@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "SecondProject",
-			"Path": "C:\\Users\\Administrator\\Documents\\Unreal Projects\\UnrealProject\\Source\\SecondProject.Target.cs",
+			"Path": "D:\\Users\\hansu\\Downloads\\Coding\\SecondProject\\Source\\SecondProject.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "SecondProjectEditor",
-			"Path": "C:\\Users\\Administrator\\Documents\\Unreal Projects\\UnrealProject\\Source\\SecondProjectEditor.Target.cs",
+			"Path": "D:\\Users\\hansu\\Downloads\\Coding\\SecondProject\\Source\\SecondProjectEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -51,6 +51,8 @@ public:
 	UPROPERTY(EditAnywhere)
 		EItemType item_Type;
 	UPROPERTY(EditAnywhere)
+		EEquipmentType equip_Type;
+	UPROPERTY(EditAnywhere)
 		FName item_Description;
 	UPROPERTY(EditAnywhere)
 		FName item_Description_Long;

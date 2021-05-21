@@ -18,7 +18,8 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/GameplayStatics.h"
 
-APlayerCharacter::APlayerCharacter() {
+APlayerCharacter::APlayerCharacter() 
+{
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
