@@ -79,7 +79,7 @@ void UInventoryListWidget::ShowItemMenu(const FName& item_Code)
 		itemMenuWidget->SetItemCode(item_Code);
 		auto mousePos = UWidgetLayoutLibrary::GetMousePositionOnViewport(GetOwningPlayer());
 		itemMenuWidget->SetPositionInViewport(mousePos, false);
-
+		/*
 		if (invenComp->GetItemInfo(item_Code)->item_Type == EItemType::Consume || invenComp->GetItemInfo(item_Code)->equip_Type == EEquipmentType::Weapon)
 		{
 			itemMenuWidget->EnableUseButton();
@@ -88,6 +88,7 @@ void UInventoryListWidget::ShowItemMenu(const FName& item_Code)
 		{
 			itemMenuWidget->DisableUseButton();
 		}
+		*/
 
 		if (itemMenuWidget->IsInViewport() == false)
 		{

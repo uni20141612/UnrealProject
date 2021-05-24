@@ -14,5 +14,14 @@ UCLASS()
 class SECONDPROJECT_API AEquipment : public AItemActor
 {
 	GENERATED_BODY()
+
+protected:
+	virtual void UseItem(AActor* target) override;
+	virtual void UnEquip(AActor* target) override;
+
+	virtual const FEquipmentInformation* GetEquippedItem(AActor* target) { return nullptr; }
+
+protected:
+	bool bUnEquipSameEquipment = false;
 	
 };

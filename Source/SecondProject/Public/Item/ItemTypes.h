@@ -70,7 +70,7 @@ public:
 		float def;
 
 	UPROPERTY(EditAnywhere)
-		class USkeletalMeshComponent* mesh;
+		class USkeletalMesh* mesh;
 	UPROPERTY(EditAnywhere)
 		EEquipmentType equipmentType;
 };

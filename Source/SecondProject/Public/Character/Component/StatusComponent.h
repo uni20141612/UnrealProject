@@ -44,8 +44,14 @@ public:
 	const float& GetSP() { return SP; }
 	const float& GetMaxSP() { return MaxSP; }
 
-	const float GetHPPercent() { return HP / (float)MaxHP; }
-	const float GetSPPercent() { return SP / (float)MaxSP; }
+	const float GetHPPercent() { return HP / MaxHP; }
+	const float GetSPPercent() { return SP / MaxSP; }
+
+	const float& GetDam() { return dam; }
+	const float& GetDef() { return def; }
+
+	void AddDam(float value) { dam += value; }
+	void AddDef(float value) { def += value; }
 
 protected:
 	//void RecoverStamina();
@@ -68,6 +74,11 @@ protected:
 		float MaxSP = 100;
 	UPROPERTY(EditAnywhere)
 		float AttackSpeed = 1.f;
+
+	UPROPERTY(EditAnywhere)
+		float dam;
+	UPROPERTY(EditAnywhere)
+		float def;
 
 	//sp 회복중지요청이 들어오면 저장합니다.
 	TArray<int32> PauseStaminaOrder;

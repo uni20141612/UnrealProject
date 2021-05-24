@@ -35,6 +35,12 @@ private:
 	FWeaponInformation* weapon;
 	FEquipmentInformation* shield;
 
+	FEquipmentInformation* boots;
+	FEquipmentInformation* chest;
+	FEquipmentInformation* gloves;
+	FEquipmentInformation* helmet;
+	FEquipmentInformation* legs;
+
 public:
 
 
@@ -43,8 +49,20 @@ public:
 	void SetWeapon(FWeaponInformation* info) { weapon = info; }
 	void SetShield(FEquipmentInformation* info) { shield = info; }
 
+	void SetBoots(FEquipmentInformation* info) { boots = info; }
+	void SetChest(FEquipmentInformation* info) { chest = info; }
+	void SetGloves(FEquipmentInformation* info) { gloves = info; }
+	void SetHelmet(FEquipmentInformation* info) { helmet = info; }
+	void SetLegs(FEquipmentInformation* info) { legs = info; }
+
 	const FWeaponInformation* GetWeapon() { return weapon; }
 	const FEquipmentInformation* GetShield() { return shield; }
+
+	const FEquipmentInformation* GetBoots() { return boots; }
+	const FEquipmentInformation* GetChest() { return chest; }
+	const FEquipmentInformation* GetGloves() { return gloves; }
+	const FEquipmentInformation* GetHelmet() { return helmet; }
+	const FEquipmentInformation* GetLegs() { return legs; }
 };
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -63,6 +81,12 @@ public:
 
 	void SetWeapon(FWeaponInformation* info) { equippedItem.SetWeapon(info); }
 	void SetShield(FEquipmentInformation* info) { equippedItem.SetShield(info); }
+
+	void SetBoots(FEquipmentInformation* info) { equippedItem.SetBoots(info); }
+	void SetChest(FEquipmentInformation* info) { equippedItem.SetChest(info); }
+	void SetGloves(FEquipmentInformation* info) { equippedItem.SetGloves(info); }
+	void SetHelmet(FEquipmentInformation* info) { equippedItem.SetHelmet(info); }
+	void SetLegs(FEquipmentInformation* info) { equippedItem.SetLegs(info); }
 
 	const FStoredItem* GetItem(const FName& itemCode);
 	const FItemInformation* GetItemInfo(const FName& itemCode);

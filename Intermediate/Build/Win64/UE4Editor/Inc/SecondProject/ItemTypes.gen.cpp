@@ -28,7 +28,6 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FPotionInformation();
 	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FItemInformation();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_AItemActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
@@ -540,7 +539,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 		Z_Construct_UScriptStruct_FWeaponInformation_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponInformation_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponInformation_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FWeaponInformation()
@@ -558,7 +557,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFWeaponInformatio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FWeaponInformation_Hash() { return 3348669918U; }
+	uint32 Get_Z_Construct_UScriptStruct_FWeaponInformation_Hash() { return 2869920149U; }
 
 static_assert(std::is_polymorphic<FPotionInformation>() == std::is_polymorphic<FItemInformation>(), "USTRUCT FPotionInformation cannot be polymorphic unless super FItemInformation is polymorphic");
 
@@ -772,11 +771,10 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFEquipmentInforma
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh_MetaData[] = {
 		{ "Category", "EquipmentInformation" },
-		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh = { "mesh", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FEquipmentInformation, mesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh = { "mesh", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FEquipmentInformation, mesh), Z_Construct_UClass_USkeletalMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_mesh_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEquipmentInformation_Statics::NewProp_equipmentType_MetaData[] = {
@@ -802,7 +800,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFEquipmentInforma
 		Z_Construct_UScriptStruct_FEquipmentInformation_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEquipmentInformation_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FEquipmentInformation()
@@ -820,7 +818,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFEquipmentInforma
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FEquipmentInformation_Hash() { return 2556802501U; }
+	uint32 Get_Z_Construct_UScriptStruct_FEquipmentInformation_Hash() { return 3318644706U; }
 
 static_assert(std::is_polymorphic<FItemInformation>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FItemInformation cannot be polymorphic unless super FTableRowBase is polymorphic");
 

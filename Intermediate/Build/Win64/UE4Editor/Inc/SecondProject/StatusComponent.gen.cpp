@@ -52,6 +52,14 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AttackSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AttackSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_dam_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_dam;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_def_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_def;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_PauseRecoverStaminaTimerHandles_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PauseRecoverStaminaTimerHandles_MetaData[];
@@ -108,6 +116,20 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed = { "AttackSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, AttackSpeed), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStatusComponent_Statics::NewProp_dam_MetaData[] = {
+		{ "Category", "StatusComponent" },
+		{ "ModuleRelativePath", "Public/Character/Component/StatusComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_dam = { "dam", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, dam), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_dam_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_dam_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStatusComponent_Statics::NewProp_def_MetaData[] = {
+		{ "Category", "StatusComponent" },
+		{ "ModuleRelativePath", "Public/Character/Component/StatusComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_def = { "def", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStatusComponent, def), METADATA_PARAMS(Z_Construct_UClass_UStatusComponent_Statics::NewProp_def_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStatusComponent_Statics::NewProp_def_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles_Inner = { "PauseRecoverStaminaTimerHandles", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles_MetaData[] = {
@@ -121,6 +143,8 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_SP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_MaxSP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_AttackSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_dam,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_def,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatusComponent_Statics::NewProp_PauseRecoverStaminaTimerHandles,
 	};
@@ -151,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeStatusComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UStatusComponent, 2406563525);
+	IMPLEMENT_CLASS(UStatusComponent, 3988279722);
 	template<> SECONDPROJECT_API UClass* StaticClass<UStatusComponent>()
 	{
 		return UStatusComponent::StaticClass();

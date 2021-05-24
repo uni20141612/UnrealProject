@@ -24,6 +24,7 @@ public:
     T* GetItemInformation();
 
     virtual void UseItem(AActor* target) { }
+    virtual void UnEquip(AActor* target) { }
 
     class UWidgetComponent* GetWidgetComponent() { return widgetComponent; }
     FName GetItemCode() { return item_Code; }
