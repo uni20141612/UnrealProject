@@ -17,7 +17,7 @@ class SECONDPROJECT_API AEquipment : public AItemActor
 
 protected:
 	virtual void UseItem(AActor* target) override;
-	virtual void UnEquip(AActor* target) override;
+	virtual void UnEquip(AActor* target, const FEquipmentInformation* info) override;
 
 	virtual const FEquipmentInformation* GetEquippedItem(AActor* target) { return nullptr; }
 

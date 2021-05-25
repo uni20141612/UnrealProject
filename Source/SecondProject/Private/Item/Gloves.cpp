@@ -26,9 +26,9 @@ void AGloves::UseItem(AActor* target)
 	Destroy();
 }
 
-void AGloves::UnEquip(AActor* target)
+void AGloves::UnEquip(AActor* target, const FEquipmentInformation* info)
 {
-	Super::UnEquip(target);
+	Super::UnEquip(target, info);
 
 	if (target != nullptr)
 	{

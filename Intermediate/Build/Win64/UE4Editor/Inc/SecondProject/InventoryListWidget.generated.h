@@ -67,7 +67,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInventoryListWidget); \
 	FORCEINLINE static uint32 __PPO__Button_All() { return STRUCT_OFFSET(UInventoryListWidget, Button_All); } \
 	FORCEINLINE static uint32 __PPO__Button_Weapon() { return STRUCT_OFFSET(UInventoryListWidget, Button_Weapon); } \
 	FORCEINLINE static uint32 __PPO__Button_Shield() { return STRUCT_OFFSET(UInventoryListWidget, Button_Shield); } \
-	FORCEINLINE static uint32 __PPO__Button_Amor() { return STRUCT_OFFSET(UInventoryListWidget, Button_Amor); } \
+	FORCEINLINE static uint32 __PPO__Button_Helmet() { return STRUCT_OFFSET(UInventoryListWidget, Button_Helmet); } \
+	FORCEINLINE static uint32 __PPO__Button_Chest() { return STRUCT_OFFSET(UInventoryListWidget, Button_Chest); } \
+	FORCEINLINE static uint32 __PPO__Button_Gloves() { return STRUCT_OFFSET(UInventoryListWidget, Button_Gloves); } \
+	FORCEINLINE static uint32 __PPO__Button_Legs() { return STRUCT_OFFSET(UInventoryListWidget, Button_Legs); } \
+	FORCEINLINE static uint32 __PPO__Button_Boots() { return STRUCT_OFFSET(UInventoryListWidget, Button_Boots); } \
 	FORCEINLINE static uint32 __PPO__Button_Consume() { return STRUCT_OFFSET(UInventoryListWidget, Button_Consume); } \
 	FORCEINLINE static uint32 __PPO__ScrollBox_ItemList() { return STRUCT_OFFSET(UInventoryListWidget, ScrollBox_ItemList); }
 

@@ -10,6 +10,12 @@ void AHelmet::UseItem(AActor* target)
 {
 	Super::UseItem(target);
 
+	if (bUnEquipSameEquipment)
+	{
+		Destroy();
+		return;
+	}
+
 	if (target != nullptr)
 	{
 		auto player = Cast<APlayerCharacter>(target);
@@ -26,9 +32,9 @@ void AHelmet::UseItem(AActor* target)
 	Destroy();
 }
 
-void AHelmet::UnEquip(AActor* target)
+void AHelmet::UnEquip(AActor* target, const FEquipmentInformation* info)
 {
-	Super::UnEquip(target);
+	Super::UnEquip(target, info);
 
 	if (target != nullptr)
 	{

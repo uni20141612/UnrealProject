@@ -16,7 +16,7 @@ class SECONDPROJECT_API AGloves : public AEquipment
 
 public:
 	virtual void UseItem(AActor* target) override;
-	virtual void UnEquip(AActor* target) override;
+	virtual void UnEquip(AActor* target, const FEquipmentInformation* info) override;
 	virtual const FEquipmentInformation* GetEquippedItem(AActor* target) override;
 	
 };

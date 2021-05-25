@@ -61,9 +61,25 @@ void EmptyLinkFunctionForGeneratedCodeInventoryListWidget() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Button_Shield;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Button_Amor_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Button_Helmet_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Button_Amor;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Button_Helmet;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Button_Chest_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Button_Chest;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Button_Gloves_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Button_Gloves;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Button_Legs_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Button_Legs;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Button_Boots_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Button_Boots;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Button_Consume_MetaData[];
 #endif
@@ -130,12 +146,40 @@ void EmptyLinkFunctionForGeneratedCodeInventoryListWidget() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Shield = { "Button_Shield", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryListWidget, Button_Shield), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Shield_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Shield_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Amor_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Helmet_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Widget/InventoryListWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Amor = { "Button_Amor", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryListWidget, Button_Amor), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Amor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Amor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Helmet = { "Button_Helmet", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryListWidget, Button_Helmet), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Helmet_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Helmet_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Chest_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/InventoryListWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Chest = { "Button_Chest", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryListWidget, Button_Chest), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Chest_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Chest_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Gloves_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/InventoryListWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Gloves = { "Button_Gloves", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryListWidget, Button_Gloves), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Gloves_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Gloves_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Legs_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/InventoryListWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Legs = { "Button_Legs", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryListWidget, Button_Legs), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Legs_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Legs_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Boots_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/InventoryListWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Boots = { "Button_Boots", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryListWidget, Button_Boots), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Boots_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Boots_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Consume_MetaData[] = {
 		{ "EditInline", "true" },
@@ -157,7 +201,11 @@ void EmptyLinkFunctionForGeneratedCodeInventoryListWidget() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_All,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Weapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Shield,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Amor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Helmet,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Chest,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Gloves,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Legs,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Boots,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_Button_Consume,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryListWidget_Statics::NewProp_ScrollBox_ItemList,
 	};
@@ -188,7 +236,7 @@ void EmptyLinkFunctionForGeneratedCodeInventoryListWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInventoryListWidget, 1102437082);
+	IMPLEMENT_CLASS(UInventoryListWidget, 4203399217);
 	template<> SECONDPROJECT_API UClass* StaticClass<UInventoryListWidget>()
 	{
 		return UInventoryListWidget::StaticClass();

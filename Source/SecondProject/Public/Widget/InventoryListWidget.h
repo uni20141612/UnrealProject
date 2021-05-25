@@ -41,7 +41,15 @@ protected:
 	UPROPERTY()
 		class UButton* Button_Shield;
 	UPROPERTY()
-		class UButton* Button_Amor;
+		class UButton* Button_Helmet;
+	UPROPERTY()
+		class UButton* Button_Chest;
+	UPROPERTY()
+		class UButton* Button_Gloves;
+	UPROPERTY()
+		class UButton* Button_Legs;
+	UPROPERTY()
+		class UButton* Button_Boots;
 	UPROPERTY()
 		class UButton* Button_Consume;
 

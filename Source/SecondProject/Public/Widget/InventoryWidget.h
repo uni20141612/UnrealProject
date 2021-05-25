@@ -20,6 +20,10 @@ public:
 
 	UFUNCTION()
 		void OnVisibilityChange(ESlateVisibility InVisibility);
+	UFUNCTION()
+		void OnClickedButtonInventory();
+	UFUNCTION()
+		void OnClickedButtonEquipment();
 
 	void UpdateItemListButton(const FName& itemCode, const int32& itemCount);
 

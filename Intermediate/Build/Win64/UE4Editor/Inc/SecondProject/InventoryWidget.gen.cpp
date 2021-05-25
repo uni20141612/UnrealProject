@@ -24,6 +24,20 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UItemInformationWidget_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UPlayerInformationWidget_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UInventoryWidget::execOnClickedButtonEquipment)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnClickedButtonEquipment();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UInventoryWidget::execOnClickedButtonInventory)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnClickedButtonInventory();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UInventoryWidget::execOnVisibilityChange)
 	{
 		P_GET_ENUM(ESlateVisibility,Z_Param_InVisibility);
@@ -36,9 +50,55 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 	{
 		UClass* Class = UInventoryWidget::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "OnClickedButtonEquipment", &UInventoryWidget::execOnClickedButtonEquipment },
+			{ "OnClickedButtonInventory", &UInventoryWidget::execOnClickedButtonInventory },
 			{ "OnVisibilityChange", &UInventoryWidget::execOnVisibilityChange },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UInventoryWidget_OnClickedButtonEquipment_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInventoryWidget_OnClickedButtonEquipment_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Widget/InventoryWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInventoryWidget_OnClickedButtonEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInventoryWidget, nullptr, "OnClickedButtonEquipment", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInventoryWidget_OnClickedButtonEquipment_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInventoryWidget_OnClickedButtonEquipment_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInventoryWidget_OnClickedButtonEquipment()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInventoryWidget_OnClickedButtonEquipment_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UInventoryWidget_OnClickedButtonInventory_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInventoryWidget_OnClickedButtonInventory_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Widget/InventoryWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInventoryWidget_OnClickedButtonInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInventoryWidget, nullptr, "OnClickedButtonInventory", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInventoryWidget_OnClickedButtonInventory_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInventoryWidget_OnClickedButtonInventory_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInventoryWidget_OnClickedButtonInventory()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInventoryWidget_OnClickedButtonInventory_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UInventoryWidget_OnVisibilityChange_Statics
 	{
@@ -119,6 +179,8 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_SecondProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UInventoryWidget_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UInventoryWidget_OnClickedButtonEquipment, "OnClickedButtonEquipment" }, // 1641644053
+		{ &Z_Construct_UFunction_UInventoryWidget_OnClickedButtonInventory, "OnClickedButtonInventory" }, // 2157094178
 		{ &Z_Construct_UFunction_UInventoryWidget_OnVisibilityChange, "OnVisibilityChange" }, // 3085174675
 	};
 #if WITH_METADATA
@@ -205,7 +267,7 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInventoryWidget, 1298657437);
+	IMPLEMENT_CLASS(UInventoryWidget, 2608751130);
 	template<> SECONDPROJECT_API UClass* StaticClass<UInventoryWidget>()
 	{
 		return UInventoryWidget::StaticClass();

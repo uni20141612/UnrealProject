@@ -8,14 +8,23 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UStatusComponent;
 #ifdef SECONDPROJECT_PlayerInformationWidget_generated_h
 #error "PlayerInformationWidget.generated.h already included, missing '#pragma once' in PlayerInformationWidget.h"
 #endif
 #define SECONDPROJECT_PlayerInformationWidget_generated_h
 
 #define UnrealProject_Source_SecondProject_Public_Widget_PlayerInformationWidget_h_16_SPARSE_DATA
-#define UnrealProject_Source_SecondProject_Public_Widget_PlayerInformationWidget_h_16_RPC_WRAPPERS
-#define UnrealProject_Source_SecondProject_Public_Widget_PlayerInformationWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define UnrealProject_Source_SecondProject_Public_Widget_PlayerInformationWidget_h_16_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSetPlayerInformation);
+
+
+#define UnrealProject_Source_SecondProject_Public_Widget_PlayerInformationWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetPlayerInformation);
+
+
 #define UnrealProject_Source_SecondProject_Public_Widget_PlayerInformationWidget_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPlayerInformationWidget(); \
@@ -62,7 +71,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPlayerInformationWidget); \
 
 #define UnrealProject_Source_SecondProject_Public_Widget_PlayerInformationWidget_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__TextBlock_CurrentHP() { return STRUCT_OFFSET(UPlayerInformationWidget, TextBlock_CurrentHP); } \
-	FORCEINLINE static uint32 __PPO__TextBlock_CurrentSP() { return STRUCT_OFFSET(UPlayerInformationWidget, TextBlock_CurrentSP); }
+	FORCEINLINE static uint32 __PPO__TextBlock_CurrentSP() { return STRUCT_OFFSET(UPlayerInformationWidget, TextBlock_CurrentSP); } \
+	FORCEINLINE static uint32 __PPO__TextBlock_Dam() { return STRUCT_OFFSET(UPlayerInformationWidget, TextBlock_Dam); } \
+	FORCEINLINE static uint32 __PPO__TextBlock_Def() { return STRUCT_OFFSET(UPlayerInformationWidget, TextBlock_Def); }
 
 
 #define UnrealProject_Source_SecondProject_Public_Widget_PlayerInformationWidget_h_13_PROLOG

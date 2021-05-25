@@ -16,12 +16,20 @@ class SECONDPROJECT_API UPlayerInformationWidget : public UUserWidget
 	GENERATED_BODY()
 
 public:
-	void SetPlayerInformation(class UStatusComponent* statComp);
+	virtual void NativeConstruct() override;
+
+	UFUNCTION()
+		void SetPlayerInformation(class UStatusComponent* statComp);
 
 protected:
 	UPROPERTY()
 		class UTextBlock* TextBlock_CurrentHP;
 	UPROPERTY()
 		class UTextBlock* TextBlock_CurrentSP;
+
+	UPROPERTY()
+		class UTextBlock* TextBlock_Dam;
+	UPROPERTY()
+		class UTextBlock* TextBlock_Def;
 
 };

@@ -43,8 +43,6 @@ private:
 
 public:
 
-
-
 public:
 	void SetWeapon(FWeaponInformation* info) { weapon = info; }
 	void SetShield(FEquipmentInformation* info) { shield = info; }
@@ -64,6 +62,9 @@ public:
 	const FEquipmentInformation* GetHelmet() { return helmet; }
 	const FEquipmentInformation* GetLegs() { return legs; }
 };
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FEquip, class UStatusComponent*, statComp);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUnEquip, class UStatusComponent*, statComp);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class SECONDPROJECT_API UInventoryComponent : public UActorComponent
@@ -97,6 +98,10 @@ public:
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+public:
+	FEquip EquipEvent;
+	FUnEquip UnEquipEvent;
 
 protected:
 	TMap<FName, FStoredItem*> inventory;		

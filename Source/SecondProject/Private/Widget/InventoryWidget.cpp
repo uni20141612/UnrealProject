@@ -4,14 +4,18 @@
 #include "Widget/InventoryListWidget.h"
 #include "Widget/ItemInformationWidget.h"
 #include "Widget/PlayerInformationWidget.h"
-
 #include "Character/Player/PlayerCharacter.h"
+
+#include "Components/Button.h"
+#include "Components/WidgetSwitcher.h"
 
 void UInventoryWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
 
 	OnVisibilityChanged.AddUniqueDynamic(this, &UInventoryWidget::OnVisibilityChange);
+	Button_Inventory->OnClicked.AddUniqueDynamic(this, &UInventoryWidget::OnClickedButtonInventory);
+	Button_Equipment->OnClicked.AddUniqueDynamic(this, &UInventoryWidget::OnClickedButtonEquipment);
 }
 
 void UInventoryWidget::OnVisibilityChange(ESlateVisibility InVisibility)
@@ -31,6 +35,16 @@ void UInventoryWidget::OnVisibilityChange(ESlateVisibility InVisibility)
 	{
 		UMG_InventoryList->RemoveItemMenu();
 	}
+}
+
+void UInventoryWidget::OnClickedButtonInventory()
+{
+	WidgetSwitcher_Switcher->SetActiveWidgetIndex(0);
+}
+
+void UInventoryWidget::OnClickedButtonEquipment()
+{
+	WidgetSwitcher_Switcher->SetActiveWidgetIndex(1);
 }
 
 void UInventoryWidget::UpdateItemListButton(const FName& itemCode, const int32& itemCount)

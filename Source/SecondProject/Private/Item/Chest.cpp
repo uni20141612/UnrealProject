@@ -26,9 +26,9 @@ void AChest::UseItem(AActor* target)
 	Destroy();
 }
 
-void AChest::UnEquip(AActor* target)
+void AChest::UnEquip(AActor* target, const FEquipmentInformation* info)
 {
-	Super::UnEquip(target);
+	Super::UnEquip(target, info);
 
 	if (target != nullptr)
 	{

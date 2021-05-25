@@ -17,11 +17,15 @@ enum class ESlateVisibility : uint8;
 #define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_SPARSE_DATA
 #define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnClickedButtonEquipment); \
+	DECLARE_FUNCTION(execOnClickedButtonInventory); \
 	DECLARE_FUNCTION(execOnVisibilityChange);
 
 
 #define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnClickedButtonEquipment); \
+	DECLARE_FUNCTION(execOnClickedButtonInventory); \
 	DECLARE_FUNCTION(execOnVisibilityChange);
 
 

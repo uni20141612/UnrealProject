@@ -13,13 +13,96 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeInventoryComponent() {}
 // Cross Module References
-	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FEquippedItem();
+	SECONDPROJECT_API UFunction* Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_SecondProject();
+	SECONDPROJECT_API UClass* Z_Construct_UClass_UStatusComponent_NoRegister();
+	SECONDPROJECT_API UFunction* Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature();
+	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FEquippedItem();
 	SECONDPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FStoredItem();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UInventoryComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics
+	{
+		struct _Script_SecondProject_eventUnEquip_Parms
+		{
+			UStatusComponent* statComp;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_statComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_statComp;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::NewProp_statComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::NewProp_statComp = { "statComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_SecondProject_eventUnEquip_Parms, statComp), Z_Construct_UClass_UStatusComponent_NoRegister, METADATA_PARAMS(Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::NewProp_statComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::NewProp_statComp_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::NewProp_statComp,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/Player/Component/InventoryComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_SecondProject, nullptr, "UnEquip__DelegateSignature", nullptr, nullptr, sizeof(_Script_SecondProject_eventUnEquip_Parms), Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics
+	{
+		struct _Script_SecondProject_eventEquip_Parms
+		{
+			UStatusComponent* statComp;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_statComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_statComp;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::NewProp_statComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::NewProp_statComp = { "statComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_SecondProject_eventEquip_Parms, statComp), Z_Construct_UClass_UStatusComponent_NoRegister, METADATA_PARAMS(Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::NewProp_statComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::NewProp_statComp_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::NewProp_statComp,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/Player/Component/InventoryComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_SecondProject, nullptr, "Equip__DelegateSignature", nullptr, nullptr, sizeof(_Script_SecondProject_eventEquip_Parms), Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 class UScriptStruct* FEquippedItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
