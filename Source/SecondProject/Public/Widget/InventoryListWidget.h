@@ -18,11 +18,33 @@ class SECONDPROJECT_API UInventoryListWidget : public UUserWidget
 
 public:
 	void Init();
-	void UpdateItemList(class UInventoryComponent* invenComp);
+	virtual void UpdateItemList(class UInventoryComponent* invenComp);
 	void UpdateItemButton(const FName& itemCode, const int32& itemCount);
 
 	void ShowItemMenu(const FName& item_Code);
 	void RemoveItemMenu();
+
+protected:
+	virtual void NativeConstruct() override;
+
+	UFUNCTION()
+		virtual void OnClickedButtonAll();
+	UFUNCTION()
+		virtual void OnClickedButtonWeapon();
+	UFUNCTION()
+		virtual void OnClickedButtonShield();
+	UFUNCTION()
+		virtual void OnClickedButtonHelmet();
+	UFUNCTION()
+		virtual void OnClickedButtonChest();
+	UFUNCTION()
+		virtual void OnClickedButtonGloves();
+	UFUNCTION()
+		virtual void OnClickedButtonLegs();
+	UFUNCTION()
+		virtual void OnClickedButtonBoots();
+	UFUNCTION()
+		virtual void OnClickedButtonConsume();
 
 protected:
 	UPROPERTY(EditAnywhere)
@@ -33,7 +55,6 @@ protected:
 	UPROPERTY()
 		UItemMenuWidget* itemMenuWidget;
 
-protected:
 	UPROPERTY()
 		class UButton* Button_All;
 	UPROPERTY()

@@ -24,6 +24,7 @@ public:
 	FStoredItem(FItemInformation* itemInfo, int32 count) { info = itemInfo; item_Count = count; }
 
 	const FItemInformation* GetItemInfo() { return info; }
+	const FEquipmentInformation* GetEquipmentInfo() { return (FEquipmentInformation*)info; }
 };
 
 USTRUCT(BlueprintType)

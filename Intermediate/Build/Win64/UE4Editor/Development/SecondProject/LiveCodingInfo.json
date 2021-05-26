@@ -28,6 +28,12 @@
 			"Shield.cpp.obj",
 			"TwoHandedActor.cpp.obj",
 			"Weapon.cpp.obj",
+			"DragableWidget.cpp.obj",
+			"DragItemButtonWidget.cpp.obj",
+			"DragShadowWidget.cpp.obj",
+			"EquipmentButtonWidget.cpp.obj",
+			"EquipmentItemListWidget.cpp.obj",
+			"EquipmentWidget.cpp.obj",
 			"HeadOnHealthBarWidget.cpp.obj",
 			"InventoryListWidget.cpp.obj",
 			"InventoryWidget.cpp.obj",
@@ -38,6 +44,7 @@
 			"PlayerInformationWidget.cpp.obj",
 			"ShowDamageWidget.cpp.obj",
 			"ToolTipWidget.cpp.obj",
+			"WidgetDragDropOper.cpp.obj",
 			"SecondProject.cpp.obj"
 		],
 		"Module.SecondProject.gen.cpp.obj": [
@@ -48,8 +55,14 @@
 			"Chest.gen.cpp.obj",
 			"CreateLinetraceNotifyState.gen.cpp.obj",
 			"CustomController.gen.cpp.obj",
+			"DragableWidget.gen.cpp.obj",
+			"DragItemButtonWidget.gen.cpp.obj",
+			"DragShadowWidget.gen.cpp.obj",
 			"Equipment.gen.cpp.obj",
 			"EquipmentActor.gen.cpp.obj",
+			"EquipmentButtonWidget.gen.cpp.obj",
+			"EquipmentItemListWidget.gen.cpp.obj",
+			"EquipmentWidget.gen.cpp.obj",
 			"EquipNotify.gen.cpp.obj",
 			"FootStepAnimNotify.gen.cpp.obj",
 			"Gloves.gen.cpp.obj",
@@ -77,7 +90,8 @@
 			"StatusComponent.gen.cpp.obj",
 			"ToolTipWidget.gen.cpp.obj",
 			"TwoHandedActor.gen.cpp.obj",
-			"Weapon.gen.cpp.obj"
+			"Weapon.gen.cpp.obj",
+			"WidgetDragDropOper.gen.cpp.obj"
 		]
 	}
 }

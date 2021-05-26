@@ -244,42 +244,26 @@ C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Buil
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Item/Weapon.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Item/Weapon.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Weapon.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/HeadOnHealthBarWidget.cpp
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/ProgressBar.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Notifications/SProgressBar.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Slate\SProgressBar.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ProgressBar.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/InventoryListWidget.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/InventoryListWidget.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/ItemButtonWidget.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemButtonWidget.generated.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\InventoryListWidget.generated.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/ItemMenuWidget.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemMenuWidget.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/ScrollBox.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SScrollBox.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/PanelWidget.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/PanelSlot.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelSlot.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelWidget.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ScrollBox.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetLayoutLibrary.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetLayoutLibrary.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/InventoryWidget.cpp
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/DragableWidget.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/DragableWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\DragableWidget.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/DragShadowWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\DragShadowWidget.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/WidgetDragDropOper.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Blueprint/DragDropOperation.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DragDropOperation.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\WidgetDragDropOper.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Blueprint/SlateBlueprintLibrary.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateBlueprintLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetBlueprintLibrary.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\Slate/SGameLayerManager.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/SCanvas.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintLibrary.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/DragItemButtonWidget.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/DragItemButtonWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\DragItemButtonWidget.generated.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/ItemInformationWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemInformationWidget.generated.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/PlayerInformationWidget.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\PlayerInformationWidget.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/Button.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/ContentWidget.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ContentWidget.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Button.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/WidgetSwitcher.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SWidgetSwitcher.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetSwitcher.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ItemButtonWidget.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/ToolTipWidget.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ToolTipWidget.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/TextBlock.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/TextWidgetTypes.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\TextWidgetTypes.generated.h
@@ -289,6 +273,52 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\Slate/Sl
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SlateTextureAtlasInterface.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/StreamableManager.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Image.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/DragShadowWidget.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/SizeBox.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/ContentWidget.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/PanelWidget.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/PanelSlot.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelSlot.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelWidget.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ContentWidget.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SizeBox.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentButtonWidget.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/EquipmentButtonWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\EquipmentButtonWidget.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentItemListWidget.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/EquipmentItemListWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/InventoryListWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/ItemButtonWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemButtonWidget.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\InventoryListWidget.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\EquipmentItemListWidget.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentWidget.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/EquipmentWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\EquipmentWidget.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/HeadOnHealthBarWidget.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/ProgressBar.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Notifications/SProgressBar.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Slate\SProgressBar.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ProgressBar.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/InventoryListWidget.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/ItemMenuWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemMenuWidget.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/ScrollBox.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SScrollBox.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ScrollBox.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/Button.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Button.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetLayoutLibrary.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetLayoutLibrary.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/InventoryWidget.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/PlayerInformationWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\PlayerInformationWidget.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/WidgetSwitcher.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SWidgetSwitcher.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetSwitcher.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ItemButtonWidget.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/ToolTipWidget.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ToolTipWidget.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ItemInformationWidget.cpp
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ItemMenuWidget.cpp
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/MainWidget.cpp
@@ -297,5 +327,6 @@ C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Buil
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/PlayerInformationWidget.cpp
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ShowDamageWidget.cpp
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ToolTipWidget.cpp
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/WidgetDragDropOper.cpp
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/SecondProject.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\SecondProject.h

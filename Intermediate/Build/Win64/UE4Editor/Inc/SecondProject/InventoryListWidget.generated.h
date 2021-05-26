@@ -14,8 +14,32 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SECONDPROJECT_InventoryListWidget_generated_h
 
 #define UnrealProject_Source_SecondProject_Public_Widget_InventoryListWidget_h_17_SPARSE_DATA
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryListWidget_h_17_RPC_WRAPPERS
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryListWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define UnrealProject_Source_SecondProject_Public_Widget_InventoryListWidget_h_17_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnClickedButtonConsume); \
+	DECLARE_FUNCTION(execOnClickedButtonBoots); \
+	DECLARE_FUNCTION(execOnClickedButtonLegs); \
+	DECLARE_FUNCTION(execOnClickedButtonGloves); \
+	DECLARE_FUNCTION(execOnClickedButtonChest); \
+	DECLARE_FUNCTION(execOnClickedButtonHelmet); \
+	DECLARE_FUNCTION(execOnClickedButtonShield); \
+	DECLARE_FUNCTION(execOnClickedButtonWeapon); \
+	DECLARE_FUNCTION(execOnClickedButtonAll);
+
+
+#define UnrealProject_Source_SecondProject_Public_Widget_InventoryListWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnClickedButtonConsume); \
+	DECLARE_FUNCTION(execOnClickedButtonBoots); \
+	DECLARE_FUNCTION(execOnClickedButtonLegs); \
+	DECLARE_FUNCTION(execOnClickedButtonGloves); \
+	DECLARE_FUNCTION(execOnClickedButtonChest); \
+	DECLARE_FUNCTION(execOnClickedButtonHelmet); \
+	DECLARE_FUNCTION(execOnClickedButtonShield); \
+	DECLARE_FUNCTION(execOnClickedButtonWeapon); \
+	DECLARE_FUNCTION(execOnClickedButtonAll);
+
+
 #define UnrealProject_Source_SecondProject_Public_Widget_InventoryListWidget_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUInventoryListWidget(); \
