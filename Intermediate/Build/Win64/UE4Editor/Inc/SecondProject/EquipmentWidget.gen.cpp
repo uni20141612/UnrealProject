@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentWidget() {}
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UEquipmentWidget();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
 	UPackage* Z_Construct_UPackage__Script_SecondProject();
-	SECONDPROJECT_API UClass* Z_Construct_UClass_UInventoryListWidget_NoRegister();
+	SECONDPROJECT_API UClass* Z_Construct_UClass_UEquipmentItemListWidget_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UEquipmentButtonWidget_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UHorizontalBox_NoRegister();
 // End Cross Module References
@@ -35,9 +35,9 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentWidget() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UMG_InventoryList_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UMG_EquipmentItemList_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_UMG_InventoryList;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_UMG_EquipmentItemList;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UMG_EquipmentButton_Helmet_MetaData[];
 #endif
@@ -86,12 +86,12 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentWidget() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_InventoryList_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentItemList_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Widget/EquipmentWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_InventoryList = { "UMG_InventoryList", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipmentWidget, UMG_InventoryList), Z_Construct_UClass_UInventoryListWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_InventoryList_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_InventoryList_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentItemList = { "UMG_EquipmentItemList", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipmentWidget, UMG_EquipmentItemList), Z_Construct_UClass_UEquipmentItemListWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentItemList_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentItemList_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentButton_Helmet_MetaData[] = {
 		{ "EditInline", "true" },
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentWidget() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_HorizontalBox_Quick = { "HorizontalBox_Quick", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipmentWidget, HorizontalBox_Quick), Z_Construct_UClass_UHorizontalBox_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_HorizontalBox_Quick_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_HorizontalBox_Quick_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEquipmentWidget_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_InventoryList,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentItemList,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentButton_Helmet,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentButton_Weapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentWidget_Statics::NewProp_UMG_EquipmentButton_Chest,
@@ -186,7 +186,7 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEquipmentWidget, 3515563943);
+	IMPLEMENT_CLASS(UEquipmentWidget, 1258271051);
 	template<> SECONDPROJECT_API UClass* StaticClass<UEquipmentWidget>()
 	{
 		return UEquipmentWidget::StaticClass();

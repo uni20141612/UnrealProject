@@ -61,7 +61,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UEquipmentWidget); \
 
 
 #define UnrealProject_Source_SecondProject_Public_Widget_EquipmentWidget_h_16_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__UMG_InventoryList() { return STRUCT_OFFSET(UEquipmentWidget, UMG_InventoryList); } \
+	FORCEINLINE static uint32 __PPO__UMG_EquipmentItemList() { return STRUCT_OFFSET(UEquipmentWidget, UMG_EquipmentItemList); } \
 	FORCEINLINE static uint32 __PPO__UMG_EquipmentButton_Helmet() { return STRUCT_OFFSET(UEquipmentWidget, UMG_EquipmentButton_Helmet); } \
 	FORCEINLINE static uint32 __PPO__UMG_EquipmentButton_Weapon() { return STRUCT_OFFSET(UEquipmentWidget, UMG_EquipmentButton_Weapon); } \
 	FORCEINLINE static uint32 __PPO__UMG_EquipmentButton_Chest() { return STRUCT_OFFSET(UEquipmentWidget, UMG_EquipmentButton_Chest); } \

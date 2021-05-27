@@ -43,4 +43,7 @@ protected:
 		class UItemInformationWidget* UMG_ItemInformation;
 	UPROPERTY()
 		class UPlayerInformationWidget* UMG_PlayerInformation;
+
+	UPROPERTY()
+		class UEquipmentWidget* UMG_Equipment;
 };

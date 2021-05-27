@@ -25,6 +25,7 @@ enum class EEquipmentType : uint8
 	Chest,
 	Legs,
 	Boots,
+	None,
 };
 
 UENUM(BlueprintType)

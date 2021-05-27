@@ -194,8 +194,7 @@ void UInventoryListWidget::OnClickedButtonShield()
 				}
 			}
 		}
-	}
-	
+	}	
 }
 
 void UInventoryListWidget::OnClickedButtonHelmet()
@@ -226,8 +225,7 @@ void UInventoryListWidget::OnClickedButtonHelmet()
 				}
 			}
 		}
-	}
-	
+	}	
 }
 
 void UInventoryListWidget::OnClickedButtonChest()
@@ -258,8 +256,7 @@ void UInventoryListWidget::OnClickedButtonChest()
 				}
 			}
 		}
-	}
-	
+	}	
 }
 
 void UInventoryListWidget::OnClickedButtonGloves()
@@ -290,8 +287,7 @@ void UInventoryListWidget::OnClickedButtonGloves()
 				}
 			}
 		}
-	}
-	
+	}	
 }
 
 void UInventoryListWidget::OnClickedButtonLegs()
@@ -322,8 +318,7 @@ void UInventoryListWidget::OnClickedButtonLegs()
 				}
 			}
 		}
-	}
-	
+	}	
 }
 
 void UInventoryListWidget::OnClickedButtonBoots()
@@ -354,8 +349,7 @@ void UInventoryListWidget::OnClickedButtonBoots()
 				}
 			}
 		}
-	}
-	
+	}	
 }
 
 void UInventoryListWidget::OnClickedButtonConsume()
@@ -386,6 +380,5 @@ void UInventoryListWidget::OnClickedButtonConsume()
 				}
 			}
 		}
-	}
-	
+	}	
 }

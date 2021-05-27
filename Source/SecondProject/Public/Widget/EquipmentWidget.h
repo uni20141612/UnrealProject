@@ -14,10 +14,13 @@ UCLASS()
 class SECONDPROJECT_API UEquipmentWidget : public UUserWidget
 {
 	GENERATED_BODY()
+public:
+	void Init();
+	virtual void NativeConstruct() override;
 
 protected:
 	UPROPERTY()
-		class UInventoryListWidget* UMG_InventoryList;
+		class UEquipmentItemListWidget* UMG_EquipmentItemList;
 	UPROPERTY()
 		class UEquipmentButtonWidget* UMG_EquipmentButton_Helmet;
 	UPROPERTY()
@@ -35,5 +38,7 @@ protected:
 
 	UPROPERTY()
 		class UHorizontalBox* HorizontalBox_Quick;
+
+	TArray<class UEquipmentButtonWidget*> QuickButtons;
 	
 };

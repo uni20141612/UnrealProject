@@ -49,7 +49,6 @@ protected:
 protected:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UItemButtonWidget> itemButtonWidgetClass;
-
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UItemMenuWidget> itemMenuWidgetClass;
 	UPROPERTY()

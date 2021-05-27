@@ -25,6 +25,9 @@ public:
 
 	const FItemInformation* GetItemInfo() { return info; }
 	const FEquipmentInformation* GetEquipmentInfo() { return (FEquipmentInformation*)info; }
+	const bool IsEquipment() { return info->item_Type == EItemType::Equipment; }
+	//GetEquipmentType 사용 전, 반드시 isEquipment가 참인지 확인해야함
+	const EEquipmentType GetEquipmentType() { auto equip = (FEquipmentInformation*)info;  if (equip != nullptr) { return equip->equipmentType; }  return EEquipmentType::None; }
 };
 
 USTRUCT(BlueprintType)
@@ -93,6 +96,8 @@ public:
 	const FStoredItem* GetItem(const FName& itemCode);
 	const FItemInformation* GetItemInfo(const FName& itemCode);
 	const FEquippedItem& GetEquippedItem() { return equippedItem; }
+	const EEquipmentType GetEquipmentType(const FName& itemCode);
+	const FEquipmentInformation* GetEquipmentInfo(const FName& itemCode);
 
 	const TMap<FName, FStoredItem*>& GetInventory() { return inventory; }
 

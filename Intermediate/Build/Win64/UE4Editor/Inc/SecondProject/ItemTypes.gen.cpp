@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 		return EEquipmentType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EEquipmentType(EEquipmentType_StaticEnum, TEXT("/Script/SecondProject"), TEXT("EEquipmentType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_SecondProject_EEquipmentType_Hash() { return 694618137U; }
+	uint32 Get_Z_Construct_UEnum_SecondProject_EEquipmentType_Hash() { return 3520246886U; }
 	UEnum* Z_Construct_UEnum_SecondProject_EEquipmentType()
 	{
 #if WITH_HOT_RELOAD
@@ -119,6 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 				{ "EEquipmentType::Chest", (int64)EEquipmentType::Chest },
 				{ "EEquipmentType::Legs", (int64)EEquipmentType::Legs },
 				{ "EEquipmentType::Boots", (int64)EEquipmentType::Boots },
+				{ "EEquipmentType::None", (int64)EEquipmentType::None },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
@@ -129,6 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeItemTypes() {}
 				{ "Helmet.Name", "EEquipmentType::Helmet" },
 				{ "Legs.Name", "EEquipmentType::Legs" },
 				{ "ModuleRelativePath", "Public/Item/ItemTypes.h" },
+				{ "None.Name", "EEquipmentType::None" },
 				{ "Shield.Name", "EEquipmentType::Shield" },
 				{ "Weapon.Name", "EEquipmentType::Weapon" },
 			};

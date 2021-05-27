@@ -79,7 +79,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInventoryWidget); \
 	FORCEINLINE static uint32 __PPO__WidgetSwitcher_Switcher() { return STRUCT_OFFSET(UInventoryWidget, WidgetSwitcher_Switcher); } \
 	FORCEINLINE static uint32 __PPO__UMG_InventoryList() { return STRUCT_OFFSET(UInventoryWidget, UMG_InventoryList); } \
 	FORCEINLINE static uint32 __PPO__UMG_ItemInformation() { return STRUCT_OFFSET(UInventoryWidget, UMG_ItemInformation); } \
-	FORCEINLINE static uint32 __PPO__UMG_PlayerInformation() { return STRUCT_OFFSET(UInventoryWidget, UMG_PlayerInformation); }
+	FORCEINLINE static uint32 __PPO__UMG_PlayerInformation() { return STRUCT_OFFSET(UInventoryWidget, UMG_PlayerInformation); } \
+	FORCEINLINE static uint32 __PPO__UMG_Equipment() { return STRUCT_OFFSET(UInventoryWidget, UMG_Equipment); }
 
 
 #define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_13_PROLOG

@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentItemListWidget() {}
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UEquipmentItemListWidget();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UInventoryListWidget();
 	UPackage* Z_Construct_UPackage__Script_SecondProject();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	SECONDPROJECT_API UClass* Z_Construct_UClass_UDragItemButtonWidget_NoRegister();
 // End Cross Module References
 	void UEquipmentItemListWidget::StaticRegisterNativesUEquipmentItemListWidget()
 	{
@@ -31,6 +33,11 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentItemListWidget() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_dragItemButtonWidgetClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_dragItemButtonWidgetClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +52,16 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentItemListWidget() {}
 		{ "ModuleRelativePath", "Public/Widget/EquipmentItemListWidget.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEquipmentItemListWidget_Statics::NewProp_dragItemButtonWidgetClass_MetaData[] = {
+		{ "Category", "EquipmentItemListWidget" },
+		{ "ModuleRelativePath", "Public/Widget/EquipmentItemListWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UEquipmentItemListWidget_Statics::NewProp_dragItemButtonWidgetClass = { "dragItemButtonWidgetClass", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipmentItemListWidget, dragItemButtonWidgetClass), Z_Construct_UClass_UDragItemButtonWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UEquipmentItemListWidget_Statics::NewProp_dragItemButtonWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentItemListWidget_Statics::NewProp_dragItemButtonWidgetClass_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEquipmentItemListWidget_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentItemListWidget_Statics::NewProp_dragItemButtonWidgetClass,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEquipmentItemListWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEquipmentItemListWidget>::IsAbstract,
 	};
@@ -54,11 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentItemListWidget() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_UEquipmentItemListWidget_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentItemListWidget_Statics::PropPointers),
 		0,
 		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UEquipmentItemListWidget_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentItemListWidget_Statics::Class_MetaDataParams))
@@ -72,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentItemListWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEquipmentItemListWidget, 4227249555);
+	IMPLEMENT_CLASS(UEquipmentItemListWidget, 752505289);
 	template<> SECONDPROJECT_API UClass* StaticClass<UEquipmentItemListWidget>()
 	{
 		return UEquipmentItemListWidget::StaticClass();

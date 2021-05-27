@@ -122,6 +122,24 @@ const FItemInformation* UInventoryComponent::GetItemInfo(const FName& itemCode)
 	return nullptr;
 }
 
+const EEquipmentType UInventoryComponent::GetEquipmentType(const FName& itemCode)
+{
+	if (inventory.Contains(itemCode))
+	{
+		return inventory[itemCode]->GetEquipmentType();
+	}
+	return EEquipmentType::None;
+}
+
+const FEquipmentInformation* UInventoryComponent::GetEquipmentInfo(const FName& itemCode)
+{
+	if (inventory.Contains(itemCode))
+	{
+		return inventory[itemCode]->GetEquipmentInfo();
+	}
+	return nullptr;
+}
+
 // Called when the game starts
 void UInventoryComponent::BeginPlay()
 {

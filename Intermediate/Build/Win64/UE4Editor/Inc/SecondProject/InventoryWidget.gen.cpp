@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UInventoryListWidget_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UItemInformationWidget_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UPlayerInformationWidget_NoRegister();
+	SECONDPROJECT_API UClass* Z_Construct_UClass_UEquipmentWidget_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(UInventoryWidget::execOnClickedButtonEquipment)
 	{
@@ -170,6 +171,10 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UMG_PlayerInformation_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_UMG_PlayerInformation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UMG_Equipment_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_UMG_Equipment;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -232,6 +237,13 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_PlayerInformation = { "UMG_PlayerInformation", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryWidget, UMG_PlayerInformation), Z_Construct_UClass_UPlayerInformationWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_PlayerInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_PlayerInformation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_Equipment_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/InventoryWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_Equipment = { "UMG_Equipment", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventoryWidget, UMG_Equipment), Z_Construct_UClass_UEquipmentWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_Equipment_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_Equipment_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UInventoryWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryWidget_Statics::NewProp_Button_Inventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryWidget_Statics::NewProp_Button_Equipment,
@@ -239,6 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_InventoryList,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_ItemInformation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_PlayerInformation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryWidget_Statics::NewProp_UMG_Equipment,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UInventoryWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UInventoryWidget>::IsAbstract,
@@ -267,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeInventoryWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInventoryWidget, 2608751130);
+	IMPLEMENT_CLASS(UInventoryWidget, 1793472895);
 	template<> SECONDPROJECT_API UClass* StaticClass<UInventoryWidget>()
 	{
 		return UInventoryWidget::StaticClass();

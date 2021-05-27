@@ -4,6 +4,7 @@
 #include "Widget/InventoryListWidget.h"
 #include "Widget/ItemInformationWidget.h"
 #include "Widget/PlayerInformationWidget.h"
+#include "Widget/EquipmentWidget.h"
 #include "Character/Player/PlayerCharacter.h"
 
 #include "Components/Button.h"
@@ -45,6 +46,7 @@ void UInventoryWidget::OnClickedButtonInventory()
 void UInventoryWidget::OnClickedButtonEquipment()
 {
 	WidgetSwitcher_Switcher->SetActiveWidgetIndex(1);
+	UMG_Equipment->Init();
 }
 
 void UInventoryWidget::UpdateItemListButton(const FName& itemCode, const int32& itemCount)

@@ -18,6 +18,8 @@ class SECONDPROJECT_API UDragItemButtonWidget : public UDragableWidget
 public:
 	void SetInformation(const FItemInformation* info, const int32& item_Count);
 	virtual void NativeConstruct() override;
+
+	const FName& GetItemCode() { return item_Code; }
 	
 public:
 	UPROPERTY()
