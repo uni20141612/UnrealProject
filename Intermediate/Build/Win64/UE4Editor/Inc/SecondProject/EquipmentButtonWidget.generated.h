@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesUEquipmentButtonWidget(); \
 	friend struct Z_Construct_UClass_UEquipmentButtonWidget_Statics; \
 public: \
-	DECLARE_CLASS(UEquipmentButtonWidget, UUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SecondProject"), NO_API) \
+	DECLARE_CLASS(UEquipmentButtonWidget, UDragableWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SecondProject"), NO_API) \
 	DECLARE_SERIALIZER(UEquipmentButtonWidget)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesUEquipmentButtonWidget(); \
 	friend struct Z_Construct_UClass_UEquipmentButtonWidget_Statics; \
 public: \
-	DECLARE_CLASS(UEquipmentButtonWidget, UUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SecondProject"), NO_API) \
+	DECLARE_CLASS(UEquipmentButtonWidget, UDragableWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SecondProject"), NO_API) \
 	DECLARE_SERIALIZER(UEquipmentButtonWidget)
 
 
@@ -63,7 +63,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UEquipmentButtonWidget); \
 #define UnrealProject_Source_SecondProject_Public_Widget_EquipmentButtonWidget_h_30_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Image_Item() { return STRUCT_OFFSET(UEquipmentButtonWidget, Image_Item); } \
 	FORCEINLINE static uint32 __PPO__TextBlock_ItemCount() { return STRUCT_OFFSET(UEquipmentButtonWidget, TextBlock_ItemCount); } \
-	FORCEINLINE static uint32 __PPO__buttonType() { return STRUCT_OFFSET(UEquipmentButtonWidget, buttonType); }
+	FORCEINLINE static uint32 __PPO__quickListBox() { return STRUCT_OFFSET(UEquipmentButtonWidget, quickListBox); } \
+	FORCEINLINE static uint32 __PPO__buttonType() { return STRUCT_OFFSET(UEquipmentButtonWidget, buttonType); } \
+	FORCEINLINE static uint32 __PPO__emptyTexture() { return STRUCT_OFFSET(UEquipmentButtonWidget, emptyTexture); }
 
 
 #define UnrealProject_Source_SecondProject_Public_Widget_EquipmentButtonWidget_h_27_PROLOG

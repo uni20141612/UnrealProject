@@ -4,8 +4,11 @@
 #include "Widget/EquipmentItemListWidget.h"
 #include "Widget/EquipmentButtonWidget.h"
 #include "Character/Player/PlayerCharacter.h"
+#include "Character/Player/Component/InventoryComponent.h"
+#include "Character/Component/StatusComponent.h"
 
 #include "Components/HorizontalBox.h"
+#include "Components/TextBlock.h"
 
 void UEquipmentWidget::Init()
 {
@@ -23,7 +26,24 @@ void UEquipmentWidget::NativeConstruct()
 		if (button != nullptr)
 		{
 			button->SetEquipmentButtonType(EEquipmentButtonType::Consume);
+			button->SetHorizontalBox_Quick(HorizontalBox_Quick);
 			QuickButtons.Emplace(button);
 		}
+	}
+
+	auto player = Cast<APlayerCharacter>(GetOwningPlayerPawn());
+	if (player != nullptr)
+	{
+		player->GetInventoryComponent()->EquipEvent.AddUniqueDynamic(this, &UEquipmentWidget::SetPlayerInformation);
+		player->GetInventoryComponent()->UnEquipEvent.AddUniqueDynamic(this, &UEquipmentWidget::SetPlayerInformation);
+	}
+}
+
+void UEquipmentWidget::SetPlayerInformation(UStatusComponent* statComp)
+{
+	if (statComp != nullptr)
+	{
+		TextBlock_Dam->SetText(FText::AsNumber((statComp->GetDam())));
+		TextBlock_Def->SetText(FText::AsNumber((statComp->GetDef())));
 	}
 }

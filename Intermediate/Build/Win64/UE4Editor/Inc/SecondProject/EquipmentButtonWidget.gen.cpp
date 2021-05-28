@@ -17,9 +17,11 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentButtonWidget() {}
 	UPackage* Z_Construct_UPackage__Script_SecondProject();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UEquipmentButtonWidget_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UEquipmentButtonWidget();
-	UMG_API UClass* Z_Construct_UClass_UUserWidget();
+	SECONDPROJECT_API UClass* Z_Construct_UClass_UDragableWidget();
 	UMG_API UClass* Z_Construct_UClass_UImage_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UHorizontalBox_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 // End Cross Module References
 	static UEnum* EEquipmentButtonType_StaticEnum()
 	{
@@ -117,17 +119,25 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentButtonWidget() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TextBlock_ItemCount_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TextBlock_ItemCount;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_quickListBox_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_quickListBox;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_buttonType_Underlying;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_buttonType_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_buttonType;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_emptyTexture_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_emptyTexture;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_UEquipmentButtonWidget_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UUserWidget,
+		(UObject* (*)())Z_Construct_UClass_UDragableWidget,
 		(UObject* (*)())Z_Construct_UPackage__Script_SecondProject,
 	};
 #if WITH_METADATA
@@ -150,6 +160,13 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentButtonWidget() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_TextBlock_ItemCount = { "TextBlock_ItemCount", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipmentButtonWidget, TextBlock_ItemCount), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_TextBlock_ItemCount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_TextBlock_ItemCount_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_quickListBox_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/EquipmentButtonWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_quickListBox = { "quickListBox", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipmentButtonWidget, quickListBox), Z_Construct_UClass_UHorizontalBox_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_quickListBox_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_quickListBox_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_buttonType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_buttonType_MetaData[] = {
@@ -158,11 +175,20 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentButtonWidget() {}
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_buttonType = { "buttonType", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipmentButtonWidget, buttonType), Z_Construct_UEnum_SecondProject_EEquipmentButtonType, METADATA_PARAMS(Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_buttonType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_buttonType_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_emptyTexture_MetaData[] = {
+		{ "Category", "EquipmentButtonWidget" },
+		{ "ModuleRelativePath", "Public/Widget/EquipmentButtonWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_emptyTexture = { "emptyTexture", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEquipmentButtonWidget, emptyTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_emptyTexture_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_emptyTexture_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEquipmentButtonWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_Image_Item,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_TextBlock_ItemCount,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_quickListBox,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_buttonType_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_buttonType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquipmentButtonWidget_Statics::NewProp_emptyTexture,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEquipmentButtonWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEquipmentButtonWidget>::IsAbstract,
@@ -191,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeEquipmentButtonWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEquipmentButtonWidget, 2427044290);
+	IMPLEMENT_CLASS(UEquipmentButtonWidget, 3410465446);
 	template<> SECONDPROJECT_API UClass* StaticClass<UEquipmentButtonWidget>()
 	{
 		return UEquipmentButtonWidget::StaticClass();

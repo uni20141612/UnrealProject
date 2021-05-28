@@ -285,6 +285,8 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentButtonWidget.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/EquipmentButtonWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\EquipmentButtonWidget.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/HorizontalBox.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\HorizontalBox.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentItemListWidget.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/EquipmentItemListWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/InventoryListWidget.h
@@ -298,8 +300,6 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentWidget.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Widget/EquipmentWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\EquipmentWidget.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/HorizontalBox.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\HorizontalBox.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/HeadOnHealthBarWidget.cpp
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/ProgressBar.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Notifications/SProgressBar.h

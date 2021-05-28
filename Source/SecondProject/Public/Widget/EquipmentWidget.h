@@ -16,7 +16,9 @@ class SECONDPROJECT_API UEquipmentWidget : public UUserWidget
 	GENERATED_BODY()
 public:
 	void Init();
-	virtual void NativeConstruct() override;
+	virtual void NativeConstruct() override; 
+	UFUNCTION()
+		void SetPlayerInformation(class UStatusComponent* statComp);
 
 protected:
 	UPROPERTY()
@@ -35,6 +37,11 @@ protected:
 		class UEquipmentButtonWidget* UMG_EquipmentButton_Legs;
 	UPROPERTY()
 		class UEquipmentButtonWidget* UMG_EquipmentButton_Boots;
+
+	UPROPERTY()
+		class UTextBlock* TextBlock_Dam;
+	UPROPERTY()
+		class UTextBlock* TextBlock_Def;
 
 	UPROPERTY()
 		class UHorizontalBox* HorizontalBox_Quick;

@@ -8,16 +8,37 @@
 
 #include "Components/Image.h"
 #include "Components/TextBlock.h"
+#include "Components/HorizontalBox.h"
 
 void UEquipmentButtonWidget::Init()
 {
-
+	item_Code = NAME_None;
+	TextBlock_ItemCount->SetText(FText::GetEmpty());
+	if (emptyTexture != nullptr)
+	{
+		Image_Item->SetBrushFromTexture(emptyTexture);
+	}
 }
 
 void UEquipmentButtonWidget::SetItemInformation(const FItemInformation* info, const int32& itemCount)
 {
 	if (buttonType == EEquipmentButtonType::Consume)
 	{
+		for (auto i = 0; i < quickListBox->GetChildrenCount(); ++i)
+		{
+			auto button = Cast<UEquipmentButtonWidget>(quickListBox->GetChildAt(i));
+			if (button != nullptr)
+			{
+				if (button != this)
+				{
+					if (button->item_Code.IsEqual(item_Code))
+					{
+						button->Init();
+						break;
+					}
+				}
+			}
+		}
 		Image_Item->SetBrushFromTexture(info->item_Image);
 		TextBlock_ItemCount->SetText(FText::AsNumber(itemCount));
 	}
@@ -28,28 +49,30 @@ void UEquipmentButtonWidget::SetItemInformation(const FEquipmentInformation* inf
 	if (buttonType != EEquipmentButtonType::Consume)
 	{
 		auto equipType = info->equipmentType;
+		auto player = Cast<APlayerCharacter>(GetOwningPlayerPawn());
 		switch (buttonType)
 		{
 		case EEquipmentButtonType::Weapon:
-			if(equipType == EEquipmentType::Weapon){ Image_Item->SetBrushFromTexture(info->item_Image); }
+			if(equipType == EEquipmentType::Weapon){ Image_Item->SetBrushFromTexture(info->item_Image); player->GetInventoryComponent()->UseItem(item_Code, player);}
 			break;
 		case EEquipmentButtonType::Shield:
-			if (equipType == EEquipmentType::Shield) { Image_Item->SetBrushFromTexture(info->item_Image); }
+			if (equipType == EEquipmentType::Shield) { Image_Item->SetBrushFromTexture(info->item_Image); player->GetInventoryComponent()->UseItem(item_Code, player); }
 			break;
 		case EEquipmentButtonType::Helmet:
-			if (equipType == EEquipmentType::Helmet) { Image_Item->SetBrushFromTexture(info->item_Image); }
+			if (equipType == EEquipmentType::Helmet) { Image_Item->SetBrushFromTexture(info->item_Image); player->GetInventoryComponent()->UseItem(item_Code, player); }
 			break;
 		case EEquipmentButtonType::Gloves:
-			if (equipType == EEquipmentType::Gloves) { Image_Item->SetBrushFromTexture(info->item_Image); }
+			if (equipType == EEquipmentType::Gloves) { Image_Item->SetBrushFromTexture(info->item_Image);  player->GetInventoryComponent()->UseItem(item_Code, player);
+			}
 			break;
 		case EEquipmentButtonType::Chest:
-			if (equipType == EEquipmentType::Chest) { Image_Item->SetBrushFromTexture(info->item_Image); }
+			if (equipType == EEquipmentType::Chest) { Image_Item->SetBrushFromTexture(info->item_Image); player->GetInventoryComponent()->UseItem(item_Code, player); }
 			break;
 		case EEquipmentButtonType::Legs:
-			if (equipType == EEquipmentType::Legs) { Image_Item->SetBrushFromTexture(info->item_Image); }
+			if (equipType == EEquipmentType::Legs) { Image_Item->SetBrushFromTexture(info->item_Image); player->GetInventoryComponent()->UseItem(item_Code, player);	}
 			break;
 		case EEquipmentButtonType::Boots:
-			if (equipType == EEquipmentType::Boots) { Image_Item->SetBrushFromTexture(info->item_Image); }
+			if (equipType == EEquipmentType::Boots) { Image_Item->SetBrushFromTexture(info->item_Image); player->GetInventoryComponent()->UseItem(item_Code, player); }
 			break;
 		default:
 			break;
@@ -68,30 +91,60 @@ bool UEquipmentButtonWidget::NativeOnDrop(const FGeometry& InGeometry, const FDr
 		if (oper != nullptr)
 		{
 			auto button = Cast<UDragItemButtonWidget>(oper->widgetReference);
-			if (button != nullptr)
+			if (button != nullptr && button->item_Code.IsEqual(NAME_None) == false)
 			{
 				item_Code = button->GetItemCode();
 
 				auto invenComp = Cast<APlayerCharacter>(GetOwningPlayerPawn())->GetInventoryComponent();
-				auto info = invenComp->GetItemInfo(item_Code);
-				auto item = invenComp->GetItem(item_Code);
-
-				if (item != nullptr)
+				auto info = invenComp->GetItem(item_Code);
+				if (info != nullptr)
 				{
-					if (invenComp->GetEquipmentType(item_Code) == EEquipmentType::None)
+					auto item = *info;
+
+					if (item.GetEquipmentType() == EEquipmentType::None)
 					{
-						SetItemInformation(info, item->item_Count);
+						SetItemInformation(item.GetItemInfo(), item.item_Count);
 					}
 					else
 					{
-						SetItemInformation(invenComp->GetEquipmentInfo(item_Code));
+						SetItemInformation(item.GetEquipmentInfo());
 					}
-
 					return true;
 				}
+			}
+
+			auto quickButton = Cast<UEquipmentButtonWidget>(oper->widgetReference);
+			if (quickButton != nullptr && quickButton->item_Code.IsEqual(NAME_None) == false)
+			{
+				item_Code = quickButton->item_Code;
+
+				auto invenComp = Cast<APlayerCharacter>(GetOwningPlayerPawn())->GetInventoryComponent();
+				auto info = invenComp->GetItem(item_Code);
+				if (info != nullptr)
+				{
+					auto item = *info;
+					SetItemInformation(item.GetItemInfo(), item.item_Count);
+				}
+
+				return true;
 			}
 		}
 	}
 
 	return false;
+}
+
+FReply UEquipmentButtonWidget::NativeOnMouseButtonDown(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent)
+{
+	if (InMouseEvent.IsMouseButtonDown(FKey("RightMouseButton")))
+	{
+		if (item_Code.IsEqual(NAME_None) == false)
+		{
+			auto player = Cast<APlayerCharacter>(GetOwningPlayerPawn());
+			player->GetInventoryComponent()->UseItem(item_Code, player);
+			Init();
+		}
+	}
+	
+	return Super::NativeOnMouseButtonDown(InGeometry, InMouseEvent);
 }

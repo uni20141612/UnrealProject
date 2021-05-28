@@ -10,6 +10,12 @@ void AChest::UseItem(AActor* target)
 {
 	Super::UseItem(target);
 
+	if (bUnEquipSameEquipment)
+	{
+		Destroy();
+		return;
+	}
+
 	if (target != nullptr)
 	{
 		auto player = Cast<APlayerCharacter>(target);

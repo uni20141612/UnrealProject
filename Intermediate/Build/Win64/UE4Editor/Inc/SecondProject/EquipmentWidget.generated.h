@@ -8,14 +8,23 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UStatusComponent;
 #ifdef SECONDPROJECT_EquipmentWidget_generated_h
 #error "EquipmentWidget.generated.h already included, missing '#pragma once' in EquipmentWidget.h"
 #endif
 #define SECONDPROJECT_EquipmentWidget_generated_h
 
 #define UnrealProject_Source_SecondProject_Public_Widget_EquipmentWidget_h_16_SPARSE_DATA
-#define UnrealProject_Source_SecondProject_Public_Widget_EquipmentWidget_h_16_RPC_WRAPPERS
-#define UnrealProject_Source_SecondProject_Public_Widget_EquipmentWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define UnrealProject_Source_SecondProject_Public_Widget_EquipmentWidget_h_16_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSetPlayerInformation);
+
+
+#define UnrealProject_Source_SecondProject_Public_Widget_EquipmentWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetPlayerInformation);
+
+
 #define UnrealProject_Source_SecondProject_Public_Widget_EquipmentWidget_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUEquipmentWidget(); \
@@ -69,6 +78,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UEquipmentWidget); \
 	FORCEINLINE static uint32 __PPO__UMG_EquipmentButton_Gloves() { return STRUCT_OFFSET(UEquipmentWidget, UMG_EquipmentButton_Gloves); } \
 	FORCEINLINE static uint32 __PPO__UMG_EquipmentButton_Legs() { return STRUCT_OFFSET(UEquipmentWidget, UMG_EquipmentButton_Legs); } \
 	FORCEINLINE static uint32 __PPO__UMG_EquipmentButton_Boots() { return STRUCT_OFFSET(UEquipmentWidget, UMG_EquipmentButton_Boots); } \
+	FORCEINLINE static uint32 __PPO__TextBlock_Dam() { return STRUCT_OFFSET(UEquipmentWidget, TextBlock_Dam); } \
+	FORCEINLINE static uint32 __PPO__TextBlock_Def() { return STRUCT_OFFSET(UEquipmentWidget, TextBlock_Def); } \
 	FORCEINLINE static uint32 __PPO__HorizontalBox_Quick() { return STRUCT_OFFSET(UEquipmentWidget, HorizontalBox_Quick); }
 
 

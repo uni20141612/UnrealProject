@@ -121,7 +121,7 @@ const FItemInformation* UInventoryComponent::GetItemInfo(const FName& itemCode)
 	}
 	return nullptr;
 }
-
+/*
 const EEquipmentType UInventoryComponent::GetEquipmentType(const FName& itemCode)
 {
 	if (inventory.Contains(itemCode))
@@ -139,7 +139,7 @@ const FEquipmentInformation* UInventoryComponent::GetEquipmentInfo(const FName& 
 	}
 	return nullptr;
 }
-
+*/
 // Called when the game starts
 void UInventoryComponent::BeginPlay()
 {
