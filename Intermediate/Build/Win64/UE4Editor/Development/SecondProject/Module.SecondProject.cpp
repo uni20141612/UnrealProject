@@ -39,6 +39,7 @@
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ItemMenuWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/MainWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/PlayerInformationWidget.cpp"
+#include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/QuickSlotWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ShowDamageWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/ToolTipWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/WidgetDragDropOper.cpp"

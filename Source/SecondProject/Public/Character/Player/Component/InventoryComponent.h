@@ -70,6 +70,9 @@ public:
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FEquip, class UStatusComponent*, statComp);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUnEquip, class UStatusComponent*, statComp);
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUseQuick, const int32&, count);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAddQuick, class UTexture2D*, image, const int32&, count );
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class SECONDPROJECT_API UInventoryComponent : public UActorComponent
 {
@@ -83,6 +86,13 @@ public:
 	void UseItem(const FName& itemCode, AActor* target);
 	void DropItem(const FName& itemCode);
 	void RemoveItem(const FName& itemCode);
+	void AddQuick(const FName& itemCode, const int32& index);
+	void RemoveQuick(const FName& itemCode);
+
+	void QuickChangeRight();
+	void QuickChangeLeft();
+	void UseQuickItem();
+	bool existQuickItem();
 
 	void SetWeapon(FWeaponInformation* info) { equippedItem.SetWeapon(info); }
 	void SetShield(FEquipmentInformation* info) { equippedItem.SetShield(info); }
@@ -109,7 +119,13 @@ public:
 	FEquip EquipEvent;
 	FUnEquip UnEquipEvent;
 
+	FAddQuick AddQuickEvent;
+	FUseQuick UseQuickEvent;
+
 protected:
 	TMap<FName, FStoredItem*> inventory;		
 	FEquippedItem equippedItem;
+
+	TArray<FName> quickSlot;
+	int32 quickIndex = 0;
 };

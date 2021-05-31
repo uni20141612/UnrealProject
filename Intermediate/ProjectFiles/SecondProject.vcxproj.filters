@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\SecondProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{31EBFD75-DFA3-43E4-96E8-A10F2FB538BE}</UniqueIdentifier>
+      <UniqueIdentifier>{ECFAD940-3E2D-4732-8A22-93AC252D8518}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\SecondProject.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{D4FB8A1F-2294-48E4-B1DC-D01CE96C6414}</UniqueIdentifier>
+      <UniqueIdentifier>{0CFD845B-9757-4401-9EA4-65B8F0105978}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\SecondProject">
-      <UniqueIdentifier>{0E4DF86D-1E65-479E-AD2F-DDE4F9649774}</UniqueIdentifier>
+      <UniqueIdentifier>{039A6480-E0E0-4170-8F16-5193F9916C0C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\SecondProject\SecondProject.Build.cs">
       <Filter>Source\SecondProject</Filter>
@@ -44,10 +44,10 @@
       <Filter>Source\SecondProject</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Private">
-      <UniqueIdentifier>{D33BDE8A-47CA-497D-BD87-44133EAE9557}</UniqueIdentifier>
+      <UniqueIdentifier>{178ABB18-1F20-48A7-9EB9-BC56752948AA}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Private\Character">
-      <UniqueIdentifier>{4E6BA83E-3107-4520-804F-12DFE09C5ADE}</UniqueIdentifier>
+      <UniqueIdentifier>{D157D9BA-EEB8-4A4F-8E85-373F1228B14E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\BaseCharacter.cpp">
       <Filter>Source\SecondProject\Private\Character</Filter>
@@ -56,22 +56,22 @@
       <Filter>Source\SecondProject\Private\Character</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Animation">
-      <UniqueIdentifier>{9E42F325-9D55-4F9B-97F8-09789C43CC1C}</UniqueIdentifier>
+      <UniqueIdentifier>{CFB70F6C-9ADD-4335-9B62-93A8302579D8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Private\Character\Animation\Notify">
-      <UniqueIdentifier>{2A1B8884-43DD-481A-A100-64D34DE4E0E8}</UniqueIdentifier>
+      <UniqueIdentifier>{6DB4F77F-BD14-400D-AFE1-1C036C9ECADF}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Animation\Notify\FootStepAnimNotify.cpp">
       <Filter>Source\SecondProject\Private\Character\Animation\Notify</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Animation\NotifyState">
-      <UniqueIdentifier>{F77B6414-7697-4B69-933A-E205EA62BAEB}</UniqueIdentifier>
+      <UniqueIdentifier>{90A0F4F4-6E2C-47A0-B21D-347AD08555C6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Animation\NotifyState\CreateLinetraceNotifyState.cpp">
       <Filter>Source\SecondProject\Private\Character\Animation\NotifyState</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Component">
-      <UniqueIdentifier>{2A66B2C8-95F9-4DB1-818D-82B42CF0D1F6}</UniqueIdentifier>
+      <UniqueIdentifier>{7F626EF1-EAE5-4D6A-BA0B-DA01229C6028}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Component\LockOnComponent.cpp">
       <Filter>Source\SecondProject\Private\Character\Component</Filter>
@@ -80,28 +80,28 @@
       <Filter>Source\SecondProject\Private\Character\Component</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Equipment">
-      <UniqueIdentifier>{31DE20E4-DB1F-4012-BBCB-EA46502BA37A}</UniqueIdentifier>
+      <UniqueIdentifier>{24E2C163-F41F-49C8-B675-D1AD8C33D2F2}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Equipment\EquipmentActor.cpp">
       <Filter>Source\SecondProject\Private\Character\Equipment</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player">
-      <UniqueIdentifier>{12C17E55-F706-4E5A-9FEA-6626F8F5C0F0}</UniqueIdentifier>
+      <UniqueIdentifier>{CB734595-D9BE-4568-BA3A-A5CCF8E90C66}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\PlayerCharacter.cpp">
       <Filter>Source\SecondProject\Private\Character\Player</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player\Animation">
-      <UniqueIdentifier>{8728DE3E-3564-49F7-B9E6-10B08B4CA563}</UniqueIdentifier>
+      <UniqueIdentifier>{5E5F929F-5ACF-44D1-9297-31026AB1FD72}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Private\Character\Player\Animation\Notify">
-      <UniqueIdentifier>{CDBB3381-AE69-4AC6-B91D-C3BC4FDA202A}</UniqueIdentifier>
+      <UniqueIdentifier>{657FCA9F-4AFF-455E-9880-C9B57A562295}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Animation\Notify\EquipNotify.cpp">
       <Filter>Source\SecondProject\Private\Character\Player\Animation\Notify</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player\Animation\NotifyState">
-      <UniqueIdentifier>{E22DE7DB-592D-45A9-BE59-09BC6558C940}</UniqueIdentifier>
+      <UniqueIdentifier>{E161914F-1E29-4CD4-A70E-CD28FC51FF5B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Animation\NotifyState\AttackNotifyState.cpp">
       <Filter>Source\SecondProject\Private\Character\Player\Animation\NotifyState</Filter>
@@ -113,19 +113,19 @@
       <Filter>Source\SecondProject\Private\Character\Player\Animation\NotifyState</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player\Component">
-      <UniqueIdentifier>{9159289B-493C-4BFD-96A2-1A867B98F87A}</UniqueIdentifier>
+      <UniqueIdentifier>{7D170563-E5B2-46F8-AFAE-9DD2C3DAD1BE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Component\InventoryComponent.cpp">
       <Filter>Source\SecondProject\Private\Character\Player\Component</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player\Controller">
-      <UniqueIdentifier>{07C8739C-B74E-46BF-9FC4-C03D7E325EE9}</UniqueIdentifier>
+      <UniqueIdentifier>{4B7FC078-BFDB-4C9F-9CC1-B4F5D3957D90}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Controller\CustomController.cpp">
       <Filter>Source\SecondProject\Private\Character\Player\Controller</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Item">
-      <UniqueIdentifier>{844D92AA-F25B-4CA8-BBE5-D65BD53BE42D}</UniqueIdentifier>
+      <UniqueIdentifier>{67833AA2-BD50-4CF1-B5C0-2E3263284F3C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Item\Boots.cpp">
       <Filter>Source\SecondProject\Private\Item</Filter>
@@ -164,7 +164,7 @@
       <Filter>Source\SecondProject\Private\Item</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Widget">
-      <UniqueIdentifier>{0E713CF3-543D-4AF3-839C-5A2DD47AC151}</UniqueIdentifier>
+      <UniqueIdentifier>{174EFC1B-5650-4F50-ADED-95C574F90800}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Widget\DragableWidget.cpp">
       <Filter>Source\SecondProject\Private\Widget</Filter>
@@ -208,6 +208,9 @@
     <ClCompile Include="..\..\Source\SecondProject\Private\Widget\PlayerInformationWidget.cpp">
       <Filter>Source\SecondProject\Private\Widget</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\QuickSlotWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SecondProject\Private\Widget\ShowDamageWidget.cpp">
       <Filter>Source\SecondProject\Private\Widget</Filter>
     </ClCompile>
@@ -218,10 +221,10 @@
       <Filter>Source\SecondProject\Private\Widget</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Public">
-      <UniqueIdentifier>{084EAEA0-6510-49A5-90F0-A27975601B8E}</UniqueIdentifier>
+      <UniqueIdentifier>{57A74FCF-DEDF-4371-BCD2-469373391C49}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Public\Character">
-      <UniqueIdentifier>{2D66B78E-0A71-4F9A-80C5-4D711ACF1750}</UniqueIdentifier>
+      <UniqueIdentifier>{DE2050D0-E0B7-4C07-89E7-21155E0C16C9}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\BaseCharacter.h">
       <Filter>Source\SecondProject\Public\Character</Filter>
@@ -230,22 +233,22 @@
       <Filter>Source\SecondProject\Public\Character</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Animation">
-      <UniqueIdentifier>{EB7A27F4-F1D9-4AC6-A50F-6667745D4693}</UniqueIdentifier>
+      <UniqueIdentifier>{60F4D18D-3B73-480C-9010-B3B568A7E663}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Public\Character\Animation\Notify">
-      <UniqueIdentifier>{55AE4297-C67C-4515-9CEC-24B94DC96B5C}</UniqueIdentifier>
+      <UniqueIdentifier>{60097312-7FF2-4566-A15F-1CBEDF03FAD5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Animation\Notify\FootStepAnimNotify.h">
       <Filter>Source\SecondProject\Public\Character\Animation\Notify</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Animation\NotifyState">
-      <UniqueIdentifier>{E40A0913-4958-4998-B54D-A99889EA22B3}</UniqueIdentifier>
+      <UniqueIdentifier>{9FB721BA-164A-4474-A323-3972FA0EE552}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Animation\NotifyState\CreateLinetraceNotifyState.h">
       <Filter>Source\SecondProject\Public\Character\Animation\NotifyState</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Component">
-      <UniqueIdentifier>{CFB18934-0ABE-482C-A9F8-A7820F85E405}</UniqueIdentifier>
+      <UniqueIdentifier>{9D340187-5EA3-4D89-9854-B976A7A51D36}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Component\LockOnComponent.h">
       <Filter>Source\SecondProject\Public\Character\Component</Filter>
@@ -254,28 +257,28 @@
       <Filter>Source\SecondProject\Public\Character\Component</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Equipment">
-      <UniqueIdentifier>{39D63E89-9631-407A-AA13-D7A91BE1BABD}</UniqueIdentifier>
+      <UniqueIdentifier>{CCED0CE4-6FB1-46C5-A2F9-5F159B91A7E2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Equipment\EquipmentActor.h">
       <Filter>Source\SecondProject\Public\Character\Equipment</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player">
-      <UniqueIdentifier>{C48C2D48-9523-4443-B358-531E84D13D0F}</UniqueIdentifier>
+      <UniqueIdentifier>{510A1A75-DCCF-415E-BE62-5F0EA91F59C3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\PlayerCharacter.h">
       <Filter>Source\SecondProject\Public\Character\Player</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player\Animation">
-      <UniqueIdentifier>{5900F71D-73DF-4D82-8F44-2B6B49C4C62C}</UniqueIdentifier>
+      <UniqueIdentifier>{5E7607AF-1199-48B0-90A0-43A8F4B263A1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Public\Character\Player\Animation\Notify">
-      <UniqueIdentifier>{69EB8943-4D19-40B5-8BDD-6B47AC240572}</UniqueIdentifier>
+      <UniqueIdentifier>{B26A63B4-4AF0-43AB-9F81-7E98B79BECCA}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Animation\Notify\EquipNotify.h">
       <Filter>Source\SecondProject\Public\Character\Player\Animation\Notify</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player\Animation\NotifyState">
-      <UniqueIdentifier>{A913BD40-2A20-465F-97DE-FA2876043DE2}</UniqueIdentifier>
+      <UniqueIdentifier>{7DFE11E7-7E33-4757-A92A-071F1BAD709A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Animation\NotifyState\AttackNotifyState.h">
       <Filter>Source\SecondProject\Public\Character\Player\Animation\NotifyState</Filter>
@@ -287,19 +290,19 @@
       <Filter>Source\SecondProject\Public\Character\Player\Animation\NotifyState</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player\Component">
-      <UniqueIdentifier>{0E5CC855-AF4C-4065-8E25-CB07F2308903}</UniqueIdentifier>
+      <UniqueIdentifier>{0007910A-3303-49EE-AD74-C70DDC4EA785}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Component\InventoryComponent.h">
       <Filter>Source\SecondProject\Public\Character\Player\Component</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player\Controller">
-      <UniqueIdentifier>{9673C0F1-0B43-4338-8F1A-1B915BCFA5D9}</UniqueIdentifier>
+      <UniqueIdentifier>{A98BE554-DEB7-4D51-A3F1-1DC54E54E136}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Controller\CustomController.h">
       <Filter>Source\SecondProject\Public\Character\Player\Controller</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Item">
-      <UniqueIdentifier>{38EB3190-BC4C-4F79-B7AF-6271E1E9A2AE}</UniqueIdentifier>
+      <UniqueIdentifier>{1D51A352-CD90-42C6-A0A9-A9474EECE955}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Item\Boots.h">
       <Filter>Source\SecondProject\Public\Item</Filter>
@@ -338,7 +341,7 @@
       <Filter>Source\SecondProject\Public\Item</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Widget">
-      <UniqueIdentifier>{32DD3F73-776E-49F0-8053-4DB0FCE4B100}</UniqueIdentifier>
+      <UniqueIdentifier>{2F53965E-8673-4216-90E2-6699C206C933}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Widget\DragableWidget.h">
       <Filter>Source\SecondProject\Public\Widget</Filter>
@@ -380,6 +383,9 @@
       <Filter>Source\SecondProject\Public\Widget</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SecondProject\Public\Widget\PlayerInformationWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\QuickSlotWidget.h">
       <Filter>Source\SecondProject\Public\Widget</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SecondProject\Public\Widget\ShowDamageWidget.h">

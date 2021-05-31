@@ -26,4 +26,9 @@ protected:
 		class UProgressBar* ProgressBar_SP;
 	UPROPERTY()
 		class APlayerCharacter* player;
+	UPROPERTY()
+		class UQuickSlotWidget* UMG_QuickSlot;
+
+	//UPROPERTY()
+		//class UTextBlock* TextBlock_SP;
 };

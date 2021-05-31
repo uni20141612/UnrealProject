@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 	UPackage* Z_Construct_UPackage__Script_SecondProject();
 	UMG_API UClass* Z_Construct_UClass_UProgressBar_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_APlayerCharacter_NoRegister();
+	SECONDPROJECT_API UClass* Z_Construct_UClass_UQuickSlotWidget_NoRegister();
 // End Cross Module References
 	void UMainWidget::StaticRegisterNativesUMainWidget()
 	{
@@ -45,6 +46,10 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_player_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_player;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UMG_QuickSlot_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_UMG_QuickSlot;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -81,10 +86,18 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainWidget_Statics::NewProp_player = { "player", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainWidget, player), Z_Construct_UClass_APlayerCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainWidget_Statics::NewProp_player_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainWidget_Statics::NewProp_player_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/MainWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot = { "UMG_QuickSlot", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainWidget, UMG_QuickSlot), Z_Construct_UClass_UQuickSlotWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMainWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_ProgressBar_HP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_ProgressBar_SP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_player,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMainWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMainWidget>::IsAbstract,
@@ -113,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMainWidget, 417729584);
+	IMPLEMENT_CLASS(UMainWidget, 3452067484);
 	template<> SECONDPROJECT_API UClass* StaticClass<UMainWidget>()
 	{
 		return UMainWidget::StaticClass();

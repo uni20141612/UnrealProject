@@ -6,12 +6,14 @@
 #include "Character/Player/Component/InventoryComponent.h"
 #include "Character/Player/PlayerCharacter.h"
 
-#include "Components/Image.h"
-#include "Components/TextBlock.h"
 #include "Components/HorizontalBox.h"
 
 void UEquipmentButtonWidget::Init()
 {
+	//퀵슬롯 배열에 코드 삭제 필요
+	auto invenComp = Cast<APlayerCharacter>(GetOwningPlayerPawn())->GetInventoryComponent();
+	invenComp->RemoveQuick(item_Code);
+
 	item_Code = NAME_None;
 	TextBlock_ItemCount->SetText(FText::GetEmpty());
 	if (emptyTexture != nullptr)
@@ -104,6 +106,7 @@ bool UEquipmentButtonWidget::NativeOnDrop(const FGeometry& InGeometry, const FDr
 					if (item.GetEquipmentType() == EEquipmentType::None)
 					{
 						SetItemInformation(item.GetItemInfo(), item.item_Count);
+						invenComp->AddQuick(item_Code, index);
 					}
 					else
 					{
@@ -124,6 +127,7 @@ bool UEquipmentButtonWidget::NativeOnDrop(const FGeometry& InGeometry, const FDr
 				{
 					auto item = *info;
 					SetItemInformation(item.GetItemInfo(), item.item_Count);
+					invenComp->AddQuick(item_Code, index);
 				}
 
 				return true;

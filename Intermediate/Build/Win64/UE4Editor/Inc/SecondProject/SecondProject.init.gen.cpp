@@ -13,6 +13,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSecondProject_init() {}
 	SECONDPROJECT_API UFunction* Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature();
 	SECONDPROJECT_API UFunction* Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature();
+	SECONDPROJECT_API UFunction* Z_Construct_UDelegateFunction_SecondProject_UseQuick__DelegateSignature();
+	SECONDPROJECT_API UFunction* Z_Construct_UDelegateFunction_SecondProject_AddQuick__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_SecondProject()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -21,14 +23,16 @@ void EmptyLinkFunctionForGeneratedCodeSecondProject_init() {}
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_SecondProject_Equip__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_SecondProject_UnEquip__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_SecondProject_UseQuick__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_SecondProject_AddQuick__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/SecondProject",
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xAB459057,
-				0xC43F4698,
+				0x21D1DEB6,
+				0x6DF1DC00,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

@@ -14,6 +14,7 @@ UInventoryComponent::UInventoryComponent()
 	PrimaryComponentTick.bCanEverTick = true;
 
 	// ...
+	quickSlot.Init(NAME_None, 10);
 }
 
 void UInventoryComponent::AddItem(AItemActor* item)
@@ -102,6 +103,135 @@ void UInventoryComponent::RemoveItem(const FName& itemCode)
 	{
 		controller->GetInventoryWidget()->UpdateItemListButton(itemCode, 0);
 	}
+}
+
+void UInventoryComponent::AddQuick(const FName& itemCode, const int32& index)
+{
+	if (inventory.Contains(itemCode))
+	{
+		if (index == quickIndex)
+		{
+			auto item = inventory[itemCode];
+			AddQuickEvent.Broadcast(item->GetItemInfo()->item_Image, item->item_Count);
+		}
+		else
+		{
+			if (quickSlot.IsValidIndex(quickIndex))
+			{
+				if (quickSlot[quickIndex].IsEqual(NAME_None))
+				{
+					quickIndex = index;
+					auto item = inventory[itemCode];
+					AddQuickEvent.Broadcast(item->GetItemInfo()->item_Image, item->item_Count);
+				}
+			}
+		}
+
+		if (quickSlot.IsValidIndex(index))
+		{
+			quickSlot[index] = itemCode;
+		}
+	}
+}
+
+void UInventoryComponent::RemoveQuick(const FName& itemCode)
+{
+	if (quickSlot.Contains(itemCode))
+	{
+		quickSlot.Remove(itemCode);
+	}
+}
+
+void UInventoryComponent::QuickChangeRight()
+{
+	if (existQuickItem())
+	{
+		++quickIndex;
+		if (quickSlot.IsValidIndex(quickIndex))
+		{
+			if (quickSlot[quickIndex].IsEqual(NAME_None))
+			{
+				QuickChangeRight();
+			}
+			else
+			{
+				if (inventory.Contains(quickSlot[quickIndex]))
+				{
+					auto item = inventory[quickSlot[quickIndex]];
+					if (item != nullptr)
+					{
+						AddQuickEvent.Broadcast(item->GetItemInfo()->item_Image, item->item_Count);
+					}
+				}
+			}
+		}
+		else
+		{
+			quickIndex = -1;
+			QuickChangeRight();
+		}
+	}
+}
+
+void UInventoryComponent::QuickChangeLeft()
+{
+	if (existQuickItem())
+	{
+		--quickIndex;
+		if (quickSlot.IsValidIndex(quickIndex))
+		{
+			if (quickSlot[quickIndex].IsEqual(NAME_None))
+			{
+				QuickChangeLeft();
+			}
+			else
+			{
+				if (inventory.Contains(quickSlot[quickIndex]))
+				{
+					auto item = inventory[quickSlot[quickIndex]];
+					if (item != nullptr)
+					{
+						AddQuickEvent.Broadcast(item->GetItemInfo()->item_Image, item->item_Count);
+					}
+				}
+			}
+		}
+		else
+		{
+			quickIndex = 10;
+			QuickChangeLeft();
+		}
+	}
+}
+
+void UInventoryComponent::UseQuickItem()
+{
+	if (quickSlot.IsValidIndex(quickIndex))
+	{
+		auto code = quickSlot[quickIndex];
+		UseItem(code, GetOwner());
+		
+		if (inventory.Contains(code))
+		{
+			UseQuickEvent.Broadcast(inventory[code]->item_Count);
+		}
+		else
+		{
+			UseQuickEvent.Broadcast(0);
+		}
+	}
+}
+
+bool UInventoryComponent::existQuickItem()
+{
+	for (auto i = 0; i < quickSlot.Num(); ++i)
+	{
+		if (!quickSlot[i].IsEqual(NAME_None))
+		{
+			return true;
+		}
+	}
+	return false;
 }
 
 const FStoredItem* UInventoryComponent::GetItem(const FName& itemCode)

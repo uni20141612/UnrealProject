@@ -584,6 +584,10 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction("Inventory", IE_Pressed, this, &APlayerCharacter::InventoryOpen);
 	PlayerInputComponent->BindAction("PickUp", IE_Pressed, this, &APlayerCharacter::ItemPickUp);
 
+	PlayerInputComponent->BindAction("QuickRight", IE_Pressed, this, &APlayerCharacter::QuickChangeRight);
+	PlayerInputComponent->BindAction("QuickLeft", IE_Pressed, this, &APlayerCharacter::QuickChangeLeft);
+	PlayerInputComponent->BindAction("UseQuick", IE_Pressed, this, &APlayerCharacter::UseQuickItem);
+
 }
 
 void APlayerCharacter::OnConstruction(const FTransform& Transform)
@@ -696,3 +700,17 @@ void APlayerCharacter::StopAttack()
 	GetStatusComponent()->ResumeRecoverStaminaPerTime();
 }
 
+void APlayerCharacter::QuickChangeRight()
+{
+	inventoryComponent->QuickChangeRight();
+}
+
+void APlayerCharacter::QuickChangeLeft()
+{
+	inventoryComponent->QuickChangeLeft();
+}
+
+void APlayerCharacter::UseQuickItem()
+{
+	inventoryComponent->UseQuickItem();
+}

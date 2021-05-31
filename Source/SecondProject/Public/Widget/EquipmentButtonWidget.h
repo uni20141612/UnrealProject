@@ -28,10 +28,12 @@ UCLASS()
 class SECONDPROJECT_API UEquipmentButtonWidget : public UDragableWidget
 {
 	GENERATED_BODY()
+
 public:
 	void Init();
 	void SetItemInformation(const FItemInformation* info, const int32& itemCount);
 	void SetItemInformation(const FEquipmentInformation* info);
+	void SetIndex(const int32& value) { index = value; }
 	void SetEquipmentButtonType(EEquipmentButtonType type) { buttonType = type; }
 	void SetHorizontalBox_Quick(class UHorizontalBox* box) { quickListBox = box; }
 	FName GetItemCode() { return item_Code; }
@@ -55,4 +57,6 @@ protected:
 		class UTexture2D* emptyTexture;
 
 	FName item_Code = NAME_None;	
+
+	int32 index = -1;
 };

@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UTexture2D;
 class UStatusComponent;
 #ifdef SECONDPROJECT_InventoryComponent_generated_h
 #error "InventoryComponent.generated.h already included, missing '#pragma once' in InventoryComponent.h"
@@ -27,6 +28,34 @@ template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FEquippedItem>()
 
 
 template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FStoredItem>();
+
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_74_DELEGATE \
+struct _Script_SecondProject_eventAddQuick_Parms \
+{ \
+	UTexture2D* image; \
+	int32 count; \
+}; \
+static inline void FAddQuick_DelegateWrapper(const FMulticastScriptDelegate& AddQuick, UTexture2D* image, int32 const& count) \
+{ \
+	_Script_SecondProject_eventAddQuick_Parms Parms; \
+	Parms.image=image; \
+	Parms.count=count; \
+	AddQuick.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_73_DELEGATE \
+struct _Script_SecondProject_eventUseQuick_Parms \
+{ \
+	int32 count; \
+}; \
+static inline void FUseQuick_DelegateWrapper(const FMulticastScriptDelegate& UseQuick, int32 const& count) \
+{ \
+	_Script_SecondProject_eventUseQuick_Parms Parms; \
+	Parms.count=count; \
+	UseQuick.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
 
 #define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_71_DELEGATE \
 struct _Script_SecondProject_eventUnEquip_Parms \
@@ -54,10 +83,10 @@ static inline void FEquip_DelegateWrapper(const FMulticastScriptDelegate& Equip,
 }
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_SPARSE_DATA
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_RPC_WRAPPERS
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_RPC_WRAPPERS_NO_PURE_DECLS
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_INCLASS_NO_PURE_DECLS \
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_SPARSE_DATA
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_RPC_WRAPPERS
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_RPC_WRAPPERS_NO_PURE_DECLS
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUInventoryComponent(); \
 	friend struct Z_Construct_UClass_UInventoryComponent_Statics; \
@@ -66,7 +95,7 @@ public: \
 	DECLARE_SERIALIZER(UInventoryComponent)
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_INCLASS \
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_INCLASS \
 private: \
 	static void StaticRegisterNativesUInventoryComponent(); \
 	friend struct Z_Construct_UClass_UInventoryComponent_Statics; \
@@ -75,7 +104,7 @@ public: \
 	DECLARE_SERIALIZER(UInventoryComponent)
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_STANDARD_CONSTRUCTORS \
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UInventoryComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UInventoryComponent) \
@@ -88,7 +117,7 @@ private: \
 public:
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_ENHANCED_CONSTRUCTORS \
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UInventoryComponent(UInventoryComponent&&); \
@@ -99,28 +128,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInventoryComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UInventoryComponent)
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_PRIVATE_PROPERTY_OFFSET
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_73_PROLOG
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_GENERATED_BODY_LEGACY \
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_PRIVATE_PROPERTY_OFFSET
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_PROLOG
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_PRIVATE_PROPERTY_OFFSET \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_SPARSE_DATA \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_RPC_WRAPPERS \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_INCLASS \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_STANDARD_CONSTRUCTORS \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_PRIVATE_PROPERTY_OFFSET \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_SPARSE_DATA \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_RPC_WRAPPERS \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_INCLASS \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_GENERATED_BODY \
+#define UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_PRIVATE_PROPERTY_OFFSET \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_SPARSE_DATA \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_INCLASS_NO_PURE_DECLS \
-	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_76_ENHANCED_CONSTRUCTORS \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_PRIVATE_PROPERTY_OFFSET \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_SPARSE_DATA \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_RPC_WRAPPERS_NO_PURE_DECLS \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_INCLASS_NO_PURE_DECLS \
+	UnrealProject_Source_SecondProject_Public_Character_Player_Component_InventoryComponent_h_79_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

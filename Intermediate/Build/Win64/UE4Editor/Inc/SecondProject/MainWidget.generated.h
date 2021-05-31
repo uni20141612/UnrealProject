@@ -63,7 +63,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UMainWidget); \
 #define UnrealProject_Source_SecondProject_Public_Widget_MainWidget_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ProgressBar_HP() { return STRUCT_OFFSET(UMainWidget, ProgressBar_HP); } \
 	FORCEINLINE static uint32 __PPO__ProgressBar_SP() { return STRUCT_OFFSET(UMainWidget, ProgressBar_SP); } \
-	FORCEINLINE static uint32 __PPO__player() { return STRUCT_OFFSET(UMainWidget, player); }
+	FORCEINLINE static uint32 __PPO__player() { return STRUCT_OFFSET(UMainWidget, player); } \
+	FORCEINLINE static uint32 __PPO__UMG_QuickSlot() { return STRUCT_OFFSET(UMainWidget, UMG_QuickSlot); }
 
 
 #define UnrealProject_Source_SecondProject_Public_Widget_MainWidget_h_13_PROLOG

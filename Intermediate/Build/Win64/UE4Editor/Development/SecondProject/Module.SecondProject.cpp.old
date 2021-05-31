@@ -29,6 +29,7 @@
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/DragItemButtonWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/DragShadowWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentButtonWidget.cpp"
+#include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentItemListWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/EquipmentWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/HeadOnHealthBarWidget.cpp"
 #include "C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Source/SecondProject/Private/Widget/InventoryListWidget.cpp"

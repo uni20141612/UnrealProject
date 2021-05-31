@@ -5,6 +5,7 @@
 #include "Character/Component/StatusComponent.h"
 
 #include "Components/ProgressBar.h"
+#include "Components/TextBlock.h"
 
 void UMainWidget::NativeConstruct()
 {

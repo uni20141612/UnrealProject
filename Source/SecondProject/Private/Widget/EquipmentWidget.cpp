@@ -26,6 +26,7 @@ void UEquipmentWidget::NativeConstruct()
 		if (button != nullptr)
 		{
 			button->SetEquipmentButtonType(EEquipmentButtonType::Consume);
+			button->SetIndex(i);
 			button->SetHorizontalBox_Quick(HorizontalBox_Quick);
 			QuickButtons.Emplace(button);
 		}
