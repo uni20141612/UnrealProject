@@ -17,4 +17,13 @@ class SECONDPROJECT_API AMonster : public ABaseCharacter
 	
 public:
 	AMonster();
+
+public:
+	UPROPERTY(EditAnywhere)
+		AActor* patrolLocation_A;
+	UPROPERTY(EditAnywhere)
+		AActor* patrolLocation_B;
+
+	UPROPERTY(EditAnywhere)
+		class UBehaviorTree* AITree;
 };
