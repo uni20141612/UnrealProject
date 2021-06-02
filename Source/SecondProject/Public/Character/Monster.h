@@ -7,6 +7,16 @@
 
 #include "Monster.generated.h"
 
+UENUM(BlueprintType)
+enum class EAICombatState : uint8
+{
+	APPROCH,
+	ATTACK,
+	BEWHARE,
+
+	AICOMBAT_MAX
+};
+
 /**
  * 
  */

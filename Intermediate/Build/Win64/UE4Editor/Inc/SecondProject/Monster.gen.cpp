@@ -13,13 +13,72 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMonster() {}
 // Cross Module References
+	SECONDPROJECT_API UEnum* Z_Construct_UEnum_SecondProject_EAICombatState();
+	UPackage* Z_Construct_UPackage__Script_SecondProject();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_AMonster_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_AMonster();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
-	UPackage* Z_Construct_UPackage__Script_SecondProject();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
 // End Cross Module References
+	static UEnum* EAICombatState_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_SecondProject_EAICombatState, Z_Construct_UPackage__Script_SecondProject(), TEXT("EAICombatState"));
+		}
+		return Singleton;
+	}
+	template<> SECONDPROJECT_API UEnum* StaticEnum<EAICombatState>()
+	{
+		return EAICombatState_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EAICombatState(EAICombatState_StaticEnum, TEXT("/Script/SecondProject"), TEXT("EAICombatState"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_SecondProject_EAICombatState_Hash() { return 1759450675U; }
+	UEnum* Z_Construct_UEnum_SecondProject_EAICombatState()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_SecondProject();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EAICombatState"), 0, Get_Z_Construct_UEnum_SecondProject_EAICombatState_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EAICombatState::APPROCH", (int64)EAICombatState::APPROCH },
+				{ "EAICombatState::ATTACK", (int64)EAICombatState::ATTACK },
+				{ "EAICombatState::BEWHARE", (int64)EAICombatState::BEWHARE },
+				{ "EAICombatState::AICOMBAT_MAX", (int64)EAICombatState::AICOMBAT_MAX },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "AICOMBAT_MAX.Name", "EAICombatState::AICOMBAT_MAX" },
+				{ "APPROCH.Name", "EAICombatState::APPROCH" },
+				{ "ATTACK.Name", "EAICombatState::ATTACK" },
+				{ "BEWHARE.Name", "EAICombatState::BEWHARE" },
+				{ "BlueprintType", "true" },
+				{ "ModuleRelativePath", "Public/Character/Monster.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_SecondProject,
+				nullptr,
+				"EAICombatState",
+				"EAICombatState",
+				Enumerators,
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	void AMonster::StaticRegisterNativesAMonster()
 	{
 	}

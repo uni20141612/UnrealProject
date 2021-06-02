@@ -306,6 +306,19 @@ C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Buil
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/StatusComponent.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Component/StatusComponent.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\StatusComponent.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Task_ChangeCombatState.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Monster/AI/Task/Task_ChangeCombatState.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Tasks/BTTask_BlackboardBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTTaskNode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTTaskNode.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTTask_BlackboardBase.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Task_ChangeCombatState.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Task_PlayRandomAnimation.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Monster/AI/Task/Task_PlayRandomAnimation.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Task_PlayRandomAnimation.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Task_Turn.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Monster/AI/Task/Task_Turn.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Task_Turn.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/ToolTipWidget.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Widget/ToolTipWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ToolTipWidget.generated.h
