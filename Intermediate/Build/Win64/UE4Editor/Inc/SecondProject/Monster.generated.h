@@ -8,15 +8,34 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class EAIMoveState : uint8;
 #ifdef SECONDPROJECT_Monster_generated_h
 #error "Monster.generated.h already included, missing '#pragma once' in Monster.h"
 #endif
 #define SECONDPROJECT_Monster_generated_h
 
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS_NO_PURE_DECLS
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS_NO_PURE_DECLS \
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_32_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FDropTable_Statics; \
+	SECONDPROJECT_API static class UScriptStruct* StaticStruct(); \
+	typedef FTableRowBase Super;
+
+
+template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FDropTable>();
+
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_SPARSE_DATA
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnChangeMoveStateEvent); \
+	DECLARE_FUNCTION(execDropItem);
+
+
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnChangeMoveStateEvent); \
+	DECLARE_FUNCTION(execDropItem);
+
+
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMonster(); \
 	friend struct Z_Construct_UClass_AMonster_Statics; \
@@ -25,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(AMonster)
 
 
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS \
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_INCLASS \
 private: \
 	static void StaticRegisterNativesAMonster(); \
 	friend struct Z_Construct_UClass_AMonster_Statics; \
@@ -34,7 +53,7 @@ public: \
 	DECLARE_SERIALIZER(AMonster)
 
 
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_STANDARD_CONSTRUCTORS \
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMonster(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMonster) \
@@ -47,7 +66,7 @@ private: \
 public:
 
 
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_ENHANCED_CONSTRUCTORS \
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMonster(AMonster&&); \
@@ -58,28 +77,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMonster); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMonster)
 
 
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_23_PROLOG
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_GENERATED_BODY_LEGACY \
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_PRIVATE_PROPERTY_OFFSET
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_42_PROLOG
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_STANDARD_CONSTRUCTORS \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_PRIVATE_PROPERTY_OFFSET \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_SPARSE_DATA \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_RPC_WRAPPERS \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_INCLASS \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_GENERATED_BODY \
+#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS_NO_PURE_DECLS \
-	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_ENHANCED_CONSTRUCTORS \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_PRIVATE_PROPERTY_OFFSET \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_SPARSE_DATA \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_INCLASS_NO_PURE_DECLS \
+	UnrealProject_Source_SecondProject_Public_Character_Monster_h_45_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -87,8 +106,16 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SECONDPROJECT_API UClass* StaticClass<class AMonster>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID SecondProject_Source_SecondProject_Public_Character_Monster_h
+#define CURRENT_FILE_ID UnrealProject_Source_SecondProject_Public_Character_Monster_h
 
+
+#define FOREACH_ENUM_EAIMOVESTATE(op) \
+	op(EAIMoveState::WALK) \
+	op(EAIMoveState::RUN) \
+	op(EAIMoveState::AIMove_MAX) 
+
+enum class EAIMoveState : uint8;
+template<> SECONDPROJECT_API UEnum* StaticEnum<EAIMoveState>();
 
 #define FOREACH_ENUM_EAICOMBATSTATE(op) \
 	op(EAICombatState::APPROCH) \

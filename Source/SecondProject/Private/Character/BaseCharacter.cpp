@@ -2,9 +2,10 @@
 
 #include "Character/BaseCharacter.h"
 #include "Character/Component/StatusComponent.h"
-#include "Components/WidgetComponent.h"
 
 #include "Widget/HeadOnHealthBarWidget.h"
+#include "Components/WidgetComponent.h"
+#include "Components/CapsuleComponent.h"
 // Sets default values
 ABaseCharacter::ABaseCharacter()
 {
@@ -30,12 +31,30 @@ float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageE
 	return 0.0f;
 }
 
+void ABaseCharacter::SetSpectator()
+{
+	GetCapsuleComponent()->SetCollisionProfileName("Ragdoll");
+}
+
+void ABaseCharacter::SetRagdoll()
+{
+	GetMesh()->SetCollisionProfileName("Ragdoll");
+	GetMesh()->SetSimulatePhysics(true);
+}
+
 // Called when the game starts or when spawned
 void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	OnDeath.AddUniqueDynamic(this, &ABaseCharacter::SetSpectator);
+	OnDeath.AddUniqueDynamic(this, &ABaseCharacter::SetRagdoll);
 	UpdateHeadOnHPBarWidget();
+}
+
+void ABaseCharacter::OnConstruction(const FTransform& Transform)
+{
+	Super::OnConstruction(Transform);
 }
 
 void ABaseCharacter::UpdateHeadOnHPBarWidget()

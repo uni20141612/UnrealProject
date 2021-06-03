@@ -13,14 +13,85 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMonsterController() {}
 // Cross Module References
+	SECONDPROJECT_API UFunction* Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_SecondProject();
+	SECONDPROJECT_API UEnum* Z_Construct_UEnum_SecondProject_EAIMoveState();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_AMonsterController_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_AMonsterController();
 	AIMODULE_API UClass* Z_Construct_UClass_AAIController();
-	UPackage* Z_Construct_UPackage__Script_SecondProject();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_AMonster_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics
+	{
+		struct _Script_SecondProject_eventChangeMoveState_Parms
+		{
+			EAIMoveState newState;
+		};
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_newState_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_newState;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::NewProp_newState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::NewProp_newState = { "newState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_SecondProject_eventChangeMoveState_Parms, newState), Z_Construct_UEnum_SecondProject_EAIMoveState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::NewProp_newState_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::NewProp_newState,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/Monster/Controller/MonsterController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_SecondProject, nullptr, "ChangeMoveState__DelegateSignature", nullptr, nullptr, sizeof(_Script_SecondProject_eventChangeMoveState_Parms), Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_SecondProject_ChangeMoveState__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(AMonsterController::execStopBehaviorTree)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->StopBehaviorTree();
+		P_NATIVE_END;
+	}
 	void AMonsterController::StaticRegisterNativesAMonsterController()
 	{
+		UClass* Class = AMonsterController::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "StopBehaviorTree", &AMonsterController::execStopBehaviorTree },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AMonsterController_StopBehaviorTree_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMonsterController_StopBehaviorTree_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/Monster/Controller/MonsterController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMonsterController_StopBehaviorTree_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMonsterController, nullptr, "StopBehaviorTree", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMonsterController_StopBehaviorTree_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMonsterController_StopBehaviorTree_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMonsterController_StopBehaviorTree()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMonsterController_StopBehaviorTree_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AMonsterController_NoRegister()
 	{
@@ -29,6 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeMonsterController() {}
 	struct Z_Construct_UClass_AMonsterController_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -43,6 +115,9 @@ void EmptyLinkFunctionForGeneratedCodeMonsterController() {}
 	UObject* (*const Z_Construct_UClass_AMonsterController_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AAIController,
 		(UObject* (*)())Z_Construct_UPackage__Script_SecondProject,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AMonsterController_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AMonsterController_StopBehaviorTree, "StopBehaviorTree" }, // 1049912941
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMonsterController_Statics::Class_MetaDataParams[] = {
@@ -69,11 +144,11 @@ void EmptyLinkFunctionForGeneratedCodeMonsterController() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AMonsterController_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AMonsterController_Statics::PropPointers),
 		0,
 		0x009002A4u,
@@ -88,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeMonsterController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMonsterController, 1433908155);
+	IMPLEMENT_CLASS(AMonsterController, 2531774255);
 	template<> SECONDPROJECT_API UClass* StaticClass<AMonsterController>()
 	{
 		return AMonsterController::StaticClass();

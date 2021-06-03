@@ -13,16 +13,103 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 // Cross Module References
+	SECONDPROJECT_API UFunction* Z_Construct_UDelegateFunction_SecondProject_OnDeath__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_SecondProject();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
-	UPackage* Z_Construct_UPackage__Script_SecondProject();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UStatusComponent_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_SecondProject_OnDeath__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_SecondProject_OnDeath__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_SecondProject_OnDeath__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_SecondProject, nullptr, "OnDeath__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_SecondProject_OnDeath__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SecondProject_OnDeath__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_SecondProject_OnDeath__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_SecondProject_OnDeath__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(ABaseCharacter::execSetRagdoll)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetRagdoll();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseCharacter::execSetSpectator)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetSpectator();
+		P_NATIVE_END;
+	}
 	void ABaseCharacter::StaticRegisterNativesABaseCharacter()
 	{
+		UClass* Class = ABaseCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "SetRagdoll", &ABaseCharacter::execSetRagdoll },
+			{ "SetSpectator", &ABaseCharacter::execSetSpectator },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABaseCharacter_SetRagdoll_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_SetRagdoll_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_SetRagdoll_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "SetRagdoll", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_SetRagdoll_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_SetRagdoll_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_SetRagdoll()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_SetRagdoll_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacter_SetSpectator_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_SetSpectator_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_SetSpectator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "SetSpectator", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_SetSpectator_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_SetSpectator_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_SetSpectator()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_SetSpectator_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ABaseCharacter_NoRegister()
 	{
@@ -31,6 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	struct Z_Construct_UClass_ABaseCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -54,6 +142,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	UObject* (*const Z_Construct_UClass_ABaseCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_SecondProject,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseCharacter_SetRagdoll, "SetRagdoll" }, // 3813703397
+		{ &Z_Construct_UFunction_ABaseCharacter_SetSpectator, "SetSpectator" }, // 1643022197
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::Class_MetaDataParams[] = {
@@ -99,11 +191,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ABaseCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -118,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 1890178911);
+	IMPLEMENT_CLASS(ABaseCharacter, 781870738);
 	template<> SECONDPROJECT_API UClass* StaticClass<ABaseCharacter>()
 	{
 		return ABaseCharacter::StaticClass();

@@ -105,7 +105,7 @@ void UStatusComponent::RecoverStaminaPerTime(float value)
 	if (GetWorld()->GetTimerManager().IsTimerActive(recoverStaminaByTimeTimerHandle) == false)
 	{
 		FTimerDelegate recoverStaminaTimerDel = FTimerDelegate::CreateUObject(this, &UStatusComponent::RecoverStamina, value);
-		GetWorld()->GetTimerManager().SetTimer(recoverStaminaByTimeTimerHandle, recoverStaminaTimerDel, 0.3f, true);
+		GetWorld()->GetTimerManager().SetTimer(recoverStaminaByTimeTimerHandle, recoverStaminaTimerDel, 0.1f, true);
 	}
 }
 

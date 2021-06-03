@@ -4,6 +4,7 @@
 #include "Character/Monster.h"
 
 #include "BehaviorTree/BlackboardComponent.h"
+#include "BrainComponent.h"
 
 void AMonsterController::OnPossess(APawn* InPawn)
 {
@@ -12,6 +13,9 @@ void AMonsterController::OnPossess(APawn* InPawn)
 	OwnerMonster = Cast<AMonster>(InPawn);
 	if (OwnerMonster != nullptr)
 	{
+		OnChangeMoveState.AddUniqueDynamic(OwnerMonster, &AMonster::OnChangeMoveStateEvent);
+		OwnerMonster->OnDeath.AddUniqueDynamic(this, &AMonsterController::StopBehaviorTree);
+
 		if (OwnerMonster->AITree != nullptr)
 		{
 			RunBehaviorTree(OwnerMonster->AITree);
@@ -23,4 +27,9 @@ void AMonsterController::OnPossess(APawn* InPawn)
 			}
 		}
 	}
+}
+
+void AMonsterController::StopBehaviorTree()
+{
+	BrainComponent->StopLogic("Death");
 }

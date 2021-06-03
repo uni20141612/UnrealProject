@@ -501,7 +501,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerCharacter, 1711165616);
+	IMPLEMENT_CLASS(APlayerCharacter, 3048981714);
 	template<> SECONDPROJECT_API UClass* StaticClass<APlayerCharacter>()
 	{
 		return APlayerCharacter::StaticClass();

@@ -71,33 +71,6 @@ void APlayerCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	GetStatusComponent()->RecoverStaminaPerTime(1.f);
-	//SpawnEquipment();
-	/*
-	if (Weapon != nullptr) {
-		//스켈레탈메시 소켓 위치를 받아오는 방법.
-		FVector weaponSocketLocation = GetMesh()->GetSocketLocation("WeaponSocket");
-		spawndWeapon = GetWorld()->SpawnActor<AEquipmentActor>(Weapon.Get(), weaponSocketLocation, FRotator::ZeroRotator);
-		spawndWeapon->SetOwner(this);
-
-		//플레이어 캐릭터의 메시의 특정 위치에다 스폰한 무기를 부착시킴.
-		spawndWeapon->AttachToComponent(
-			GetMesh(),
-			FAttachmentTransformRules(EAttachmentRule::SnapToTarget, false),
-			"WeaponSocket"
-		);
-	}
-
-	if (Shield != nullptr) {
-		FVector shieldSocketLocation = GetMesh()->GetSocketLocation("ShieldSocket");
-		spawndShield = GetWorld()->SpawnActor<AEquipmentActor>(Shield.Get(), shieldSocketLocation, FRotator::ZeroRotator);
-
-		spawndShield->AttachToComponent(
-			GetMesh(),
-			FAttachmentTransformRules(EAttachmentRule::SnapToTarget, false),
-			"ShieldSocket"
-		);
-	}
-	*/
 }
 
 void APlayerCharacter::Run()
@@ -118,6 +91,7 @@ void APlayerCharacter::Run()
 		FTimerDelegate runTimerDel = FTimerDelegate::CreateUObject(GetStatusComponent(), &UStatusComponent::RemoveStamina, 7.f);
 		GetWorldTimerManager().SetTimer(RunStaminaTimerHandle, runTimerDel, 1.f, true);
 	}
+	GetStatusComponent()->RunRecoverHPTimer();
 }
 
 void APlayerCharacter::StopRun()
