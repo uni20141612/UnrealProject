@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SECONDPROJECT_Monster_generated_h
 
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS_NO_PURE_DECLS
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS_NO_PURE_DECLS \
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS_NO_PURE_DECLS
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMonster(); \
 	friend struct Z_Construct_UClass_AMonster_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AMonster)
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS \
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS \
 private: \
 	static void StaticRegisterNativesAMonster(); \
 	friend struct Z_Construct_UClass_AMonster_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AMonster)
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_STANDARD_CONSTRUCTORS \
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMonster(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMonster) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_ENHANCED_CONSTRUCTORS \
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMonster(AMonster&&); \
@@ -58,28 +58,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMonster); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMonster)
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_23_PROLOG
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_GENERATED_BODY_LEGACY \
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_23_PROLOG
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_STANDARD_CONSTRUCTORS \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_GENERATED_BODY \
+#define SecondProject_Source_SecondProject_Public_Character_Monster_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS_NO_PURE_DECLS \
-	UnrealProject_Source_SecondProject_Public_Character_Monster_h_26_ENHANCED_CONSTRUCTORS \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_PRIVATE_PROPERTY_OFFSET \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_SPARSE_DATA \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_INCLASS_NO_PURE_DECLS \
+	SecondProject_Source_SecondProject_Public_Character_Monster_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -87,7 +87,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SECONDPROJECT_API UClass* StaticClass<class AMonster>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID UnrealProject_Source_SecondProject_Public_Character_Monster_h
+#define CURRENT_FILE_ID SecondProject_Source_SecondProject_Public_Character_Monster_h
 
 
 #define FOREACH_ENUM_EAICOMBATSTATE(op) \

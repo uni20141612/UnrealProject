@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-SecondProject-8972.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\SecondProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Module.SecondProject.cpp.obj"
+"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Module.SecondProject.gen.cpp.obj"
+"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Default.rc2.res"
+/OUT:"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\UE4Editor-SecondProject-8972.lib"
+/INCLUDE:IMPLEMENT_MODULE_SecondProject

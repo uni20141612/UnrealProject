@@ -6,9 +6,9 @@
 /NAME:"UE4Editor-SecondProject.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\SecondProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Module.SecondProject.cpp.obj"
-"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Module.SecondProject.gen.cpp.obj"
-"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Default.rc2.res"
-/OUT:"D:\Users\hansu\Downloads\Coding\SecondProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\UE4Editor-SecondProject.lib"
+"C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\SecondProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Module.SecondProject.cpp.obj"
+"C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Module.SecondProject.gen.cpp.obj"
+"C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\Default.rc2.res"
+/OUT:"C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Development\SecondProject\UE4Editor-SecondProject.lib"
 /INCLUDE:IMPLEMENT_MODULE_SecondProject

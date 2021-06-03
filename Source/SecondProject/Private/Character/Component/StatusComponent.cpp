@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "Character/Component/StatusComponent.h"
 #include "Character/Player/PlayerCharacter.h"
 
@@ -13,57 +12,15 @@ UStatusComponent::UStatusComponent()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
-	// ...
 }
 
 // Called when the game starts
 void UStatusComponent::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
-	//RunRecoverStaminaTimer();
+	
 	RunRecoverHPTimer();
 }
-/*
-void UStatusComponent::RunRecoverStaminaTimer()
-{
-	if (GetWorld()->GetTimerManager().IsTimerActive(recoverStaminaTimerHandle) == false)
-	{
-		GetWorld()->GetTimerManager().SetTimer(
-			recoverStaminaTimerHandle,
-			this,
-			&UStatusComponent::RecoverStamina, 0.25f, true);
-	}
-}
-
-void UStatusComponent::PauseRecoverStamina()
-{
-	if (GetWorld()->GetTimerManager().IsTimerActive(recoverStaminaTimerHandle) == true)
-	{
-		GetWorld()->GetTimerManager().PauseTimer(recoverStaminaTimerHandle);
-	}
-}
-
-void UStatusComponent::RunRemoveStaminaTimer()
-{
-	if (GetWorld()->GetTimerManager().IsTimerActive(removeStaminaTimerHandle) == false)
-	{
-		GetWorld()->GetTimerManager().SetTimer(
-			removeStaminaTimerHandle,
-			this,
-			&UStatusComponent::RemoveStamina, 0.5f, true);
-	}
-}
-
-void UStatusComponent::PauseRemoveStaminaTimer()
-{
-	if (GetWorld()->GetTimerManager().IsTimerActive(removeStaminaTimerHandle) == true)
-	{
-		GetWorld()->GetTimerManager().PauseTimer(removeStaminaTimerHandle);
-	}
-}
-*/
 
 void UStatusComponent::RunRecoverHPTimer()
 {
@@ -152,29 +109,7 @@ void UStatusComponent::RecoverStaminaPerTime(float value)
 	}
 }
 
-/*
-void UStatusComponent::RecoverStamina()
-{
-	SP = FMath::Clamp(SP + 2, 0, MaxSP);
-	//UE_LOG(LogTemp, Log, TEXT("%d"), SP);
-}
-
-void UStatusComponent::RemoveStamina()
-{
-	SP = FMath::Clamp(SP - 2, 0, MaxSP);
-	if (SP == 0)
-	{
-		Cast<APlayerCharacter>(GetOwner())->StopRun();
-	}
-}
-*/
-
 void UStatusComponent::RecoverHP()
 {
 	HP = FMath::Clamp(HP + 1, 0.f, MaxHP);
-}
-
-void UStatusComponent::RemoveHP()
-{
-	HP = FMath::Clamp(HP - 1, 0.f, MaxHP);
 }

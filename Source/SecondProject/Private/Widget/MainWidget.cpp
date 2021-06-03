@@ -19,6 +19,9 @@ void UMainWidget::NativeConstruct()
 		{
 			ProgressBar_HP->SetPercent(statusComp->GetHPPercent());
 			ProgressBar_SP->SetPercent(statusComp->GetSPPercent());
+
+			TextBlock_HP_Main->SetText(FText::AsNumber(statusComp->GetHP()));
+			TextBlock_SP_Main->SetText(FText::AsNumber(statusComp->GetSP()));
 		}
 	}
 }
@@ -33,6 +36,9 @@ void UMainWidget::NativeTick(const FGeometry& MyGeometry, float InDeltaTime) {
 		{
 			ProgressBar_HP->SetPercent(FMath::FInterpTo(ProgressBar_HP->Percent, statusComp->GetHPPercent(), InDeltaTime, 5.f));
 			ProgressBar_SP->SetPercent(FMath::FInterpTo(ProgressBar_SP->Percent, statusComp->GetSPPercent(), InDeltaTime, 5.f));
+
+			TextBlock_HP_Main->SetText(FText::AsNumber(statusComp->GetHP()));
+			TextBlock_SP_Main->SetText(FText::AsNumber(statusComp->GetSP()));
 		}
 	}
 }

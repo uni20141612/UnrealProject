@@ -17,12 +17,7 @@ public:
 	UStatusComponent();
 	// Called when the game starts
 	virtual void BeginPlay() override;
-	/*
-	void RunRecoverStaminaTimer();
-	void PauseRecoverStamina();
-	void RunRemoveStaminaTimer();
-	void PauseRemoveStaminaTimer();
-	*/
+
 	void RunRecoverHPTimer();
 	void PauseRecoverHPTimer();
 
@@ -54,10 +49,7 @@ public:
 	void AddDef(float value) { def += value; }
 
 protected:
-	//void RecoverStamina();
-	//void RemoveStamina();
 	void RecoverHP();
-	void RemoveHP();
 
 public:
 	//n초당 sp를 회복시키는 타이머 핸들

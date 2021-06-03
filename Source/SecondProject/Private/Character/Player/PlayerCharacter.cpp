@@ -111,8 +111,6 @@ void APlayerCharacter::Run()
 
 	bRun = true;
 	GetStatusComponent()->PauseRecoverStaminaPerTime();
-	//GetStatusComponent()->PauseRecoverStamina();
-	//GetStatusComponent()->RunRemoveStaminaTimer();
 	GetCharacterMovement()->MaxWalkSpeed = 1200;
 
 	if (GetWorldTimerManager().IsTimerActive(RunStaminaTimerHandle) == false)
@@ -126,8 +124,6 @@ void APlayerCharacter::StopRun()
 {
 	bRun = false;
 	GetStatusComponent()->ResumeRecoverStaminaPerTime();
-	//GetStatusComponent()->PauseRemoveStaminaTimer();
-	//GetStatusComponent()->RunRecoverStaminaTimer();
 	GetCharacterMovement()->MaxWalkSpeed = 600;
 
 	if (GetWorldTimerManager().IsTimerActive(RunStaminaTimerHandle) == true)
@@ -147,20 +143,6 @@ void APlayerCharacter::Roll()
 			{
 				spawndWeapon->Roll();
 			}
-			/*
-			if (equipInfo.GetWeapon()->RollMontage != nullptr && statusComponent->CheckStamina(equipInfo.GetWeapon()->rollSP) == true)
-			{
-				statusComponent->SetSP(statusComponent->GetSP() - equipInfo.GetWeapon()->rollSP);
-				statusComponent->PauseRecoverStamina();
-
-				lockOnComponent->bBlockLookAt = true;
-				float time = GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->RollMontage);
-
-				GetWorldTimerManager().SetTimer(RollStaminaTimerHandle,
-					statusComponent, &UStatusComponent::RunRecoverStaminaTimer, time);
-
-			}
-			*/
 		}
 	}
 }
@@ -176,30 +158,6 @@ void APlayerCharacter::Guard()
 			{
 				spawndWeapon->Guard();
 			}
-			/*
-			bGuard = !bGuard;
-			if (equipInfo.GetShield() != nullptr)
-			{
-				if (bGuard && statusComponent->CheckStamina(30) == false)
-				{
-					bGuard = false;
-				}
-			}
-			else
-			{
-				if (equipInfo.GetWeapon()->guardMontage != nullptr)
-				{
-					if (!GetMesh()->GetAnimInstance()->IsAnyMontagePlaying())
-					{
-						float time = GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->guardMontage);
-
-						FDelegate guardTimerDel = FTimerDelegate::CreateUObject(this, &APlayerCharacter::SetGuard, false);
-						FTimerHandle guardTimerHandle;
-						GetWorldTimerManager().SetTimer(guardTimerHandle, guardTimerDel, time, false);
-					}
-				}
-			}
-			*/
 		}
 	}
 }
@@ -216,67 +174,6 @@ bool APlayerCharacter::GuardProcess(FVector hitLocation)
 		return spawndWeapon->GuardProcess(hitLocation);
 	}
 	return false;
-	/*
-	//1. hitLocation과 플레이어 사이의 각도 
-	FRotator rot = (hitLocation - GetActorLocation()).Rotation();
-	//1번 각도와 현재 플레이어의 로테이션을 이용하면, 좌우를 알수 있음
-	float yaw = (rot - GetActorRotation()).Yaw;
-
-	//알아보기 쉽게
-	if (yaw > 180)
-	{
-		yaw -= 360;
-	}
-	else if (yaw < -180)
-	{
-		yaw += 360;
-	}
-	//플레이어 앞을 기준으로
-	//좌측값 : -180~0
-	//우측값 : 0 ~ 180
-	
-	//좌측
-	if (-120 <= yaw && yaw <= 0)
-	{
-		if (equipInfo.GetWeapon()->leftGuardMontage != nullptr)
-		{
-			GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->leftGuardMontage);
-		}
-		else
-		{
-			GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->frontGuardMontage);
-		}
-	}
-	//우측
-	else if (yaw >= 0 && yaw <= 120)
-	{
-		if (equipInfo.GetWeapon()->rightGuardMontage)
-		{
-			GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->rightGuardMontage);
-		}
-		else
-		{
-			GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->frontGuardMontage);
-		}
-	}
-	//후방
-	else
-	{
-		GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->gotHitBackMontage);
-		if (equipInfo.GetWeapon()->gotHitParticle != nullptr)
-		{
-			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), equipInfo.GetWeapon()->gotHitParticle, hitLocation);
-		}
-		return false;
-	}
-
-	if (equipInfo.GetWeapon()->guardParticle != nullptr)
-	{
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), equipInfo.GetWeapon()->guardParticle, hitLocation);
-	}
-	
-	return true;
-	*/
 }
 
 void APlayerCharacter::HitProcess(FVector hitLocation)
@@ -290,49 +187,6 @@ void APlayerCharacter::HitProcess(FVector hitLocation)
 	{
 		spawndWeapon->HitProcess(hitLocation);
 	}
-	/*
-	//1. hitLocation과 플레이어 사이의 각도 
-	FRotator rot = (hitLocation - GetActorLocation()).Rotation();
-	//1번 각도와 현재 플레이어의 로테이션을 이용하면, 좌우를 알수 있음
-	float yaw = (rot - GetActorRotation()).Yaw;
-
-	//알아보기 쉽게
-	if (yaw > 180)
-	{
-		yaw -= 360;
-	}
-	else if (yaw < -180)
-	{
-		yaw += 360;
-	}
-	//플레이어 앞을 기준으로
-	//좌측값 : -180~0
-	//우측값 : 0 ~ 180
-	//좌측
-	if (yaw > -135 && yaw <= -45)
-	{
-		//GetMesh()->GetAnimInstance()->Montage_Play(gotHitLeftMontage);
-	}
-	//전방
-	else if (yaw > -45 && yaw <= 45)
-	{
-		//GetMesh()->GetAnimInstance()->Montage_Play(gotHitCenterMontage);
-	}
-	//우측
-	else if (yaw > 45 && yaw <= 135)
-	{
-		//GetMesh()->GetAnimInstance()->Montage_Play(gotHitRightMontage);
-	}
-	//후방
-	else
-	{
-		//GetMesh()->GetAnimInstance()->Montage_Play(gotHitBackMontage);
-	}
-
-	if (gotHitParticle != nullptr)
-	{
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), gotHitParticle, hitLocation);
-	}*/
 }
 
 void APlayerCharacter::LockOn()
@@ -431,6 +285,7 @@ float APlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Damag
 	}
 
 	Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	GetStatusComponent()->RunRecoverHPTimer();
 
 	return 0.0f;
 }
@@ -615,16 +470,6 @@ void APlayerCharacter::EquipWeapon()
 			}
 		}
 	}
-	/*
-	if(bReadyCombat == true)
-	{
-		if (UnEquipMontage != nullptr && GetMesh()->GetAnimInstance()->IsAnyMontagePlaying()==false)
-		{
-			GetMesh()->GetAnimInstance()->Montage_Play(UnEquipMontage);
-			bReadyCombat = false;
-		}
-	}
-	*/
 }
 
 void APlayerCharacter::Attack()
@@ -633,65 +478,6 @@ void APlayerCharacter::Attack()
 	{
 		spawndWeapon->Attack();
 	}
-
-	/*
-	auto equipInfo = inventoryComponent->GetEquippedItem();
-	if (equipInfo.GetWeapon() != nullptr)
-	{
-		if (bReadyCombat == false)
-		{
-			if (equipInfo.GetWeapon()->EquipMontage != nullptr)
-			{
-				if (GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false) 
-				{
-					GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->EquipMontage);
-					bReadyCombat = true;
-				}
-			}
-		}
-		else
-		{
-			bAttack = true;
-
-			if (equipInfo.GetWeapon()->AttackMontage != nullptr &&
-				GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false)
-			{
-				if (statusComponent->CheckStamina(equipInfo.GetWeapon()->attackSP))
-				{
-					statusComponent->SetSP(statusComponent->GetSP() - equipInfo.GetWeapon()->attackSP);
-					statusComponent->PauseRecoverStamina();
-					GetMesh()->GetAnimInstance()->Montage_Play(equipInfo.GetWeapon()->AttackMontage);
-				}
-			}
-		}
-	}
-	
-	if (bReadyCombat == false) {
-		if (EquipMontage != nullptr)
-		{
-			if (GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false)
-			{
-				GetMesh()->GetAnimInstance()->Montage_Play(EquipMontage);
-				bReadyCombat = true;
-			}
-		}
-	}
-	else
-	{
-		bAttack = true;
-
-		if (	AttackMontage != nullptr &&
-			GetMesh()->GetAnimInstance()->IsAnyMontagePlaying() == false) {
-
-			if (statusComponent->CheckStamina(20))
-			{
-				statusComponent->SetSP(statusComponent->GetSP() - 20);
-				statusComponent->PauseRecoverStamina();
-				GetMesh()->GetAnimInstance()->Montage_Play(AttackMontage);
-			}
-		}
-	}
-	*/
 }
 
 void APlayerCharacter::StopAttack()

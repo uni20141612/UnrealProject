@@ -28,7 +28,8 @@ protected:
 		class APlayerCharacter* player;
 	UPROPERTY()
 		class UQuickSlotWidget* UMG_QuickSlot;
-
-	//UPROPERTY()
-		//class UTextBlock* TextBlock_SP;
+	UPROPERTY()
+		class UTextBlock* TextBlock_HP_Main;
+	UPROPERTY()
+		class UTextBlock* TextBlock_SP_Main;
 };

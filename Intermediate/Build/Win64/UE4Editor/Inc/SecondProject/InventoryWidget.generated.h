@@ -14,22 +14,22 @@ enum class ESlateVisibility : uint8;
 #endif
 #define SECONDPROJECT_InventoryWidget_generated_h
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_SPARSE_DATA
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_SPARSE_DATA
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnClickedButtonEquipment); \
 	DECLARE_FUNCTION(execOnClickedButtonInventory); \
 	DECLARE_FUNCTION(execOnVisibilityChange);
 
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnClickedButtonEquipment); \
 	DECLARE_FUNCTION(execOnClickedButtonInventory); \
 	DECLARE_FUNCTION(execOnVisibilityChange);
 
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_INCLASS_NO_PURE_DECLS \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUInventoryWidget(); \
 	friend struct Z_Construct_UClass_UInventoryWidget_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(UInventoryWidget)
 
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_INCLASS \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesUInventoryWidget(); \
 	friend struct Z_Construct_UClass_UInventoryWidget_Statics; \
@@ -47,7 +47,7 @@ public: \
 	DECLARE_SERIALIZER(UInventoryWidget)
 
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_STANDARD_CONSTRUCTORS \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UInventoryWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UInventoryWidget) \
@@ -60,7 +60,7 @@ private: \
 public:
 
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_ENHANCED_CONSTRUCTORS \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UInventoryWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -73,7 +73,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInventoryWidget); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UInventoryWidget)
 
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_PRIVATE_PROPERTY_OFFSET \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Button_Inventory() { return STRUCT_OFFSET(UInventoryWidget, Button_Inventory); } \
 	FORCEINLINE static uint32 __PPO__Button_Equipment() { return STRUCT_OFFSET(UInventoryWidget, Button_Equipment); } \
 	FORCEINLINE static uint32 __PPO__WidgetSwitcher_Switcher() { return STRUCT_OFFSET(UInventoryWidget, WidgetSwitcher_Switcher); } \
@@ -83,27 +83,27 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInventoryWidget); \
 	FORCEINLINE static uint32 __PPO__UMG_Equipment() { return STRUCT_OFFSET(UInventoryWidget, UMG_Equipment); }
 
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_13_PROLOG
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_GENERATED_BODY_LEGACY \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_13_PROLOG
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_PRIVATE_PROPERTY_OFFSET \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_SPARSE_DATA \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_INCLASS \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_STANDARD_CONSTRUCTORS \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_PRIVATE_PROPERTY_OFFSET \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_SPARSE_DATA \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_INCLASS \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_GENERATED_BODY \
+#define SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_PRIVATE_PROPERTY_OFFSET \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_SPARSE_DATA \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_INCLASS_NO_PURE_DECLS \
-	UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_ENHANCED_CONSTRUCTORS \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_PRIVATE_PROPERTY_OFFSET \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_SPARSE_DATA \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_INCLASS_NO_PURE_DECLS \
+	SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -111,7 +111,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SECONDPROJECT_API UClass* StaticClass<class UInventoryWidget>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID UnrealProject_Source_SecondProject_Public_Widget_InventoryWidget_h
+#define CURRENT_FILE_ID SecondProject_Source_SecondProject_Public_Widget_InventoryWidget_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

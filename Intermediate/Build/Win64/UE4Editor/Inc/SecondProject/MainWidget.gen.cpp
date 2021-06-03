@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 	UMG_API UClass* Z_Construct_UClass_UProgressBar_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_APlayerCharacter_NoRegister();
 	SECONDPROJECT_API UClass* Z_Construct_UClass_UQuickSlotWidget_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 // End Cross Module References
 	void UMainWidget::StaticRegisterNativesUMainWidget()
 	{
@@ -50,6 +51,14 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UMG_QuickSlot_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_UMG_QuickSlot;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TextBlock_HP_Main_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TextBlock_HP_Main;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TextBlock_SP_Main_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TextBlock_SP_Main;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -93,11 +102,27 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot = { "UMG_QuickSlot", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainWidget, UMG_QuickSlot), Z_Construct_UClass_UQuickSlotWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_HP_Main_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/MainWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_HP_Main = { "TextBlock_HP_Main", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainWidget, TextBlock_HP_Main), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_HP_Main_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_HP_Main_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_SP_Main_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widget/MainWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_SP_Main = { "TextBlock_SP_Main", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainWidget, TextBlock_SP_Main), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_SP_Main_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_SP_Main_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMainWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_ProgressBar_HP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_ProgressBar_SP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_player,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_UMG_QuickSlot,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_HP_Main,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_TextBlock_SP_Main,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMainWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMainWidget>::IsAbstract,
@@ -126,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMainWidget, 3452067484);
+	IMPLEMENT_CLASS(UMainWidget, 2656175329);
 	template<> SECONDPROJECT_API UClass* StaticClass<UMainWidget>()
 	{
 		return UMainWidget::StaticClass();

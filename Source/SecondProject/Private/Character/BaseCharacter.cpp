@@ -12,7 +12,6 @@ ABaseCharacter::ABaseCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	statusComponent = CreateDefaultSubobject<UStatusComponent>(TEXT("stausComponent"));
-
 	widgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("widgetComponent"));
 	widgetComponent->SetupAttachment(RootComponent);
 }

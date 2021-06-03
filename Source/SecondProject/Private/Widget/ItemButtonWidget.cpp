@@ -80,32 +80,12 @@ void UItemButtonWidget::OnHoveredButtonItem()
 			{
 				myToolTipWidget->SetText("There is no Item Description");
 			}
-			//myToolTipWidget->SetText(invenComp->GetInventory()[item_Code]->GetItemInfo()->item_Description);
 		}
 	}
 }
 
 void UItemButtonWidget::OnClickedButtonItem()
 {
-	/*
-	if (itemMenuWidgetClass != nullptr)
-	{
-		if (itemMenuWidget == nullptr)
-		{
-			itemMenuWidget = CreateWidget<UItemMenuWidget>(GetOwningPlayer(), itemMenuWidgetClass.Get());
-		}
-		itemMenuWidget->SetItemCode(item_Code);
-		auto mousePos = UWidgetLayoutLibrary::GetMousePositionOnViewport(GetOwningPlayer());
-		itemMenuWidget->SetPositionInViewport(mousePos,false);
-		
-		if (itemMenuWidget->IsInViewport() == false)
-		{
-			itemMenuWidget->AddToViewport();
-		}
-
-		//Cast<APlayerCharacter>(GetOwningPlayerPawn())->GetInventoryComponent()->UseItem(item_Code, GetOwningPlayerPawn());
-	}
-	*/
 	if (UMG_ItemList != nullptr)
 	{
 		UMG_ItemList->ShowItemMenu(item_Code);
