@@ -6,6 +6,7 @@
 #include "Widget/HeadOnHealthBarWidget.h"
 #include "Components/WidgetComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Perception/AIperceptionStimuliSourceComponent.h"
 // Sets default values
 ABaseCharacter::ABaseCharacter()
 {
@@ -15,6 +16,8 @@ ABaseCharacter::ABaseCharacter()
 	statusComponent = CreateDefaultSubobject<UStatusComponent>(TEXT("stausComponent"));
 	widgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("widgetComponent"));
 	widgetComponent->SetupAttachment(RootComponent);
+
+	perceptionSourceComponent = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("perceptionSourceComponent"));
 }
 
 // Called every frame
@@ -25,7 +28,6 @@ void ABaseCharacter::Tick(float DeltaTime)
 
 float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
-	UE_LOG(LogTemp, Log, TEXT("takedamage"));
 	GetStatusComponent()->SetHP(GetStatusComponent()->GetHP() - DamageAmount);
 	UpdateHeadOnHPBarWidget();
 	return 0.0f;

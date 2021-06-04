@@ -77,7 +77,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseCharacter); \
 
 #define UnrealProject_Source_SecondProject_Public_Character_BaseCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__statusComponent() { return STRUCT_OFFSET(ABaseCharacter, statusComponent); } \
-	FORCEINLINE static uint32 __PPO__widgetComponent() { return STRUCT_OFFSET(ABaseCharacter, widgetComponent); }
+	FORCEINLINE static uint32 __PPO__widgetComponent() { return STRUCT_OFFSET(ABaseCharacter, widgetComponent); } \
+	FORCEINLINE static uint32 __PPO__perceptionSourceComponent() { return STRUCT_OFFSET(ABaseCharacter, perceptionSourceComponent); }
 
 
 #define UnrealProject_Source_SecondProject_Public_Character_BaseCharacter_h_12_PROLOG

@@ -5,6 +5,12 @@
 
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BrainComponent.h"
+#include "Perception/AIPerceptionComponent.h"
+
+AMonsterController::AMonsterController()
+{
+	PerceptionComponent = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("PerceptionComponent"));
+}
 
 void AMonsterController::OnPossess(APawn* InPawn)
 {
@@ -15,6 +21,7 @@ void AMonsterController::OnPossess(APawn* InPawn)
 	{
 		OnChangeMoveState.AddUniqueDynamic(OwnerMonster, &AMonster::OnChangeMoveStateEvent);
 		OwnerMonster->OnDeath.AddUniqueDynamic(this, &AMonsterController::StopBehaviorTree);
+		PerceptionComponent->OnTargetPerceptionUpdated.AddUniqueDynamic(this, &AMonsterController::OnTargetPerceptionUpdatedEvent);
 
 		if (OwnerMonster->AITree != nullptr)
 		{
@@ -32,4 +39,13 @@ void AMonsterController::OnPossess(APawn* InPawn)
 void AMonsterController::StopBehaviorTree()
 {
 	BrainComponent->StopLogic("Death");
+}
+
+void AMonsterController::OnTargetPerceptionUpdatedEvent(AActor* actor, FAIStimulus Stimulus)
+{
+	//UE_LOG(LogTemp, Warning, TEXT("%s"), *actor->GetName());
+	if(GetBlackboardComponent()->GetValueAsObject("Target") == nullptr)
+	{
+		GetBlackboardComponent()->SetValueAsObject("Target", actor);
+	}
 }

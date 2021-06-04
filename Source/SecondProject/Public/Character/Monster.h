@@ -34,6 +34,8 @@ struct FDropTable : public FTableRowBase
 public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class AItemActor> item;
+	UPROPERTY(EditAnywhere)
+		float percent;
 };
 
 /**

@@ -46,4 +46,6 @@ protected:
 		class UStatusComponent* statusComponent;
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
 		class UWidgetComponent* widgetComponent;
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+		class UAIPerceptionStimuliSourceComponent* perceptionSourceComponent;
 };

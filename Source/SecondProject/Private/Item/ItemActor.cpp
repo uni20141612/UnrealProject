@@ -16,6 +16,7 @@ AItemActor::AItemActor()
 	RootComponent = sphereComponent;
 	sphereComponent->SetCollisionProfileName("Item");
 	sphereComponent->SetSimulatePhysics(true);
+	sphereComponent->SetLinearDamping(10.f);
 
 	particleComponent = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("particleComp"));
 	particleComponent->SetupAttachment(RootComponent);

@@ -280,6 +280,8 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\VisualLogger/VisualLoggerDebugSnapshotInterface.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\VisualLoggerDebugSnapshotInterface.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionTypes.generated.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\MonsterController.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/PlayerCharacter.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/PlayerCharacter.h

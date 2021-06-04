@@ -156,8 +156,7 @@ void AEquipmentActor::OnBeginOverlapEvent(AActor* OverlappedActor, AActor* Other
 	if (OtherActor->IsA<AMonster>() == true)
 	{
 		if (hitActors.Contains(OtherActor) == false)
-		{
-			UE_LOG(LogTemp, Log, TEXT("%s"), *OtherActor->GetName());			
+		{	
 			OtherActor->TakeDamage(10.f, FDamageEvent(), nullptr, this);
 			hitActors.AddUnique(OtherActor);
 

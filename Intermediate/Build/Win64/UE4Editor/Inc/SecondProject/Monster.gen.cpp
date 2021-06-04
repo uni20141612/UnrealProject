@@ -176,6 +176,10 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_item_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_item;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_percent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_percent;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -196,8 +200,16 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_item = { "item", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDropTable, item), Z_Construct_UClass_AItemActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_item_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_item_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_percent_MetaData[] = {
+		{ "Category", "DropTable" },
+		{ "ModuleRelativePath", "Public/Character/Monster.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_percent = { "percent", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDropTable, percent), METADATA_PARAMS(Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_percent_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_percent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDropTable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_item,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDropTable_Statics::NewProp_percent,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FDropTable_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_SecondProject,
@@ -227,7 +239,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDropTable_Hash() { return 4200368669U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDropTable_Hash() { return 3363013428U; }
 	DEFINE_FUNCTION(AMonster::execOnChangeMoveStateEvent)
 	{
 		P_GET_ENUM(EAIMoveState,Z_Param_newState);
@@ -417,7 +429,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMonster, 3216598238);
+	IMPLEMENT_CLASS(AMonster, 3248238345);
 	template<> SECONDPROJECT_API UClass* StaticClass<AMonster>()
 	{
 		return AMonster::StaticClass();
