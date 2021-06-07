@@ -4,6 +4,8 @@
 
 #include "Blueprint/UserWidget.h"//<<요 안에 위젯 생성 함수 있음.
 #include "Widget/InventoryWidget.h"
+#include "Widget/BossWidget.h"
+#include "Character/Monster.h"
 
 void ACustomController::SetLockOnWidgetPos(AActor* target)
 {
@@ -49,6 +51,34 @@ void ACustomController::ShowInventory()
 		bShowMouseCursor = false;
 		SetInputMode(FInputModeGameOnly());
 		inventoryWidget->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+void ACustomController::AddBossWidget(AMonster* monster)
+{
+	if (monster != nullptr)
+	{
+		if (bossWidgetClass != nullptr)
+		{
+			if (bossWidget != nullptr && bossWidget->IsInViewport() == false)
+			{
+				bossWidget->AddToViewport();
+			}
+			if (bossWidget == nullptr)
+			{
+				bossWidget = CreateWidget<UBossWidget>(this, bossWidgetClass.Get());
+				bossWidget->SetMonster(monster);
+				bossWidget->AddToViewport();
+			}
+		}
+	}
+}
+
+void ACustomController::RemoveBossWidget()
+{
+	if (bossWidget)
+	{
+		bossWidget->RemoveFromParent();
 	}
 }
 

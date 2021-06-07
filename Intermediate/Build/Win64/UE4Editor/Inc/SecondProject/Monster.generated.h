@@ -25,12 +25,14 @@ template<> SECONDPROJECT_API UScriptStruct* StaticStruct<struct FDropTable>();
 #define UnrealProject_Source_SecondProject_Public_Character_Monster_h_47_SPARSE_DATA
 #define UnrealProject_Source_SecondProject_Public_Character_Monster_h_47_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execRemoveBossWidget); \
 	DECLARE_FUNCTION(execOnChangeMoveStateEvent); \
 	DECLARE_FUNCTION(execDropItem);
 
 
 #define UnrealProject_Source_SecondProject_Public_Character_Monster_h_47_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execRemoveBossWidget); \
 	DECLARE_FUNCTION(execOnChangeMoveStateEvent); \
 	DECLARE_FUNCTION(execDropItem);
 

@@ -54,8 +54,11 @@ public:
 	UFUNCTION()
 		void OnChangeMoveStateEvent(EAIMoveState newState);
 
-	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser);
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 	virtual void BeginPlay() override;
+
+	UFUNCTION()
+		void RemoveBossWidget();
 
 public:
 	UPROPERTY(EditAnywhere)
@@ -68,4 +71,8 @@ public:
 	UPROPERTY(EditAnywhere)
 		class UBehaviorTree* AITree;
 
+	UPROPERTY(EditAnywhere)
+		FName monster_Name;
+	UPROPERTY(EditAnywhere)
+		bool bBoss = false;
 };

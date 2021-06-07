@@ -2,6 +2,8 @@
 
 #include "Character/Monster/Controller/MonsterController.h"
 #include "Character/Monster.h"
+#include "Character/Player/PlayerCharacter.h"
+#include "Character/Player/Controller/CustomController.h"
 
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BrainComponent.h"
@@ -41,11 +43,23 @@ void AMonsterController::StopBehaviorTree()
 	BrainComponent->StopLogic("Death");
 }
 
-void AMonsterController::OnTargetPerceptionUpdatedEvent(AActor* actor, FAIStimulus Stimulus)
+void AMonsterController::OnTargetPerceptionUpdatedEvent(AActor* Actor, FAIStimulus Stimulus)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("%s"), *actor->GetName());
-	if(GetBlackboardComponent()->GetValueAsObject("Target") == nullptr)
+	if (Actor->IsA<APlayerCharacter>())
 	{
-		GetBlackboardComponent()->SetValueAsObject("Target", actor);
+		auto player = Cast<APlayerCharacter>(Actor);
+		auto controller = Cast<ACustomController>(player->GetController());
+		if (controller != nullptr)
+		{
+			if (Cast<AMonster>(GetPawn())->bBoss == true)
+			{
+				controller->AddBossWidget(Cast<AMonster>(GetPawn()));
+			}
+		}
+
+		if (GetBlackboardComponent()->GetValueAsObject("Target") == nullptr)
+		{
+			GetBlackboardComponent()->SetValueAsObject("Target", Actor);
+		}
 	}
 }

@@ -19,6 +19,8 @@ public:
 	void SetLockOnWidgetPos(AActor* target);
 	void SetVisibilityLockOnWidget(ESlateVisibility newVisible);
 	void ShowInventory();
+	void AddBossWidget(class AMonster* monster);
+	void RemoveBossWidget();
 	class UItemInformationWidget* GetItemInformationWidget();
 
 	class UInventoryWidget* GetInventoryWidget() { return inventoryWidget; }
@@ -41,4 +43,9 @@ protected:
 		TSubclassOf<class UInventoryWidget> inventoryWidgetClass;
 	UPROPERTY()
 		UInventoryWidget* inventoryWidget;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UBossWidget> bossWidgetClass;
+	UPROPERTY()
+		UBossWidget* bossWidget;
 };

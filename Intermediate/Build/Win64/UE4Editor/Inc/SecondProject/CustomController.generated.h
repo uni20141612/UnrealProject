@@ -66,7 +66,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACustomController); \
 	FORCEINLINE static uint32 __PPO__lockOnWidgetClass() { return STRUCT_OFFSET(ACustomController, lockOnWidgetClass); } \
 	FORCEINLINE static uint32 __PPO__lockOnWidget() { return STRUCT_OFFSET(ACustomController, lockOnWidget); } \
 	FORCEINLINE static uint32 __PPO__inventoryWidgetClass() { return STRUCT_OFFSET(ACustomController, inventoryWidgetClass); } \
-	FORCEINLINE static uint32 __PPO__inventoryWidget() { return STRUCT_OFFSET(ACustomController, inventoryWidget); }
+	FORCEINLINE static uint32 __PPO__inventoryWidget() { return STRUCT_OFFSET(ACustomController, inventoryWidget); } \
+	FORCEINLINE static uint32 __PPO__bossWidgetClass() { return STRUCT_OFFSET(ACustomController, bossWidgetClass); } \
+	FORCEINLINE static uint32 __PPO__bossWidget() { return STRUCT_OFFSET(ACustomController, bossWidget); }
 
 
 #define UnrealProject_Source_SecondProject_Public_Character_Player_Controller_CustomController_h_13_PROLOG

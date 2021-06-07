@@ -1,10 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Character/Monster.h"
+#include "Character/Monster/Controller/MonsterController.h"
+#include "Character/Player/Controller/CustomController.h"
+#include "Character/Player/PlayerCharacter.h"
 #include "Character/Component/StatusComponent.h"
 #include "Components/CapsuleComponent.h"
 
 #include "GameFramework/CharacterMovementComponent.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
 
 AMonster::AMonster()
@@ -57,22 +61,6 @@ void AMonster::DropItem()
 				}
 			}
 		}
-
-		/*
-		auto dropCount = FMath::RandRange(1, 5);
-
-		for (auto i = 0; i < dropCount; ++i)
-		{
-			auto dropItemIndex = FMath::RandRange(0, dropitems.Num() - 1);
-			//auto spawndItem = GetWorld()->SpawnActor<AItemActor>(dropitems[dropItemIndex]->item.Get(), GetActorLocation(), FRotator::ZeroRotator);
-
-			auto spawnTr = FTransform(GetActorLocation() + FMath::RandPointInBox(FBox(FVector(1, 1, 0), FVector(10, 10, 0))));
-			auto spawnItem = UGameplayStatics::BeginDeferredActorSpawnFromClass(GetWorld(), 
-				dropitems[dropItemIndex]->item.Get(), spawnTr, ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn);
-
-			UGameplayStatics::FinishSpawningActor(spawnItem, spawnTr);
-		}
-		*/
 	}
 }
 
@@ -107,4 +95,26 @@ void AMonster::BeginPlay()
 {
 	Super::BeginPlay();
 	OnDeath.AddUniqueDynamic(this, &AMonster::DropItem);
+	OnDeath.AddUniqueDynamic(this, &AMonster::RemoveBossWidget);
+	
+}
+
+void AMonster::RemoveBossWidget()
+{
+	if (bBoss)
+	{
+		auto aiCon = Cast<AMonsterController>(GetController());
+		if (aiCon)
+		{
+			auto target = aiCon->GetBlackboardComponent()->GetValueAsObject("Target");
+			if (target != nullptr)
+			{
+				auto con = Cast<ACustomController>(Cast<ACharacter>(target)->GetController());
+				if (con)
+				{
+					con->RemoveBossWidget();
+				}
+			}
+		}
+	}
 }

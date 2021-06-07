@@ -153,11 +153,13 @@ bool AEquipmentActor::IsPlayingAnyMontage()
 
 void AEquipmentActor::OnBeginOverlapEvent(AActor* OverlappedActor, AActor* OtherActor)
 {
+	float damage = 30.f;
 	if (OtherActor->IsA<AMonster>() == true)
 	{
 		if (hitActors.Contains(OtherActor) == false)
 		{	
-			OtherActor->TakeDamage(10.f, FDamageEvent(), nullptr, this);
+			//OverlappedActor;
+			OtherActor->TakeDamage(damage, FDamageEvent(), nullptr, this);
 			hitActors.AddUnique(OtherActor);
 
 			//라인트레이스가 검출할 오브젝트 타입 설정
@@ -203,7 +205,7 @@ void AEquipmentActor::OnBeginOverlapEvent(AActor* OverlappedActor, AActor* Other
 						auto player = Cast<APlayerCharacter>(GetOwner());
 						if (player != nullptr)
 						{
-							player->ShowDamage(10.f, hits[i].Location);
+							player->ShowDamage(damage, hits[i].Location);
 						}
 					}
 				}

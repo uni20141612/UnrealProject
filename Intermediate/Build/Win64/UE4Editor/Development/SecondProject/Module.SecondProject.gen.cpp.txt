@@ -33,62 +33,8 @@ C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Buil
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\ItemActor.generated.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Equipment.generated.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Boots.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CheckDistance.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Monster/AI/Service/CheckDistance.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Services/BTService_BlackboardBase.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTService.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTAuxiliaryNode.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTNode.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeTypes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeTypes.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagContainer.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagContainer.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AITypes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavAreaBase.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavAreaBase.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavArea.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationQueryFilter.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BrainComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AIResourceInterface.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIResourceInterface.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BrainComponent.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BlackboardAssetProvider.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardAssetProvider.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTaskOwnerInterface.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Public\GameplayTaskTypes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTaskOwnerInterface.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\Tasks/AITask.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTask.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/WeakInterfacePtr.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTask.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITask.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTNode.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTAuxiliaryNode.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTService.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTService_BlackboardBase.generated.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CheckDistance.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CheckInputNotifyState.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Animation/NotifyState/CheckInputNotifyState.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CheckInputNotifyState.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Chest.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Item/Chest.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Chest.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CreateLinetraceNotifyState.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Animation/NotifyState/CreateLinetraceNotifyState.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CreateLinetraceNotifyState.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CustomController.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Controller/CustomController.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CustomController.generated.h
-C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/DragableWidget.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Widget/DragableWidget.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/BossWidget.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Widget/BossWidget.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
@@ -188,6 +134,68 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\BossWidget.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CheckDistance.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Monster/AI/Service/CheckDistance.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Services/BTService_BlackboardBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTService.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTAuxiliaryNode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTNode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeTypes.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagContainer.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagContainer.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AITypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavAreaBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavAreaBase.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavArea.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationQueryFilter.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BrainComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AIResourceInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIResourceInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BrainComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BlackboardAssetProvider.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardAssetProvider.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTaskOwnerInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Public\GameplayTaskTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTaskOwnerInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\Tasks/AITask.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTask.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/WeakInterfacePtr.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTask.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITask.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTNode.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTAuxiliaryNode.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTService.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTService_BlackboardBase.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CheckDistance.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CheckInputNotifyState.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Animation/NotifyState/CheckInputNotifyState.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CheckInputNotifyState.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Chest.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Item/Chest.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Chest.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CreateLinetraceNotifyState.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Animation/NotifyState/CreateLinetraceNotifyState.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CreateLinetraceNotifyState.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/CustomController.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Player/Controller/CustomController.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\CustomController.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/DesertDragon.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Monster/DesertDragon.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject\Public\Character/Monster.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Monster.generated.h
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\DesertDragon.generated.h
+C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/DragableWidget.gen.cpp
+C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Widget/DragableWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\DragableWidget.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/DragItemButtonWidget.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Widget/DragItemButtonWidget.h
@@ -256,8 +264,6 @@ C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Buil
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Widget/MainWidget.h
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\MainWidget.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/Monster.gen.cpp
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Monster.h
-C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Intermediate\Build\Win64\UE4Editor\Inc\SecondProject\Monster.generated.h
 C:/Users/Administrator/Documents/Unreal Projects/UnrealProject/Intermediate/Build/Win64/UE4Editor/Inc/SecondProject/MonsterController.gen.cpp
 C:\Users\Administrator\Documents\Unreal Projects\UnrealProject\Source\SecondProject/Public/Character/Monster/Controller/MonsterController.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AIController.h

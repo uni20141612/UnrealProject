@@ -240,6 +240,13 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FDropTable_Hash() { return 3363013428U; }
+	DEFINE_FUNCTION(AMonster::execRemoveBossWidget)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RemoveBossWidget();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMonster::execOnChangeMoveStateEvent)
 	{
 		P_GET_ENUM(EAIMoveState,Z_Param_newState);
@@ -261,6 +268,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		static const FNameNativePtrPair Funcs[] = {
 			{ "DropItem", &AMonster::execDropItem },
 			{ "OnChangeMoveStateEvent", &AMonster::execOnChangeMoveStateEvent },
+			{ "RemoveBossWidget", &AMonster::execRemoveBossWidget },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -321,6 +329,28 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMonster_RemoveBossWidget_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMonster_RemoveBossWidget_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/Monster.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMonster_RemoveBossWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMonster, nullptr, "RemoveBossWidget", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMonster_RemoveBossWidget_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMonster_RemoveBossWidget_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMonster_RemoveBossWidget()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMonster_RemoveBossWidget_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AMonster_NoRegister()
 	{
 		return AMonster::StaticClass();
@@ -348,6 +378,15 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AITree_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AITree;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_monster_Name_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_monster_Name;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bBoss_MetaData[];
+#endif
+		static void NewProp_bBoss_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bBoss;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -359,6 +398,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMonster_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMonster_DropItem, "DropItem" }, // 3780342589
 		{ &Z_Construct_UFunction_AMonster_OnChangeMoveStateEvent, "OnChangeMoveStateEvent" }, // 68740046
+		{ &Z_Construct_UFunction_AMonster_RemoveBossWidget, "RemoveBossWidget" }, // 1247927199
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMonster_Statics::Class_MetaDataParams[] = {
@@ -396,11 +436,31 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMonster_Statics::NewProp_AITree = { "AITree", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMonster, AITree), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMonster_Statics::NewProp_AITree_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMonster_Statics::NewProp_AITree_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMonster_Statics::NewProp_monster_Name_MetaData[] = {
+		{ "Category", "Monster" },
+		{ "ModuleRelativePath", "Public/Character/Monster.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AMonster_Statics::NewProp_monster_Name = { "monster_Name", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMonster, monster_Name), METADATA_PARAMS(Z_Construct_UClass_AMonster_Statics::NewProp_monster_Name_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMonster_Statics::NewProp_monster_Name_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMonster_Statics::NewProp_bBoss_MetaData[] = {
+		{ "Category", "Monster" },
+		{ "ModuleRelativePath", "Public/Character/Monster.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMonster_Statics::NewProp_bBoss_SetBit(void* Obj)
+	{
+		((AMonster*)Obj)->bBoss = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMonster_Statics::NewProp_bBoss = { "bBoss", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMonster), &Z_Construct_UClass_AMonster_Statics::NewProp_bBoss_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMonster_Statics::NewProp_bBoss_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMonster_Statics::NewProp_bBoss_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMonster_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Statics::NewProp_patrolLocation_A,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Statics::NewProp_patrolLocation_B,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Statics::NewProp_dropTable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Statics::NewProp_AITree,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Statics::NewProp_monster_Name,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Statics::NewProp_bBoss,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMonster_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMonster>::IsAbstract,
@@ -429,7 +489,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMonster, 3248238345);
+	IMPLEMENT_CLASS(AMonster, 1583686689);
 	template<> SECONDPROJECT_API UClass* StaticClass<AMonster>()
 	{
 		return AMonster::StaticClass();

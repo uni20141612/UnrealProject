@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\SecondProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2D44EEAF-5736-436F-9313-9AF4D20AB04D}</UniqueIdentifier>
+      <UniqueIdentifier>{3E4D60C7-1465-4ECB-A1B5-A10184052905}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\SecondProject.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{C555848F-67D6-4BA0-B423-1BB427B24FB4}</UniqueIdentifier>
+      <UniqueIdentifier>{FF608B1F-AB3A-4B0A-8D8C-12AEB9A17921}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\SecondProject">
-      <UniqueIdentifier>{3BB14E58-39EE-4E7E-9F86-9363D4B60F3A}</UniqueIdentifier>
+      <UniqueIdentifier>{09909857-E068-4CF8-B114-2E4806902D44}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\SecondProject\SecondProject.Build.cs">
       <Filter>Source\SecondProject</Filter>
@@ -44,10 +44,10 @@
       <Filter>Source\SecondProject</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Private">
-      <UniqueIdentifier>{F1F810D2-1BE6-4CC3-866E-0EECBBF97AAE}</UniqueIdentifier>
+      <UniqueIdentifier>{2CD2C1F8-0BE6-42AC-9186-26005533ECE5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Private\Character">
-      <UniqueIdentifier>{4A751B2C-F3A7-4658-B4A9-2C3686C63EFE}</UniqueIdentifier>
+      <UniqueIdentifier>{BEF6BCD2-0CBC-428E-8D71-C40E868B53E3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\BaseCharacter.cpp">
       <Filter>Source\SecondProject\Private\Character</Filter>
@@ -56,22 +56,22 @@
       <Filter>Source\SecondProject\Private\Character</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Animation">
-      <UniqueIdentifier>{3E1CA7DC-F3E6-485A-88B4-2B69560B57AF}</UniqueIdentifier>
+      <UniqueIdentifier>{E275AC31-6A29-455D-B73E-A92A4C949C20}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Private\Character\Animation\Notify">
-      <UniqueIdentifier>{AE152FED-42EE-4E0E-84FC-DCDB5B67E591}</UniqueIdentifier>
+      <UniqueIdentifier>{41F7A5CD-387C-4B12-BB44-107269F63DEE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Animation\Notify\FootStepAnimNotify.cpp">
       <Filter>Source\SecondProject\Private\Character\Animation\Notify</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Animation\NotifyState">
-      <UniqueIdentifier>{A3688978-9F49-4A61-A2DD-390B27AF7BFA}</UniqueIdentifier>
+      <UniqueIdentifier>{ED07B6C4-5FAE-446C-A45D-7C8CE54DDCB4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Animation\NotifyState\CreateLinetraceNotifyState.cpp">
       <Filter>Source\SecondProject\Private\Character\Animation\NotifyState</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Component">
-      <UniqueIdentifier>{BB9DA1E2-5271-41F1-9217-C16F6867ACB0}</UniqueIdentifier>
+      <UniqueIdentifier>{300C1C86-304C-430E-997C-F8646553D567}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Component\LockOnComponent.cpp">
       <Filter>Source\SecondProject\Private\Character\Component</Filter>
@@ -80,19 +80,22 @@
       <Filter>Source\SecondProject\Private\Character\Component</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Equipment">
-      <UniqueIdentifier>{4F8EA9A7-3E69-4D0D-91D7-35E5501E62E1}</UniqueIdentifier>
+      <UniqueIdentifier>{1902033A-E09D-437A-8343-F7670FF7EEDD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Equipment\EquipmentActor.cpp">
       <Filter>Source\SecondProject\Private\Character\Equipment</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Monster">
-      <UniqueIdentifier>{5C222484-2938-45C0-8AD3-F014BEB1ED44}</UniqueIdentifier>
+      <UniqueIdentifier>{AB0F9320-67C0-411B-8580-1F079556CAE0}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Character\Monster\DesertDragon.cpp">
+      <Filter>Source\SecondProject\Private\Character\Monster</Filter>
+    </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Monster\AI">
-      <UniqueIdentifier>{E46150D4-CBB1-470C-B51A-D554149602D3}</UniqueIdentifier>
+      <UniqueIdentifier>{BA916602-5E49-49CB-8F5A-B161856EE265}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Private\Character\Monster\AI\Service">
-      <UniqueIdentifier>{9C8C8694-E376-454A-8FA6-FB17F7029770}</UniqueIdentifier>
+      <UniqueIdentifier>{E0225906-6C4C-403F-A261-3F00F9B482A5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Monster\AI\Service\CheckDistance.cpp">
       <Filter>Source\SecondProject\Private\Character\Monster\AI\Service</Filter>
@@ -101,7 +104,7 @@
       <Filter>Source\SecondProject\Private\Character\Monster\AI\Service</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Monster\AI\Task">
-      <UniqueIdentifier>{D8831C71-450C-4C46-A7F4-D628588D0C19}</UniqueIdentifier>
+      <UniqueIdentifier>{6F920C52-DDE9-4510-898E-D4723FAA3E9B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Monster\AI\Task\Task_ChangeCombatState.cpp">
       <Filter>Source\SecondProject\Private\Character\Monster\AI\Task</Filter>
@@ -116,28 +119,28 @@
       <Filter>Source\SecondProject\Private\Character\Monster\AI\Task</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Monster\Controller">
-      <UniqueIdentifier>{EE317946-2C1D-4B34-94D0-6BBCCC9C398F}</UniqueIdentifier>
+      <UniqueIdentifier>{6C95366E-8C4C-4C72-B699-620BD6894D9C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Monster\Controller\MonsterController.cpp">
       <Filter>Source\SecondProject\Private\Character\Monster\Controller</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player">
-      <UniqueIdentifier>{C27B0572-5F5B-4BFA-9E26-7D0CB1A76D78}</UniqueIdentifier>
+      <UniqueIdentifier>{04D4F064-FD78-43B6-B74D-66C4D215E874}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\PlayerCharacter.cpp">
       <Filter>Source\SecondProject\Private\Character\Player</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player\Animation">
-      <UniqueIdentifier>{D1CC6172-F630-497A-A1B3-CFFE013A719A}</UniqueIdentifier>
+      <UniqueIdentifier>{DE5A8412-C767-490E-A9C6-4C9AAF66A10F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Private\Character\Player\Animation\Notify">
-      <UniqueIdentifier>{48F3D9E3-D708-4FC7-A042-DF49EAD748C1}</UniqueIdentifier>
+      <UniqueIdentifier>{B4EFDBA6-8740-4393-A740-D83BF45A6709}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Animation\Notify\EquipNotify.cpp">
       <Filter>Source\SecondProject\Private\Character\Player\Animation\Notify</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player\Animation\NotifyState">
-      <UniqueIdentifier>{5CBFD510-E898-46A8-925B-443CFFF05A75}</UniqueIdentifier>
+      <UniqueIdentifier>{A3FA5A8E-B9A3-4255-9FCD-5808F038471D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Animation\NotifyState\AttackNotifyState.cpp">
       <Filter>Source\SecondProject\Private\Character\Player\Animation\NotifyState</Filter>
@@ -149,19 +152,19 @@
       <Filter>Source\SecondProject\Private\Character\Player\Animation\NotifyState</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player\Component">
-      <UniqueIdentifier>{08BB28FD-8847-4B11-A6A8-4670D7757EC9}</UniqueIdentifier>
+      <UniqueIdentifier>{37780131-09D8-4107-9037-50FCD46D8EBE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Component\InventoryComponent.cpp">
       <Filter>Source\SecondProject\Private\Character\Player\Component</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Character\Player\Controller">
-      <UniqueIdentifier>{3FE5F051-7C87-449C-9C5B-F5F2D8152551}</UniqueIdentifier>
+      <UniqueIdentifier>{3FE120B1-6315-42BA-BAD7-FBB660A5A04B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Character\Player\Controller\CustomController.cpp">
       <Filter>Source\SecondProject\Private\Character\Player\Controller</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Item">
-      <UniqueIdentifier>{B47CA105-8C3C-433A-AEFE-E2E679343682}</UniqueIdentifier>
+      <UniqueIdentifier>{C3BDACED-2E3A-483B-84F4-523405D9A7FB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SecondProject\Private\Item\Boots.cpp">
       <Filter>Source\SecondProject\Private\Item</Filter>
@@ -200,8 +203,11 @@
       <Filter>Source\SecondProject\Private\Item</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Private\Widget">
-      <UniqueIdentifier>{8C3EC7C3-0289-4A95-A76D-277907C0AB5D}</UniqueIdentifier>
+      <UniqueIdentifier>{83417F20-72F3-4479-AAB1-6A0553AF2B82}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SecondProject\Private\Widget\BossWidget.cpp">
+      <Filter>Source\SecondProject\Private\Widget</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SecondProject\Private\Widget\DragableWidget.cpp">
       <Filter>Source\SecondProject\Private\Widget</Filter>
     </ClCompile>
@@ -257,10 +263,10 @@
       <Filter>Source\SecondProject\Private\Widget</Filter>
     </ClCompile>
     <Filter Include="Source\SecondProject\Public">
-      <UniqueIdentifier>{5E46B032-15C7-426D-A673-826A7D3383E3}</UniqueIdentifier>
+      <UniqueIdentifier>{D108D74A-E5B8-4D57-BC55-45257F845870}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Public\Character">
-      <UniqueIdentifier>{DFB9CE1F-D948-463D-B5C5-5B807DDE4B95}</UniqueIdentifier>
+      <UniqueIdentifier>{EE158C88-20FA-4E9B-A7D8-CF87988D8CDF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\BaseCharacter.h">
       <Filter>Source\SecondProject\Public\Character</Filter>
@@ -269,22 +275,22 @@
       <Filter>Source\SecondProject\Public\Character</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Animation">
-      <UniqueIdentifier>{1224BF3E-CBF3-4D99-9950-C3DF867456B6}</UniqueIdentifier>
+      <UniqueIdentifier>{1254AB22-530D-45BD-8136-283044785F59}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Public\Character\Animation\Notify">
-      <UniqueIdentifier>{4B7B4CF9-4A5D-40F5-9BF3-BB7BA60ADEE3}</UniqueIdentifier>
+      <UniqueIdentifier>{CA5B9F04-1A42-4D00-AC24-FE494B9442DA}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Animation\Notify\FootStepAnimNotify.h">
       <Filter>Source\SecondProject\Public\Character\Animation\Notify</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Animation\NotifyState">
-      <UniqueIdentifier>{3C84C67D-ADA2-41DB-BFE5-912867DA9FC7}</UniqueIdentifier>
+      <UniqueIdentifier>{6D98B504-BD38-4F94-8535-8E0ADA6F5111}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Animation\NotifyState\CreateLinetraceNotifyState.h">
       <Filter>Source\SecondProject\Public\Character\Animation\NotifyState</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Component">
-      <UniqueIdentifier>{4550D739-CD2C-4DAE-B543-55195D935EA0}</UniqueIdentifier>
+      <UniqueIdentifier>{64A4A01B-44AE-4A0A-803A-D145C5D8D313}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Component\LockOnComponent.h">
       <Filter>Source\SecondProject\Public\Character\Component</Filter>
@@ -293,19 +299,22 @@
       <Filter>Source\SecondProject\Public\Character\Component</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Equipment">
-      <UniqueIdentifier>{12AD16D8-3BB6-45BD-9D93-0C40A1BD7051}</UniqueIdentifier>
+      <UniqueIdentifier>{DB596958-80AD-493A-9DA1-D37F92A2C308}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Equipment\EquipmentActor.h">
       <Filter>Source\SecondProject\Public\Character\Equipment</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Monster">
-      <UniqueIdentifier>{B4027F02-F7BD-42F9-997C-5DD9DD78AB4F}</UniqueIdentifier>
+      <UniqueIdentifier>{3A716779-562B-4CDD-8C68-1BF9D8172755}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Character\Monster\DesertDragon.h">
+      <Filter>Source\SecondProject\Public\Character\Monster</Filter>
+    </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Monster\AI">
-      <UniqueIdentifier>{291AD617-4F49-4BA5-9509-266C5B3B2E19}</UniqueIdentifier>
+      <UniqueIdentifier>{2BA191AD-A8A6-4F44-AB58-E56DF54BF36B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Public\Character\Monster\AI\Service">
-      <UniqueIdentifier>{CB89175F-A4F7-4B4D-8423-10FC0773E45E}</UniqueIdentifier>
+      <UniqueIdentifier>{A3BE8937-A28F-4D46-A7C9-FCC4F362E5C3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Monster\AI\Service\CheckDistance.h">
       <Filter>Source\SecondProject\Public\Character\Monster\AI\Service</Filter>
@@ -314,7 +323,7 @@
       <Filter>Source\SecondProject\Public\Character\Monster\AI\Service</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Monster\AI\Task">
-      <UniqueIdentifier>{C666B3AB-8898-4C4B-B135-DCC9E98EBAB4}</UniqueIdentifier>
+      <UniqueIdentifier>{91099573-96E9-4A7C-BF28-FC66AFBEE2C7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Monster\AI\Task\Task_ChangeCombatState.h">
       <Filter>Source\SecondProject\Public\Character\Monster\AI\Task</Filter>
@@ -329,28 +338,28 @@
       <Filter>Source\SecondProject\Public\Character\Monster\AI\Task</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Monster\Controller">
-      <UniqueIdentifier>{2D4315F1-00AF-499A-95EC-19E2BAA9B92F}</UniqueIdentifier>
+      <UniqueIdentifier>{189C8DE9-868D-4023-9CEF-F313AF8D3A24}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Monster\Controller\MonsterController.h">
       <Filter>Source\SecondProject\Public\Character\Monster\Controller</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player">
-      <UniqueIdentifier>{3834C041-D343-4B86-AF98-E700B1FBED4C}</UniqueIdentifier>
+      <UniqueIdentifier>{B8DB43DC-D415-4D16-BF92-2D3FD022932F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\PlayerCharacter.h">
       <Filter>Source\SecondProject\Public\Character\Player</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player\Animation">
-      <UniqueIdentifier>{5B952D65-232B-4489-90FB-140F1FB4737E}</UniqueIdentifier>
+      <UniqueIdentifier>{6C3065EC-091D-4F1C-B916-CCF2ED39DE32}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SecondProject\Public\Character\Player\Animation\Notify">
-      <UniqueIdentifier>{A6A07A6B-99D2-45A5-90C1-FEC8A25D36E0}</UniqueIdentifier>
+      <UniqueIdentifier>{89B0CD72-DB06-4AD2-B14C-F091C9785817}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Animation\Notify\EquipNotify.h">
       <Filter>Source\SecondProject\Public\Character\Player\Animation\Notify</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player\Animation\NotifyState">
-      <UniqueIdentifier>{04FDCCB3-D6F1-468E-9B7C-F0B27958BB51}</UniqueIdentifier>
+      <UniqueIdentifier>{A180B2EF-4095-4FA2-9645-DACB8D10CE36}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Animation\NotifyState\AttackNotifyState.h">
       <Filter>Source\SecondProject\Public\Character\Player\Animation\NotifyState</Filter>
@@ -362,19 +371,19 @@
       <Filter>Source\SecondProject\Public\Character\Player\Animation\NotifyState</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player\Component">
-      <UniqueIdentifier>{86A257C6-F851-4CEB-AE83-EF03BDB63226}</UniqueIdentifier>
+      <UniqueIdentifier>{FE734474-D119-49CD-B594-634EB402CE3D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Component\InventoryComponent.h">
       <Filter>Source\SecondProject\Public\Character\Player\Component</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Character\Player\Controller">
-      <UniqueIdentifier>{6138B54E-6E13-4F93-B360-1714C55BDF04}</UniqueIdentifier>
+      <UniqueIdentifier>{904E5279-A602-4048-8FB7-6FEA5ECFE510}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Character\Player\Controller\CustomController.h">
       <Filter>Source\SecondProject\Public\Character\Player\Controller</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Item">
-      <UniqueIdentifier>{B520C17F-8EC7-44ED-A0AB-E4D5908D517F}</UniqueIdentifier>
+      <UniqueIdentifier>{3D248475-225B-4B34-BCFB-8363B85A8A1C}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SecondProject\Public\Item\Boots.h">
       <Filter>Source\SecondProject\Public\Item</Filter>
@@ -413,8 +422,11 @@
       <Filter>Source\SecondProject\Public\Item</Filter>
     </ClInclude>
     <Filter Include="Source\SecondProject\Public\Widget">
-      <UniqueIdentifier>{60F27908-936C-4695-AAA4-55CB7EF64EB8}</UniqueIdentifier>
+      <UniqueIdentifier>{52B8C21B-75D4-4EAA-964D-488F032A0DA4}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SecondProject\Public\Widget\BossWidget.h">
+      <Filter>Source\SecondProject\Public\Widget</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SecondProject\Public\Widget\DragableWidget.h">
       <Filter>Source\SecondProject\Public\Widget</Filter>
     </ClInclude>
