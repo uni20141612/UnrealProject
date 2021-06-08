@@ -64,6 +64,8 @@ APlayerCharacter::APlayerCharacter()
 	Legs->SetupAttachment(GetMesh());
 	Boots = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Boots"));
 	Boots->SetupAttachment(GetMesh());
+
+	SetGenericTeamId(FGenericTeamId(0));
 }
 
 void APlayerCharacter::BeginPlay()

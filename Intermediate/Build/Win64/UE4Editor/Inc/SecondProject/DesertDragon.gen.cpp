@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeDesertDragon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADesertDragon, 3386182768);
+	IMPLEMENT_CLASS(ADesertDragon, 2448003836);
 	template<> SECONDPROJECT_API UClass* StaticClass<ADesertDragon>()
 	{
 		return ADesertDragon::StaticClass();

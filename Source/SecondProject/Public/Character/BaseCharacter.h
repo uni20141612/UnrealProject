@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "GenericTeamAgentInterface.h"
 
 #include "BaseCharacter.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDeath);
 
 UCLASS()
-class SECONDPROJECT_API ABaseCharacter : public ACharacter
+class SECONDPROJECT_API ABaseCharacter : public ACharacter, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 
@@ -21,6 +22,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser);
+
+	/** Retrieve team identifier in form of FGenericTeamId */
+	virtual FGenericTeamId GetGenericTeamId() const { return myTeam; }
 
 	class UStatusComponent* GetStatusComponent() { return statusComponent; }
 
@@ -35,6 +39,9 @@ protected:
 	virtual void OnConstruction(const FTransform& Transform) override;
 	void UpdateHeadOnHPBarWidget();
 
+	/** Assigns Team Agent to given TeamID */
+	virtual void SetGenericTeamId(const FGenericTeamId& TeamID) { myTeam = TeamID; }
+
 public:
 	UPROPERTY()
 		TArray<AActor*> hitActors;
@@ -48,4 +55,6 @@ protected:
 		class UWidgetComponent* widgetComponent;
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
 		class UAIPerceptionStimuliSourceComponent* perceptionSourceComponent;
+
+	FGenericTeamId myTeam;
 };

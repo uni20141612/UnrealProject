@@ -18,6 +18,8 @@ AMonster::AMonster()
 
 	bUseControllerRotationYaw = false;
 	GetCharacterMovement()->bOrientRotationToMovement = true;
+
+	SetGenericTeamId(FGenericTeamId(1));
 }
 
 void AMonster::DropItem()

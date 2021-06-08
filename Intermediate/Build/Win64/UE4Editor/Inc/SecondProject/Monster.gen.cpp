@@ -489,7 +489,7 @@ static struct FScriptStruct_SecondProject_StaticRegisterNativesFDropTable
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMonster, 1583686689);
+	IMPLEMENT_CLASS(AMonster, 348264474);
 	template<> SECONDPROJECT_API UClass* StaticClass<AMonster>()
 	{
 		return AMonster::StaticClass();
